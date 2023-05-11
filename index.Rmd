@@ -3,7 +3,7 @@ title: "Cynthia S Cardinault"
 image: "Cynthia.jpg"
 links:
   - label: LinkedIn
-    url: "linkedin.com/in/cynthiacardinault"
+    url: "https://www.linkedin.com/in/cynthiacardinault/"
   - label: Twitter
     url: "https://twitter.com/cynthiasotocar"
   - label: GitHub
