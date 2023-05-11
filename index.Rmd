@@ -1,0 +1,54 @@
+---
+title: "Cynthia S Cardinault"
+image: "Cynthia.jpg"
+links:
+  - label: LinkedIn
+    url: "linkedin.com/in/cynthiacardinault"
+  - label: Twitter
+    url: "https://twitter.com/cynthiasotocar"
+  - label: GitHub
+    url: "https://github.com/cyntsc"
+  - label: Email
+    url: "mailto:cyntsc10@gmail.com"
+output:
+  postcards::trestles
+---
+
+## Bio
+
+I love working at the intersection of biology and data science, I actively look for new strategies to handle multiomic data. My current interest are in analize transcriptomic and epigenomic data sequenced with cellranger-ARC sequencing, now I am working with human brain tissue, and other public datasets from human and mouse tissue. My implementations are standing in improve known pipelines based on R packages code, like Seurat and Signac, but eventually I will be testing multiomic software based on python.\
+I have previous experience working with bulk RNA-seq datasets from plants tissue, I have also some experience with unsupervised machine learning (ML) methods with keras & tensorflow for python in GoogleCollab.
+
+I am aware of the prevailing need to convey the relevance and opportunity presented by emerging areas in data science and modern biology, so I am very excited to actively participate in the future of human health and food safety that the future holds for us.
+
+## Education
+
+**Centro de Investigación Científica de Yucatán** \| Yucatán, Mx.
+
+Ph.D. Candidate in Biology Sciences \| January 2019 - January 2023
+
+**Universidad Autónoma de Yucatán** \| Yucatán, Mx.
+
+Master. in Computer Science \| September 2013 - May 2016
+
+**Universidad Autónoma de Tamaulipas** \| Tamaulipas, Mx.
+
+B.S. in Computer Science \| January 1993 - January 1997
+
+## Experience
+
+**Healthy International Dept. in Tamaulipas** \| Administrative supervisor at Tampico-Madero-Altamira Harbor \| Jan 2004 - Jan 2012
+
+**Freelance IT consultant** \| Software development \| 2000 - 2010
+
+**Terminales Portátiles SA de CV** \| Software Engineer \| 1998 - 2000
+
+## Teaching
+
+**CSHL, NY.** \| Teacher Assistant \| Oct 2022
+
+**Latin American Technological University (UTEL)** \| Instructor \| Aug 2016 - Aug 2018
+
+**Aliat Universities, Mx** \| Content specialist and instructional designer \| Jan 2017 - Dec 2017
+
+**Latin University of Merida, Mx** \| Instructor \| June 2016 - Aug 2018
