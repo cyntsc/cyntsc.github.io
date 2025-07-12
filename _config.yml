@@ -1,3 +1,11 @@
 theme: "just-the-docs"
 title: "My Bioinformatics Notebook"
 description: "Workflows, notes, and visual checks in scRNA-seq, scATAC-seq, multiome, spatial"
+just_the_docs:
+  navigation:
+    - title: "Home"
+      url: /
+    - title: "Multiome scRNA-seq and scATAC-seq Workflow"
+      url: /scRNA-seq
+    - title: "Multiome"
+      url: /multiome
