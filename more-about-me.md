@@ -1,3 +1,9 @@
+---
+title: more about me
+nav_order: 2
+permalink: /more-about-me/
+---
+
 # More about me
 
 ![Cynthia](Cynthia.jpeg)

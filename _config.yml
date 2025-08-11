@@ -7,12 +7,4 @@ aux_links:
   "GitHub":
     - "https://github.com/cyntsc/cyntsc.github.io"
 just_the_docs:
-  navigation:
-    - title: "Home"
-      url: /
-    - title: "Multiome scRNA-seq and scATAC-seq Workflow"
-      url: /scRNA-seq
-    - title: "Multiome"
-      url: /multiome
-    - title: "More about me"
-      url: /more-about-me
+  search_enabled: true
