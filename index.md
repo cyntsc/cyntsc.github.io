@@ -1,10 +1,16 @@
-# 📓 My Bioinformatics Notebook
+---
+title: Home
+nav_order: 1
+permalink: /
+---
 
-Hello! I’m Cynthia. For the past eight years, I have dedicated most of my career to exploring transcriptomics, and more recently epigenomics, spanning bulk RNA, single-cell, spatial, and multiome (scRNA-seq + scATAC-seq) analyses. I have run a wide range of pipelines and workflows aimed at addressing key biological questions across two distinct fields: plant–pathogen interactions and human brain neuroscience. Odd mix? Perhaps. But while they may seem worlds apart, I see many shared genomic fundamentals.
+# 📓 Wellcome to my Bioinformatics Notebook
+<br>
+For the past eight years I have dedicated most of my career to exploring transcriptomics, and more recently epigenomics, spanning bulk RNA, single-cell, spatial, and multiome (scRNA-seq + scATAC-seq) analyses. I have run a wide range of pipelines and workflows aimed at addressing key biological questions across two distinct fields: plant–pathogen interactions and human brain neuroscience. Odd mix? Perhaps. But while they may seem worlds apart, I see many shared genomic fundamentals.
 
-This notebook is my digital lab bench notebook: a place to document workflows, record unexpected findings, troubleshoot challenges, and capture insights that emerge along the way. It serves both as a personal reference and an open resource for others navigating similar data complexities.
+This notebook is my digital lab bench: a place to document workflows, record unexpected findings, troubleshoot challenges, and capture insights that emerge along the way. It serves both as a personal reference and an open resource for others navigating similar data complexities.
 
-If you’d like to know more about my background and interests, visit [More about me](more-about-me).
+If you’d like to know more about my background and interests, visit [More about me](/more-about-me.md/).
 
 ---
 
@@ -33,3 +39,9 @@ If you spot mistakes, have suggestions, or just want to geek out about data, you
 ## 📬 Always happy to connect!
 
 If you want to swap workflows, brainstorm methods, or talk about new opportunities, feel free to reach out or explore more on LinkedIn.
+
+---
+
+
+Best,<br>
+Cynthia S Cardinault

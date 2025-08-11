@@ -1,20 +1,20 @@
 ---
 title: more about me
-nav_order: 2
+nav_order: 1
 permalink: /more-about-me/
 ---
 
 # More about me
-
+<!--
 ![Cynthia](Cynthia.jpeg)
 
 [LinkedIn](https://www.linkedin.com/in/cynthiacardinault/) | [Twitter](https://twitter.com/cynthiasotocar) | [GitHub](https://github.com/cyntsc) | [Email](mailto:cyntsc10@gmail.com)
-
+-->
 ---
 
 ## Bio
 
-I’m Cynthia, a bioinformatician passionate about bringing biology and data science together to tackle complex questions. At the Lieber Institute, my current work centers on multiome (transcriptomic and epigenomic) and spatial transcriptomics in the human brain habenula, where we are building an integrated atlas of cell-type signatures, their regulatory elements, and their spatial organization. I’m excited to see a preprint of this work coming soon.
+I’m Cynthia S Cardinault, a bioinformatician passionate about bringing biology and data science together to tackle complex questions. At the Lieber Institute, my current work centers on multiome (transcriptomic and epigenomic) and spatial transcriptomics in the human brain habenula, where we are building an integrated atlas of cell-type signatures, their regulatory elements, and their spatial organization. I’m excited to see a preprint of this work coming soon.
 
 I began my genomics career during my doctorate at CICY, studying plant–pathogen interactions in Arabidopsis. Using bulk RNA data and co-expression networks, I identified key defense gene modules against ascomycete fungi, relevant topic for food security in the face of climate change.
 
@@ -56,7 +56,7 @@ Most of my current project repositories are private for now, but these are plann
 📓 **My Bioinformatics Notebook**  
 A growing collection of workflows, tips, and insights for **scRNA-seq**, **scATAC-seq**, **multiome**, and **Visium spatial transcriptomics** — along with plot interpretations, favorite tools, and curated references.  
 
-Here’s a preview: [Bioinformatic_Notebook](index)
+Here’s a preview: [Bioinformatic_Notebook](/index.md/)
 
 ---
 
