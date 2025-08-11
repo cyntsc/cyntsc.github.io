@@ -6,6 +6,12 @@ permalink: /
 
 # 📓 Wellcome to my Bioinformatics Notebook
 <br>
+
+           Under construction — thank you for your patience!
+           Exciting updates are on the way.
+
+
+<br>
 For the past eight years I have dedicated most of my career to exploring transcriptomics, and more recently epigenomics, spanning bulk RNA, single-cell, spatial, and multiome (scRNA-seq + scATAC-seq) analyses. I have run a wide range of pipelines and workflows aimed at addressing key biological questions across two distinct fields: plant–pathogen interactions and human brain neuroscience. Odd mix? Perhaps. But while they may seem worlds apart, I see many shared genomic fundamentals.
 
 This notebook is my digital lab bench: a place to document workflows, record unexpected findings, troubleshoot challenges, and capture insights that emerge along the way. It serves both as a personal reference and an open resource for others navigating similar data complexities.

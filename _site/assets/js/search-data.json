@@ -1,7 +1,7 @@
 {"0": {
     "doc": "Home",
     "title": "📓 Wellcome to my Bioinformatics Notebook",
-    "content": "For the past eight years I have dedicated most of my career to exploring transcriptomics, and more recently epigenomics, spanning bulk RNA, single-cell, spatial, and multiome (scRNA-seq + scATAC-seq) analyses. I have run a wide range of pipelines and workflows aimed at addressing key biological questions across two distinct fields: plant–pathogen interactions and human brain neuroscience. Odd mix? Perhaps. But while they may seem worlds apart, I see many shared genomic fundamentals. This notebook is my digital lab bench: a place to document workflows, record unexpected findings, troubleshoot challenges, and capture insights that emerge along the way. It serves both as a personal reference and an open resource for others navigating similar data complexities. If you’d like to know more about my background and interests, visit More about me. ",
+    "content": ". Under construction — thank you for your patience! Exciting updates are on the way. For the past eight years I have dedicated most of my career to exploring transcriptomics, and more recently epigenomics, spanning bulk RNA, single-cell, spatial, and multiome (scRNA-seq + scATAC-seq) analyses. I have run a wide range of pipelines and workflows aimed at addressing key biological questions across two distinct fields: plant–pathogen interactions and human brain neuroscience. Odd mix? Perhaps. But while they may seem worlds apart, I see many shared genomic fundamentals. This notebook is my digital lab bench: a place to document workflows, record unexpected findings, troubleshoot challenges, and capture insights that emerge along the way. It serves both as a personal reference and an open resource for others navigating similar data complexities. If you’d like to know more about my background and interests, visit More about me. ",
     "url": "/#-wellcome-to-my-bioinformatics-notebook",
     
     "relUrl": "/#-wellcome-to-my-bioinformatics-notebook"
@@ -85,7 +85,7 @@
   },"12": {
     "doc": "more about me",
     "title": "My Formal Education",
-    "content": ". | Doctor in Biology Sciences Centro de Investigación Científica de Yucatán, Yucatán, Mx. January 2019 - January 2023 . | Master in Computer Science Universidad Autónoma de Yucatán, Yucatán, Mx. September 2013 - May 2016 . | B.S. in Computer Science Universidad Autónoma de Tamaulipas, Tamaulipas, Mx. January 1993 - January 1997 . | . ",
+    "content": ". | Doctor in Biology Sciences Biotechnology Specialist Thesis: “Análisis de redes de coexpresión RNA-Seq para identificar patrones genéticos consenso en Arabidopsis en respuesta a la infección por hongos ascomycetes” Centro de Investigación Científica de Yucatán, Yucatán, Mx. CONACYT 552999 January 2019 - January 2023 . | Master in Computer Science Thesis: “Modelo para el Análisis de la Interacción en Entornos Virtuales de Aprendizaje Colaborativo” Universidad Autónoma de Yucatán, Yucatán, Mx. CONACYT 552999 September 2013 - May 2016 . | Bachelor in Computer Science Universidad Autónoma de Tamaulipas, Tamaulipas, Mx. January 1993 - January 1997 . | . ",
     "url": "/more-about-me/#my-formal-education",
     
     "relUrl": "/more-about-me/#my-formal-education"

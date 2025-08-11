@@ -104,15 +104,20 @@ Soto, C., Menéndez, V & Aguilar, R. (2014) Methodological framework for the dev
 
 ## My Formal Education
 
-- **Doctor in Biology Sciences**  
-  Centro de Investigación Científica de Yucatán, Yucatán, Mx.  
+- **Doctor in Biology Sciences**
+  Biotechnology Specialist
+  Thesis: *"Análisis de redes de coexpresión RNA-Seq para identificar patrones genéticos consenso en Arabidopsis en respuesta a la infección por hongos ascomycetes"*  
+  Centro de Investigación Científica de Yucatán, Yucatán, Mx.
+  CONACYT 552999
   *January 2019 - January 2023*
 
-- **Master in Computer Science**  
-  Universidad Autónoma de Yucatán, Yucatán, Mx.  
+- **Master in Computer Science**
+  Thesis: *"Modelo para el Análisis de la Interacción en Entornos Virtuales de Aprendizaje Colaborativo"*
+  Universidad Autónoma de Yucatán, Yucatán, Mx.
+  CONACYT 552999
   *September 2013 - May 2016*
 
-- **B.S. in Computer Science**  
+- **Bachelor in Computer Science**  
   Universidad Autónoma de Tamaulipas, Tamaulipas, Mx.  
   *January 1993 - January 1997*
 
