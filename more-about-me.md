@@ -51,12 +51,11 @@ Most of my current project repositories are private for now, but these are plann
 
 ---
 
-## One of my most recent projects in progress is:  
+## Most recent project in progress
 
-📓 **My Bioinformatics Notebook**  
-A growing collection of workflows, tips, and insights for **scRNA-seq**, **scATAC-seq**, **multiome**, and **Visium spatial transcriptomics** — along with plot interpretations, favorite tools, and curated references.  
+*"My Bioinformatics Notebook"*. Planned to be a growing collection with weekly updated, containing workflows, tips, and insights for *scRNA-seq*, *scATAC-seq*, *multiome*, and *Visium spatial transcriptomics*, along with plot interpretations, favorite tools, and curated references.  
 
-Here’s a preview: [Bioinformatic_Notebook](/index.md/)
+Here’s a preview of the expected content: [Bioinformatic_Notebook](/index.md/)
 
 ---
 

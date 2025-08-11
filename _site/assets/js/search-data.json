@@ -63,11 +63,11 @@
     "relUrl": "/more-about-me/#my-github-repo"
   },"9": {
     "doc": "more about me",
-    "title": "One of my most recent projects in progress is:",
-    "content": "📓 My Bioinformatics Notebook A growing collection of workflows, tips, and insights for scRNA-seq, scATAC-seq, multiome, and Visium spatial transcriptomics — along with plot interpretations, favorite tools, and curated references. Here’s a preview: Bioinformatic_Notebook . ",
-    "url": "/more-about-me/#one-of-my-most-recent-projects-in-progress-is",
+    "title": "Most recent project in progress",
+    "content": "“My Bioinformatics Notebook”. Planned to be a growing collection with weekly updated, containing workflows, tips, and insights for scRNA-seq, scATAC-seq, multiome, and Visium spatial transcriptomics, along with plot interpretations, favorite tools, and curated references. Here’s a preview of the expected content: Bioinformatic_Notebook . ",
+    "url": "/more-about-me/#most-recent-project-in-progress",
     
-    "relUrl": "/more-about-me/#one-of-my-most-recent-projects-in-progress-is"
+    "relUrl": "/more-about-me/#most-recent-project-in-progress"
   },"10": {
     "doc": "more about me",
     "title": "Technical Skills",
