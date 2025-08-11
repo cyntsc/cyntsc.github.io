@@ -1,6 +1,11 @@
-theme: "just-the-docs"
-title: "My Bioinformatics Notebook"
+## theme: "just-the-docs"
+title: "Cynthia Bioinformatics Notebook"
 description: "Workflows, notes, and visual checks in scRNA-seq, scATAC-seq, multiome, spatial"
+remote_theme: just-the-docs/just-the-docs  ##  tell Jekyll to use the theme via remote_theme
+# Optional: show GitHub link in the header
+aux_links:
+  "GitHub":
+    - "https://github.com/cyntsc/cyntsc.github.io"
 just_the_docs:
   navigation:
     - title: "Home"
@@ -9,3 +14,5 @@ just_the_docs:
       url: /scRNA-seq
     - title: "Multiome"
       url: /multiome
+    - title: "More about me"
+      url: /more-about-me
