@@ -35,12 +35,13 @@ resources that are neither **oversimplified** (skipping important steps) nor **o
 
 So these notes focus on six main areas:  
 
-1. **Background** – What these notes gather  
-2. **Key Literature** – Papers, papers, and more papers  
-3. **Vignettes & Tutorials** – Broad, but still helpful  
-4. **Core Functions & References** – What’s most relevant now  
-5. **Custom Repo Practices** – Tips from my own workflows  
-6. **Behind-the-Scenes Tools & File Formats** – The underrated but essential stuff  
+1. [**Background**](#1-background) – What these notes gather  
+2. [**Key Literature**](#2-key-literature) – Papers, papers, and more papers  
+3. [**Vignettes & Tutorials**](#3-vignettes--tutorials) – Broad, but still helpful  
+4. [**Core Functions & References**](#4-core-functions) – What’s most relevant now  
+5. [**Custom Repo Practices**](#5-custom-repo-practices) – Tips from my own workflows  
+6. [**Behind-the-Scenes Tools & File Formats**](#6-behind-the-scenes-tools--file-formats) – The underrated but essential stuff  
+
 
 From time to time, I also add quick sketches or diagrams — nothing fancy, just visual aids that help me (and hopefully you) grasp the concepts better.  
 
@@ -52,6 +53,37 @@ From time to time, I also add quick sketches or diagrams — nothing fancy, just
 <br>
 These notes highlight strategies and resources for the **downstream analysis of single-cell chromatin accessibility**.  
 The main goal is to compile practical references and methods to support the identification of candidate cis-regulatory elements (cCREs) for advanced analysis — including tasks such as linking peaks to genes or computing differentially accessible regions (DARs).  
+
+### Identifying Peaks: CellRanger vs CallPeaks  
+
+<details>
+<summary>Sketch 1 – CellRanger default peak calls</summary>
+<img src="{{ '/images/atac_cisRE/1.jpg' | relative_url }}" alt="Sketch 1" width="300">
+</details>
+
+<details>
+<summary>Sketch 2 – Peak overview</summary>
+<p align="center">
+  <img src="{{ '/images/atac_cisRE/2.jpg' | relative_url }}" alt="Sketch 2" width="45%">
+  <img src="{{ '/images/atac_cisRE/2b.jpg' | relative_url }}" alt="Sketch 2b" width="45%">
+</p>
+</details>
+
+<details>
+<summary>Sketch 3 – Global vs local peaks</summary>
+<p align="center">
+  <img src="{{ '/images/atac_cisRE/3.jpg' | relative_url }}" alt="Sketch 3" width="45%">
+  <img src="{{ '/images/atac_cisRE/4.jpg' | relative_url }}" alt="Sketch 4" width="45%">
+</p>
+</details>
+
+<details>
+<summary>Sketch 4 – Cell-to-cell vs pseudobulk</summary>
+<p align="center">
+  <img src="{{ '/images/atac_cisRE/5.jpg' | relative_url }}" alt="Sketch 5" width="45%">
+  <img src="{{ '/images/atac_cisRE/6.jpg' | relative_url }}" alt="Sketch 6" width="45%">
+</p>
+</details>
 
 ---
 

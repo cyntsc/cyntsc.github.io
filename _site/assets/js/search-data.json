@@ -50,7 +50,7 @@
   },"7": {
     "doc": "Identifying candidate cis-regulatory elements (cCREs)",
     "title": "1. Background",
-    "content": "These notes highlight strategies and resources for the downstream analysis of single-cell chromatin accessibility. The main goal is to compile practical references and methods to support the identification of candidate cis-regulatory elements (cCREs) for advanced analysis — including tasks such as linking peaks to genes or computing differentially accessible regions (DARs). ",
+    "content": "These notes highlight strategies and resources for the downstream analysis of single-cell chromatin accessibility. The main goal is to compile practical references and methods to support the identification of candidate cis-regulatory elements (cCREs) for advanced analysis — including tasks such as linking peaks to genes or computing differentially accessible regions (DARs). Identifying Peaks: CellRanger vs CallPeaks . Sketch 1 – CellRanger default peak calls Sketch 2 – Peak overview . Sketch 3 – Global vs local peaks . Sketch 4 – Cell-to-cell vs pseudobulk . ",
     "url": "/sATAC-seq-analysis/link_peak_gene/#1-background",
     
     "relUrl": "/sATAC-seq-analysis/link_peak_gene/#1-background"
