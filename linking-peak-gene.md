@@ -33,14 +33,20 @@ This space is a collection of my working notes on **snATAC-seq downstream analys
 Instead, my goal is to share the kind of material I often find missing:  
 resources that are neither **oversimplified** (skipping important steps) nor **overly specific** to a single research question.  
 
-So these notes focus on six main areas:  
+So these notes focus on six main areas:  (*click on the links*)
 
-1. [**Background**](#1-background) – What these notes gather  
-2. [**Key Literature**](#2-key-literature) – Papers, papers, and more papers  
-3. [**Vignettes & Tutorials**](#3-vignettes--tutorials) – Broad, but still helpful  
-4. [**Core Functions & References**](#4-core-functions) – What’s most relevant now  
-5. [**Custom Repo Practices**](#5-custom-repo-practices) – Tips from my own workflows  
-6. [**Behind-the-Scenes Tools & File Formats**](#6-behind-the-scenes-tools--file-formats) – The underrated but essential stuff  
+<div style="background-color:#f5f5f5; padding:15px; border-radius:8px;">
+
+<ol>
+  <li><a href="#1-background"><strong>Background</strong></a> – What these notes gather</li>
+  <li><a href="#2-key-literature"><strong>Key Literature</strong></a> – Papers, papers, and more papers</li>
+  <li><a href="#3-vignettes--tutorials"><strong>Vignettes & Tutorials</strong></a> – Broad, but still helpful</li>
+  <li><a href="#4-core-functions"><strong>Core Functions & References</strong></a> – What’s most relevant now</li>
+  <li><a href="#5-custom-repo-practices"><strong>Custom Repo Practices</strong></a> – Tips from my own workflows</li>
+  <li><a href="#6-behind-the-scenes-tools--file-formats"><strong>Behind-the-Scenes Tools & File Formats</strong></a> – The underrated but essential stuff</li>
+</ol>
+
+</div>
 
 
 From time to time, I also add quick sketches or diagrams — nothing fancy, just visual aids that help me (and hopefully you) grasp the concepts better.  
@@ -55,6 +61,7 @@ These notes highlight strategies and resources for the **downstream analysis of 
 The main goal is to compile practical references and methods to support the identification of candidate cis-regulatory elements (cCREs) for advanced analysis — including tasks such as linking peaks to genes or computing differentially accessible regions (DARs).  
 
 ### Identifying Peaks: CellRanger vs CallPeaks  
+<div style="background-color:#fff9db; padding:10px; border-radius:8px;">
 
 <details>
 <summary>Sketch 1 – CellRanger default peak calls</summary>
@@ -84,7 +91,7 @@ The main goal is to compile practical references and methods to support the iden
   <img src="{{ '/images/atac_cisRE/6.jpg' | relative_url }}" alt="Sketch 6" width="45%">
 </p>
 </details>
-
+</div>
 ---
 
 ## 2. Key Literature  
