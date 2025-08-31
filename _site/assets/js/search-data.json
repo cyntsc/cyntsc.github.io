@@ -34,97 +34,153 @@
     
     "relUrl": "/"
   },"5": {
-    "doc": "Linking peak-genes",
-    "title": "Linking peak-genes",
+    "doc": "Linking peaks to genes",
+    "title": "Chromatin Accessibility Downstream Analysis for High-Confidence Peaks",
+    "content": "Notebook: Cynthia SC (08-28-2025) . ",
+    "url": "/sATAC-seq-analysis/link_peak_genes/#chromatin-accessibility-downstream-analysis-for-high-confidence-peaks",
+    
+    "relUrl": "/sATAC-seq-analysis/link_peak_genes/#chromatin-accessibility-downstream-analysis-for-high-confidence-peaks"
+  },"6": {
+    "doc": "Linking peaks to genes",
+    "title": "Background",
+    "content": "These notes focus on strategies and resources for downstream analysis of high-confidence chromatin accessibility peaks. The goal is to gather resources to explore/deepen strategies to identify candidate cis-regulatory elements (cCREs) for advanced analysis. ",
+    "url": "/sATAC-seq-analysis/link_peak_genes/#background",
+    
+    "relUrl": "/sATAC-seq-analysis/link_peak_genes/#background"
+  },"7": {
+    "doc": "Linking peaks to genes",
+    "title": "Key Literature",
+    "content": ". | Chawla et al., 2025 (Nat Genet) Single-nucleus chromatin accessibility profiling identifies cell types and functional variants contributing to major depression. DOI link Code for DAR (cell-type/cluster-specific cCREs &amp; TFs): GitHub repo . | Zeng et al., 2024 (Science) Genetic regulation of cell type–specific chromatin accessibility shapes brain disease etiology. DOI link . | Anderson et al., 2023 (Cell Genomics) Single nucleus multiomics identifies ZEB1 and MAFB as candidate regulators of Alzheimer’s disease-specific cis-regulatory elements. DOI link Code for peak calling: Workflow . | . ",
+    "url": "/sATAC-seq-analysis/link_peak_genes/#key-literature",
+    
+    "relUrl": "/sATAC-seq-analysis/link_peak_genes/#key-literature"
+  },"8": {
+    "doc": "Linking peaks to genes",
+    "title": "Vignettes &amp; Tutorials",
+    "content": ". | Data structures &amp; object interaction (Signac) | Linking peaks to genes (10x Multiome) | Calling Peaks with MACS2 | Motif analysis with Signac | Co-accessible networks with Cicero | . ",
+    "url": "/sATAC-seq-analysis/link_peak_genes/#vignettes--tutorials",
+    
+    "relUrl": "/sATAC-seq-analysis/link_peak_genes/#vignettes--tutorials"
+  },"9": {
+    "doc": "Linking peaks to genes",
+    "title": "Core Functions &amp; References",
+    "content": ". | Signac . | CallPeaks | CRAN docs | . | FeatureMatrix | RegionStats | LinkedPeaks | . | GenomicRanges . | reduce | IRanges methods | . | . | Seurat v5+ . | AggregateExpression | . | . ",
+    "url": "/sATAC-seq-analysis/link_peak_genes/#core-functions--references",
+    
+    "relUrl": "/sATAC-seq-analysis/link_peak_genes/#core-functions--references"
+  },"10": {
+    "doc": "Linking peaks to genes",
+    "title": "Custom Repo Practices",
+    "content": ". | Peak calling workflows: scMultiomics_AD repo | Link detection strategies: . | Filter MACS peak calls (e.g., by expression or cell type). | Keep only genes with sufficient UMIs (e.g., ≥200). | Restrict peak–gene links by distance (≤100 kb from TSS). | Example: link filtering. | . | . ",
+    "url": "/sATAC-seq-analysis/link_peak_genes/#custom-repo-practices",
+    
+    "relUrl": "/sATAC-seq-analysis/link_peak_genes/#custom-repo-practices"
+  },"11": {
+    "doc": "Linking peaks to genes",
+    "title": "Behind-the-Scenes Tools &amp; File Formats",
+    "content": ". | MACS Project: GitHub | Changelog | . | | Installation: MACS2 guide | MACS3 guide | . | BED file format: UCSC FAQ | . ",
+    "url": "/sATAC-seq-analysis/link_peak_genes/#behind-the-scenes-tools--file-formats",
+    
+    "relUrl": "/sATAC-seq-analysis/link_peak_genes/#behind-the-scenes-tools--file-formats"
+  },"12": {
+    "doc": "Linking peaks to genes",
+    "title": "Outline",
+    "content": ". | Chromatin Accessibility Downstream Analysis for High-Confidence Peaks | Background | Key Literature | Vignettes &amp; Tutorials | Core Functions &amp; References | Custom Repo Practices | Behind-the-Scenes Tools &amp; File Formats | . ",
+    "url": "/sATAC-seq-analysis/link_peak_genes/#outline",
+    
+    "relUrl": "/sATAC-seq-analysis/link_peak_genes/#outline"
+  },"13": {
+    "doc": "Linking peaks to genes",
+    "title": "Linking peaks to genes",
     "content": " ",
     "url": "/sATAC-seq-analysis/link_peak_genes/",
     
     "relUrl": "/sATAC-seq-analysis/link_peak_genes/"
-  },"6": {
+  },"14": {
     "doc": "more about me",
     "title": "More about me",
     "content": ". ",
     "url": "/more-about-me/#more-about-me",
     
     "relUrl": "/more-about-me/#more-about-me"
-  },"7": {
+  },"15": {
     "doc": "more about me",
     "title": "Bio",
     "content": "I’m Cynthia S Cardinault, a bioinformatician passionate about bringing biology and data science together to tackle complex questions. At the Lieber Institute, my current work centers on multiome (transcriptomic and epigenomic) and spatial transcriptomics in the human brain habenula, where we are building an integrated atlas of cell-type signatures, their regulatory elements, and their spatial organization. I’m excited to see a preprint of this work coming soon. I began my genomics career during my doctorate at CICY, studying plant–pathogen interactions in Arabidopsis. Using bulk RNA data and co-expression networks, I identified key defense gene modules against ascomycete fungi, relevant topic for food security in the face of climate change. Before that, during my master’s degree, I researched educational technologies of the future, analyzing interoperability between the Moodle LMS and purpose-built educational applications. I study IMS-LTI–based services that strengthened connections between learning platforms. I see bioinformatics as a borderless field, unconstrained by species, languages, or methods. I’m driven to contribute to projects that advance human health, agriculture, and other global challenges. ",
     "url": "/more-about-me/#bio",
     
     "relUrl": "/more-about-me/#bio"
-  },"8": {
+  },"16": {
     "doc": "more about me",
     "title": "Scientific Open Resources | SpeakerDeck | YouTube",
     "content": "Presentations and public talks on bioinformatics, neuroscience and plant biology: . 🎥 Walkthroughs in multiomics | YouTube Playlist Title: LIEBER - Behind the Scenes of Spatial an Multiomic Data Analysis in Neuroscience 🧠🧬 Playlist featuring walkthroughs of my work with a focus on the human brain. Multiome pipelines like CellRanger ARC and Data-driven discussions. Thanks to PhD Collado who compiled, edited and allocated all these recordings. Youtube . 📑 My SpeakerDeck | SpeakerDeck Title: LIEBER - Slides for talks Spatial transcriptomics and multiomics. Material used for internal talks, the R-StatClub and conferences. SpeakerDeck . 🎥 Transcriptomic Analysis in Arabidopsis thaliana | YouTube Playlist | Posters Title: CICY – Arabidopsis Pathogenesis Compiles a set of talks and presentations in which I discussed topics in molecular biology, plant genetics, and transcriptomic analysis in Arabidopsis thaliana. YouTube . ",
     "url": "/more-about-me/#scientific-open-resources--speakerdeck--youtube",
     
     "relUrl": "/more-about-me/#scientific-open-resources--speakerdeck--youtube"
-  },"9": {
+  },"17": {
     "doc": "more about me",
     "title": "My GitHub Repo",
     "content": "Most of my current project repositories are private for now, but these are planned to be public next year. In the meantime, you can check out my activity and contributions from this year: 🔗 GitHub Profile – cyntsc . ",
     "url": "/more-about-me/#my-github-repo",
     
     "relUrl": "/more-about-me/#my-github-repo"
-  },"10": {
+  },"18": {
     "doc": "more about me",
     "title": "Most recent project in progress",
     "content": "“My Bioinformatics Notebook”. Planned to be a growing collection with weekly updated, containing workflows, tips, and insights for scRNA-seq, scATAC-seq, multiome, and Visium spatial transcriptomics, along with plot interpretations, favorite tools, and curated references. Here’s a preview of the expected content: Bioinformatic_Notebook . ",
     "url": "/more-about-me/#most-recent-project-in-progress",
     
     "relUrl": "/more-about-me/#most-recent-project-in-progress"
-  },"11": {
+  },"19": {
     "doc": "more about me",
     "title": "Technical Skills",
     "content": "The short answer: any language or package I need to get the job done. But a more detailed view: I work across R, Python (Jupyter), and Shell/Bash for high-performance, SLURM-managed workflows, with GitHub for reproducible documentation. My toolkit includes: . | R packages: Seurat, Signac, SpatialExperiment, spatialLIBD, scran, scater, bluster, WGCNA, DeconvoBuddies, dendextend, ComplexHeatmap, ggplot2, tidyverse | Technologies &amp; data types: scRNA-seq, scATAC-seq, multiome, Visium spatial transcriptomics | 10x Pipleines: Cell Ranger, Cell Ranger ARC, Space Ranger | RNA-seq preprocessing &amp; assembly tools: FastQC, Trimmomatic, STAR, HISAT2, Salmon, Kallisto, HTSeq | AI-assisted workflows: ChatGPT, Gemini for accelerating analysis and problem-solving | . ",
     "url": "/more-about-me/#technical-skills",
     
     "relUrl": "/more-about-me/#technical-skills"
-  },"12": {
+  },"20": {
     "doc": "more about me",
     "title": "My publications",
     "content": "Soto-Cardinault C, Childs KL, Góngora-Castillo E. Network Analysis of Publicly Available RNA-seq Provides Insights into the Molecular Mechanisms of Plant Defense against Multiple Fungal Pathogens in Arabidopsis thaliana. Genes (Basel). 2023 Dec 16;14(12):2223. doi: 10.3390/genes14122223. PMID: 38137044; PMCID: PMC10743233 Link . Soto-Cardinault CG, Duarte-Aké F, De-la-Peña C, Góngora-Castillo E. DNA Methylation and Transcriptomic Next-Generation Technologies in Cereal Genomics. Methods Mol Biol. 2020;2072:65-84. [doi: 10.1007/978-1-4939-9865-4_7. PMID: 31541439] Book-chapter . Soto, C., Ucán, J. P., &amp; Aguilar, R. A. (2018). Diseñando entornos virtuales de aprendizaje para el análisis de la colaboración con UWE. Abstraction &amp; Application, 20, 55–67. México. ISSN:2007-2635 . Soto, C., Menéndez, V. y Aguilar, R. (2015) Interoperabilidad entre el LMS Moodle y aplicaciones educativas de propósito específico utilizando servicios del IMS-LTI. Revista Apertura. Vol. 7 No. 2. Índice de Revistas Mexicanas de Investigación Científica y Tecnológica. ISSN:2007-1094 . Soto, C., Menéndez, V &amp; Aguilar, R. (2014) Methodological framework for the development of virtual environments for collaborative-ludic sceneries and integration to learning management systems. Proceedings of the International Conference on Education and New Learning Technologies (Edulearn 2014).Julio 7-9. Spain: Barcelona. pp. 2534-2540. ISBN: 978-84-6170557-3 / ISSN: 2340-1117. Indexed in Web Of Science. EDULEARN14 . ",
     "url": "/more-about-me/#my-publications",
     
     "relUrl": "/more-about-me/#my-publications"
-  },"13": {
+  },"21": {
     "doc": "more about me",
     "title": "My Formal Education",
     "content": ". | Doctor in Biology Sciences Biotechnology Specialist Thesis: “Análisis de redes de coexpresión RNA-Seq para identificar patrones genéticos consenso en Arabidopsis en respuesta a la infección por hongos ascomycetes” Centro de Investigación Científica de Yucatán, Yucatán, Mx. CONACYT 552999 January 2019 - January 2023 . | Master in Computer Science Thesis: “Modelo para el Análisis de la Interacción en Entornos Virtuales de Aprendizaje Colaborativo” Universidad Autónoma de Yucatán, Yucatán, Mx. CONACYT 552999 September 2013 - May 2016 . | Bachelor in Computer Science Universidad Autónoma de Tamaulipas, Tamaulipas, Mx. January 1993 - January 1997 . | . ",
     "url": "/more-about-me/#my-formal-education",
     
     "relUrl": "/more-about-me/#my-formal-education"
-  },"14": {
+  },"22": {
     "doc": "more about me",
     "title": "more about me",
     "content": " ",
     "url": "/more-about-me/",
     
     "relUrl": "/more-about-me/"
-  },"15": {
+  },"23": {
     "doc": "scATAC-seq analysis (multiome)",
     "title": "scATAC-seq analysis",
     "content": "Brief overview of your goals and dataset. | Data QC (TSS enrichment, FRiP) | Peak calling (MACS2) | Dimensionality reduction (LSI) | Clustering &amp; annotation | Peak–gene links (Signac::LinkPeaks) | Visualization (CoveragePlot) | . ",
     "url": "/sATAC-seq-analysis/#scatac-seq-analysis",
     
     "relUrl": "/sATAC-seq-analysis/#scatac-seq-analysis"
-  },"16": {
+  },"24": {
     "doc": "scATAC-seq analysis (multiome)",
     "title": "scATAC-seq analysis (multiome)",
     "content": " ",
     "url": "/sATAC-seq-analysis/",
     
     "relUrl": "/sATAC-seq-analysis/"
-  },"17": {
+  },"25": {
     "doc": "scRNA-seq analysis (multiome)",
     "title": "scRNA-seq analysis",
     "content": "Outline the core workflow. | QC (mito %, nFeatures, nCounts) | Normalization (SCTransform/log-normalize) | Dimensionality reduction (PCA/UMAP) | Clustering &amp; markers | Integration across samples | Differential expression &amp; enrichment | . ",
     "url": "/sRNA-seq-analysis/#scrna-seq-analysis",
     
     "relUrl": "/sRNA-seq-analysis/#scrna-seq-analysis"
-  },"18": {
+  },"26": {
     "doc": "scRNA-seq analysis (multiome)",
     "title": "scRNA-seq analysis (multiome)",
     "content": " ",
