@@ -1,8 +1,8 @@
 ---
 title: "Identifying candidate cis-regulatory elements (cCREs)"
-parent: "scATAC-seq analysis (multiome)"
+parent: "2 scATAC-seq analysis (multiome)"
 nav_order: 1
-permalink: /sATAC-seq-analysis/link_peak_gene/
+permalink: /sATAC-seq-analysis/identifying-ccres/
 ---
 
 # Single Cell ATAC-seq: Identifying candidate cis-regulatory elements (cCREs) 

@@ -1,101 +1,101 @@
 {"0": {
-    "doc": "Home",
-    "title": "📓 Wellcome to my Bioinformatics Notebook",
-    "content": ". Under construction — thank you for your patience! Exciting updates are on the way. For the past eight years I have dedicated most of my career to exploring transcriptomics, and more recently epigenomics, spanning bulk RNA, single-cell, spatial, and multiome (scRNA-seq + scATAC-seq) analyses. I have run a wide range of pipelines and workflows aimed at addressing key biological questions across two distinct fields: plant–pathogen interactions and human brain neuroscience. Odd mix? Perhaps. But while they may seem worlds apart, I see many shared genomic fundamentals. This notebook is my digital lab bench: a place to document workflows, record unexpected findings, troubleshoot challenges, and capture insights that emerge along the way. It serves both as a personal reference and an open resource for others navigating similar data complexities. If you’d like to know more about my background and interests, visit More about me. ",
-    "url": "/#-wellcome-to-my-bioinformatics-notebook",
+    "doc": "Identifying candidate cis-regulatory elements (cCREs)",
+    "title": "Single Cell ATAC-seq: Identifying candidate cis-regulatory elements (cCREs)",
+    "content": "R workflow using snATACseq with regular tools like Seurat, Signac, MACS2 and GRanges . Notebook: 08-28-2025 . ",
+    "url": "/sATAC-seq-analysis/identifying-ccres/#single-cell-atac-seq-identifying-candidate-cis-regulatory-elements-ccres",
     
-    "relUrl": "/#-wellcome-to-my-bioinformatics-notebook"
+    "relUrl": "/sATAC-seq-analysis/identifying-ccres/#single-cell-atac-seq-identifying-candidate-cis-regulatory-elements-ccres"
   },"1": {
+    "doc": "Identifying candidate cis-regulatory elements (cCREs)",
+    "title": "Welcome!",
+    "content": "Hi there 👋 . I hope you’re doing well, and that you find these notes useful for your analysis. You probably landed here because you’re: . | looking for a quick overview of snATAC-seq strategies, | searching for considerations when running downstream analysis, or | simply exploring out of curiosity | . Whatever the reason, welcome 🙌 . This space is a collection of my working notes on snATAC-seq downstream analysis “…not a full reproducible repo — there are already plenty of those out there. With the rise of AI coding assistants like ChatGPT, Gemini, or Claude, anyone can generate a decent pipeline if they know what to ask” (But that’s a topic for another day 😉). Instead, my goal is to share the kind of material I often find missing: resources that are neither oversimplified (skipping important steps) nor overly specific to a single research question. So these notes focus on six main areas: (click on the links) . | Background – What these notes gather | Key Literature – Papers, papers, and more papers | Vignettes &amp; Tutorials – Broad, but still helpful | Core Functions &amp; References – What’s most relevant now | Custom Repo Practices – Tips from my own workflows | Behind-the-Scenes Tools &amp; File Formats – The underrated but essential stuff | . From time to time, I also add quick sketches or diagrams — nothing fancy, just visual aids that help me (and hopefully you) grasp the concepts better. “Enjoy exploring, and feel free to share feedback. It helps make this resource better for the whole community” . ",
+    "url": "/sATAC-seq-analysis/identifying-ccres/#welcome",
+    
+    "relUrl": "/sATAC-seq-analysis/identifying-ccres/#welcome"
+  },"2": {
+    "doc": "Identifying candidate cis-regulatory elements (cCREs)",
+    "title": "1. Background",
+    "content": "These notes highlight strategies and resources for the downstream analysis of single-cell chromatin accessibility. The main goal is to compile practical references and methods to support the identification of candidate cis-regulatory elements (cCREs) for advanced analysis — including tasks such as linking peaks to genes or computing differentially accessible regions (DARs). Identifying Peaks: CellRanger vs CallPeaks . Sketch 1 – CellRanger default peak calls Sketch 2 – Peak overview . Sketch 3 – Global vs local peaks . Sketch 4 – Cell-to-cell vs pseudobulk . ",
+    "url": "/sATAC-seq-analysis/identifying-ccres/#1-background",
+    
+    "relUrl": "/sATAC-seq-analysis/identifying-ccres/#1-background"
+  },"3": {
+    "doc": "Identifying candidate cis-regulatory elements (cCREs)",
+    "title": "2. Key Literature",
+    "content": ". | Chawla et al., 2025 (Nat Genet) Single-nucleus chromatin accessibility profiling identifies cell types and functional variants contributing to major depression. DOI link Includes code for DAR analysis (cell-type/cluster-specific cCREs and TFs): GitHub repo . | Zeng et al., 2024 (Science) Genetic regulation of cell type–specific chromatin accessibility shapes brain disease etiology. DOI link . | Anderson et al., 2023 (Cell Genomics) Single nucleus multiomics identifies ZEB1 and MAFB as candidate regulators of Alzheimer’s disease-specific cis-regulatory elements. DOI link Includes code for peak calling: Workflow . | . ",
+    "url": "/sATAC-seq-analysis/identifying-ccres/#2-key-literature",
+    
+    "relUrl": "/sATAC-seq-analysis/identifying-ccres/#2-key-literature"
+  },"4": {
+    "doc": "Identifying candidate cis-regulatory elements (cCREs)",
+    "title": "3. Vignettes &amp; Tutorials",
+    "content": ". | Data structures &amp; object interaction (Signac) | Linking peaks to genes (10x Multiome) | Calling Peaks with MACS2 | Motif analysis with Signac | Co-accessible networks with Cicero | . ",
+    "url": "/sATAC-seq-analysis/identifying-ccres/#3-vignettes--tutorials",
+    
+    "relUrl": "/sATAC-seq-analysis/identifying-ccres/#3-vignettes--tutorials"
+  },"5": {
+    "doc": "Identifying candidate cis-regulatory elements (cCREs)",
+    "title": "4. Core Functions",
+    "content": ". | Signac . | CallPeaks | FeatureMatrix | RegionStats | LinkedPeaks | . | GenomicRanges . | reduce | IRanges methods | . | Seurat v5+ . | AggregateExpression | . | . ",
+    "url": "/sATAC-seq-analysis/identifying-ccres/#4-core-functions",
+    
+    "relUrl": "/sATAC-seq-analysis/identifying-ccres/#4-core-functions"
+  },"6": {
+    "doc": "Identifying candidate cis-regulatory elements (cCREs)",
+    "title": "5. Custom Repo Practices",
+    "content": ". | Peak calling workflows: scMultiomics_AD repo | Link detection strategies: . | Filter MACS peak calls (e.g., by expression or cell type). | Keep only genes with sufficient UMIs (e.g., ≥200). | Restrict peak–gene links by distance (≤100 kb from TSS). | Example: link filtering. | . | . ",
+    "url": "/sATAC-seq-analysis/identifying-ccres/#5-custom-repo-practices",
+    
+    "relUrl": "/sATAC-seq-analysis/identifying-ccres/#5-custom-repo-practices"
+  },"7": {
+    "doc": "Identifying candidate cis-regulatory elements (cCREs)",
+    "title": "6. Behind-the-Scenes Tools &amp; File Formats",
+    "content": "To run some functions, like Signac::CallPeaks (which internally invokes MACS), you might be interested in reading a bit about how MACS work, as you need to install it to let CallPeaks operate. Here, I am listing the most elementary resources for making happen, these are: . | MACS Project: GitHub and Changelog | Installation: MACS2 guide and MACS3 guide | BED = Browser Extensible Data format (standard for genomic intervals): UCSC FAQ | . If you are wondering, Why get into BED format ? The short story is that CallPeaks() calls MACS2, which produces BED/narrowPeak files. Then Signac reads those into GRanges, discarding the need for you to handle files manually. The relation is direct: CallPeaks() = automated creation + import of MACS2 BED output into R . This matter if you want to: . | Export: you can always export Signac’s GRanges peaks back into a BED file (with rtracklayer::export()). Useful if you want to load them in IGV, UCSC Genome Browser, or compare with ENCODE cCREs. | Import: if you already have BED peaks (e.g., ENCODE, or your own MACS2 runs outside of Signac), you can load them with rtracklayer::import() and use them directly in Signac. | Consistency: this BED ↔ GRanges conversion makes it easy to interoperate between R and external genomics tools. | . Thanks for reading through these notes. I hope they give you a useful starting point or spark new ideas for your own analysis. Feel free to share thoughts, suggestions, or resources. Collaboration makes the whole community stronger. Until next time, happy exploring! . Cynthia SC . ",
+    "url": "/sATAC-seq-analysis/identifying-ccres/#6-behind-the-scenes-tools--file-formats",
+    
+    "relUrl": "/sATAC-seq-analysis/identifying-ccres/#6-behind-the-scenes-tools--file-formats"
+  },"8": {
+    "doc": "Identifying candidate cis-regulatory elements (cCREs)",
+    "title": "Identifying candidate cis-regulatory elements (cCREs)",
+    "content": " ",
+    "url": "/sATAC-seq-analysis/identifying-ccres/",
+    
+    "relUrl": "/sATAC-seq-analysis/identifying-ccres/"
+  },"9": {
+    "doc": "Home",
+    "title": "📓 Welcome to my Bioinformatics Notebook",
+    "content": ". Under construction — thank you for your patience! Exciting updates are on the way. For the past eight years I have dedicated most of my career to exploring transcriptomics, and more recently epigenomics, spanning bulk RNA, single-cell, spatial, and multiome (scRNA-seq + scATAC-seq) analyses. I have run a wide range of pipelines and workflows aimed at addressing key biological questions across two distinct fields: plant–pathogen interactions and human brain neuroscience. Odd mix? Perhaps. But while they may seem worlds apart, I see many shared genomic fundamentals. This notebook is my digital lab bench: a place to document workflows, record unexpected findings, troubleshoot challenges, and capture insights that emerge along the way. It serves both as a personal reference and an open resource for others navigating similar data complexities. If you’d like to know more about my background and interests, visit More about me. ",
+    "url": "/#-welcome-to-my-bioinformatics-notebook",
+    
+    "relUrl": "/#-welcome-to-my-bioinformatics-notebook"
+  },"10": {
     "doc": "Home",
     "title": "What you’ll find here",
     "content": "Curated references that have been most valuable in my work, short technical write-ups and interpretations of common and less common visualizations about scRNA-seq, Multiome (snRNA-seq + snATAC-seq), and Visium Spatial Transcriptomics. ",
     "url": "/#what-youll-find-here",
     
     "relUrl": "/#what-youll-find-here"
-  },"2": {
+  },"11": {
     "doc": "Home",
     "title": "Why share this?",
     "content": "Every neat figure or polished manuscript hides a trail of trial, error, and “why on earth did I think that would work?” moments. By sharing my notes, I hope to: . | Show the kind of experience (and occasional stubbornness) it takes to get from raw data to conclusions. | Help others dodge some of the same pitfalls (or at least feel less alone while falling into them). | Build a transparent portfolio of how I think through data from first QC plots all the way to that hard-won last figure. | Gather links to papers, vignettes, blog posts, Twitter threads, and other resources that have shaped my work (and probably saved me from disaster more than once). | . Important: This isn’t a complete start-to-finish guide for replicating full pipelines. Honestly, there are hundreds of excellent resources out there already, many much better than I could write. Plus, each project comes with its own technical quirks and biological context. Most of my actual solutions are pieced together from a tent of decent references to fit specific problems. If you spot mistakes, have suggestions, or just want to geek out about data, your feedback is very welcome. I’m always tweaking things here to make it more useful — for myself and hopefully for others. ",
     "url": "/#why-share-this",
     
     "relUrl": "/#why-share-this"
-  },"3": {
+  },"12": {
     "doc": "Home",
     "title": "📬 Always happy to connect!",
     "content": "If you want to swap workflows, brainstorm methods, or talk about new opportunities, feel free to reach out or explore more on LinkedIn. Best, Cynthia S Cardinault . ",
     "url": "/#-always-happy-to-connect",
     
     "relUrl": "/#-always-happy-to-connect"
-  },"4": {
+  },"13": {
     "doc": "Home",
     "title": "Home",
     "content": " ",
     "url": "/",
     
     "relUrl": "/"
-  },"5": {
-    "doc": "Identifying candidate cis-regulatory elements (cCREs)",
-    "title": "Single Cell ATAC-seq: Identifying candidate cis-regulatory elements (cCREs)",
-    "content": "R workflow using snATACseq with regular tools like Seurat, Signac, MACS2 and GRanges . Notebook: 08-28-2025 . ",
-    "url": "/sATAC-seq-analysis/link_peak_gene/#single-cell-atac-seq-identifying-candidate-cis-regulatory-elements-ccres",
-    
-    "relUrl": "/sATAC-seq-analysis/link_peak_gene/#single-cell-atac-seq-identifying-candidate-cis-regulatory-elements-ccres"
-  },"6": {
-    "doc": "Identifying candidate cis-regulatory elements (cCREs)",
-    "title": "Welcome!",
-    "content": "Hi there 👋 . I hope you’re doing well, and that you find these notes useful for your analysis. You probably landed here because you’re: . | looking for a quick overview of snATAC-seq strategies, | searching for considerations when running downstream analysis, or | simply exploring out of curiosity | . Whatever the reason, welcome 🙌 . This space is a collection of my working notes on snATAC-seq downstream analysis “…not a full reproducible repo — there are already plenty of those out there. With the rise of AI coding assistants like ChatGPT, Gemini, or Claude, anyone can generate a decent pipeline if they know what to ask” (But that’s a topic for another day 😉). Instead, my goal is to share the kind of material I often find missing: resources that are neither oversimplified (skipping important steps) nor overly specific to a single research question. So these notes focus on six main areas: (click on the links) . | Background – What these notes gather | Key Literature – Papers, papers, and more papers | Vignettes &amp; Tutorials – Broad, but still helpful | Core Functions &amp; References – What’s most relevant now | Custom Repo Practices – Tips from my own workflows | Behind-the-Scenes Tools &amp; File Formats – The underrated but essential stuff | . From time to time, I also add quick sketches or diagrams — nothing fancy, just visual aids that help me (and hopefully you) grasp the concepts better. “Enjoy exploring, and feel free to share feedback. It helps make this resource better for the whole community” . ",
-    "url": "/sATAC-seq-analysis/link_peak_gene/#welcome",
-    
-    "relUrl": "/sATAC-seq-analysis/link_peak_gene/#welcome"
-  },"7": {
-    "doc": "Identifying candidate cis-regulatory elements (cCREs)",
-    "title": "1. Background",
-    "content": "These notes highlight strategies and resources for the downstream analysis of single-cell chromatin accessibility. The main goal is to compile practical references and methods to support the identification of candidate cis-regulatory elements (cCREs) for advanced analysis — including tasks such as linking peaks to genes or computing differentially accessible regions (DARs). Identifying Peaks: CellRanger vs CallPeaks . Sketch 1 – CellRanger default peak calls Sketch 2 – Peak overview . Sketch 3 – Global vs local peaks . Sketch 4 – Cell-to-cell vs pseudobulk . ",
-    "url": "/sATAC-seq-analysis/link_peak_gene/#1-background",
-    
-    "relUrl": "/sATAC-seq-analysis/link_peak_gene/#1-background"
-  },"8": {
-    "doc": "Identifying candidate cis-regulatory elements (cCREs)",
-    "title": "2. Key Literature",
-    "content": ". | Chawla et al., 2025 (Nat Genet) Single-nucleus chromatin accessibility profiling identifies cell types and functional variants contributing to major depression. DOI link Includes code for DAR analysis (cell-type/cluster-specific cCREs and TFs): GitHub repo . | Zeng et al., 2024 (Science) Genetic regulation of cell type–specific chromatin accessibility shapes brain disease etiology. DOI link . | Anderson et al., 2023 (Cell Genomics) Single nucleus multiomics identifies ZEB1 and MAFB as candidate regulators of Alzheimer’s disease-specific cis-regulatory elements. DOI link Includes code for peak calling: Workflow . | . ",
-    "url": "/sATAC-seq-analysis/link_peak_gene/#2-key-literature",
-    
-    "relUrl": "/sATAC-seq-analysis/link_peak_gene/#2-key-literature"
-  },"9": {
-    "doc": "Identifying candidate cis-regulatory elements (cCREs)",
-    "title": "3. Vignettes &amp; Tutorials",
-    "content": ". | Data structures &amp; object interaction (Signac) | Linking peaks to genes (10x Multiome) | Calling Peaks with MACS2 | Motif analysis with Signac | Co-accessible networks with Cicero | . ",
-    "url": "/sATAC-seq-analysis/link_peak_gene/#3-vignettes--tutorials",
-    
-    "relUrl": "/sATAC-seq-analysis/link_peak_gene/#3-vignettes--tutorials"
-  },"10": {
-    "doc": "Identifying candidate cis-regulatory elements (cCREs)",
-    "title": "4. Core Functions",
-    "content": ". | Signac . | CallPeaks | FeatureMatrix | RegionStats | LinkedPeaks | . | GenomicRanges . | reduce | IRanges methods | . | Seurat v5+ . | AggregateExpression | . | . ",
-    "url": "/sATAC-seq-analysis/link_peak_gene/#4-core-functions",
-    
-    "relUrl": "/sATAC-seq-analysis/link_peak_gene/#4-core-functions"
-  },"11": {
-    "doc": "Identifying candidate cis-regulatory elements (cCREs)",
-    "title": "5. Custom Repo Practices",
-    "content": ". | Peak calling workflows: scMultiomics_AD repo | Link detection strategies: . | Filter MACS peak calls (e.g., by expression or cell type). | Keep only genes with sufficient UMIs (e.g., ≥200). | Restrict peak–gene links by distance (≤100 kb from TSS). | Example: link filtering. | . | . ",
-    "url": "/sATAC-seq-analysis/link_peak_gene/#5-custom-repo-practices",
-    
-    "relUrl": "/sATAC-seq-analysis/link_peak_gene/#5-custom-repo-practices"
-  },"12": {
-    "doc": "Identifying candidate cis-regulatory elements (cCREs)",
-    "title": "6. Behind-the-Scenes Tools &amp; File Formats",
-    "content": "To run some functions, like Signac::CallPeaks (which internally invokes MACS), you might be interested in reading a bit about how MACS work, as you need to install it to let CallPeaks operate. Here, I am listing the most elementary resources for making happen, these are: . | MACS Project: GitHub and Changelog | Installation: MACS2 guide and MACS3 guide | BED = Browser Extensible Data format (standard for genomic intervals): UCSC FAQ | . If you are wondering, Why get into BED format ? The short story is that CallPeaks() calls MACS2, which produces BED/narrowPeak files. Then Signac reads those into GRanges, discarding the need for you to handle files manually. The relation is direct: CallPeaks() = automated creation + import of MACS2 BED output into R . This matter if you want to: . | Export: you can always export Signac’s GRanges peaks back into a BED file (with rtracklayer::export()). Useful if you want to load them in IGV, UCSC Genome Browser, or compare with ENCODE cCREs. | Import: if you already have BED peaks (e.g., ENCODE, or your own MACS2 runs outside of Signac), you can load them with rtracklayer::import() and use them directly in Signac. | Consistency: this BED ↔ GRanges conversion makes it easy to interoperate between R and external genomics tools. | . Thanks for reading through these notes. I hope they give you a useful starting point or spark new ideas for your own analysis. Feel free to share thoughts, suggestions, or resources. Collaboration makes the whole community stronger. Until next time, happy exploring! . Cynthia SC . ",
-    "url": "/sATAC-seq-analysis/link_peak_gene/#6-behind-the-scenes-tools--file-formats",
-    
-    "relUrl": "/sATAC-seq-analysis/link_peak_gene/#6-behind-the-scenes-tools--file-formats"
-  },"13": {
-    "doc": "Identifying candidate cis-regulatory elements (cCREs)",
-    "title": "Identifying candidate cis-regulatory elements (cCREs)",
-    "content": " ",
-    "url": "/sATAC-seq-analysis/link_peak_gene/",
-    
-    "relUrl": "/sATAC-seq-analysis/link_peak_gene/"
   },"14": {
     "doc": "more about me",
     "title": "More about me",
@@ -160,29 +160,29 @@
     
     "relUrl": "/more-about-me/"
   },"23": {
-    "doc": "scATAC-seq analysis (multiome)",
+    "doc": "2 scATAC-seq analysis (multiome)",
     "title": "scATAC-seq analysis",
     "content": "Brief overview of your goals and dataset. | Data QC (TSS enrichment, FRiP) | Peak calling (MACS2) | Dimensionality reduction (LSI) | Clustering &amp; annotation | Peak–gene links (Signac::LinkPeaks) | Visualization (CoveragePlot) | . ",
     "url": "/sATAC-seq-analysis/#scatac-seq-analysis",
     
     "relUrl": "/sATAC-seq-analysis/#scatac-seq-analysis"
   },"24": {
-    "doc": "scATAC-seq analysis (multiome)",
-    "title": "scATAC-seq analysis (multiome)",
+    "doc": "2 scATAC-seq analysis (multiome)",
+    "title": "2 scATAC-seq analysis (multiome)",
     "content": " ",
     "url": "/sATAC-seq-analysis/",
     
     "relUrl": "/sATAC-seq-analysis/"
   },"25": {
-    "doc": "scRNA-seq analysis (multiome)",
+    "doc": "1 scRNA-seq analysis (multiome)",
     "title": "scRNA-seq analysis",
     "content": "Outline the core workflow. | QC (mito %, nFeatures, nCounts) | Normalization (SCTransform/log-normalize) | Dimensionality reduction (PCA/UMAP) | Clustering &amp; markers | Integration across samples | Differential expression &amp; enrichment | . ",
     "url": "/sRNA-seq-analysis/#scrna-seq-analysis",
     
     "relUrl": "/sRNA-seq-analysis/#scrna-seq-analysis"
   },"26": {
-    "doc": "scRNA-seq analysis (multiome)",
-    "title": "scRNA-seq analysis (multiome)",
+    "doc": "1 scRNA-seq analysis (multiome)",
+    "title": "1 scRNA-seq analysis (multiome)",
     "content": " ",
     "url": "/sRNA-seq-analysis/",
     

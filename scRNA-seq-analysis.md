@@ -1,6 +1,6 @@
 ---
-title: "scRNA-seq analysis (multiome)"
-nav_order: 2
+title: "1 scRNA-seq analysis (multiome)"
+nav_order: 1
 has_children: true
 permalink: /sRNA-seq-analysis/
 ---

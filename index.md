@@ -4,7 +4,7 @@ nav_order: 1
 permalink: /
 ---
 
-# 📓 Wellcome to my Bioinformatics Notebook
+# 📓 Welcome to my Bioinformatics Notebook
 <br>
 
            Under construction — thank you for your patience!
