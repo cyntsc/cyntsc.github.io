@@ -34,68 +34,68 @@
     
     "relUrl": "/"
   },"5": {
-    "doc": "Linking peaks to genes",
-    "title": "Chromatin Accessibility Downstream Analysis for High-Confidence Peaks",
-    "content": "Notebook: Cynthia SC (08-28-2025) . ",
-    "url": "/sATAC-seq-analysis/link_peak_genes/#chromatin-accessibility-downstream-analysis-for-high-confidence-peaks",
+    "doc": "Identifying candidate cis-regulatory elements (cCREs)",
+    "title": "Single Cell ATAC-seq: Identifying candidate cis-regulatory elements (cCREs)",
+    "content": "R workflow using snATACseq with regular tools like Seurat, Signac, MACS2 and GRanges . Notebook: 08-28-2025 . ",
+    "url": "/sATAC-seq-analysis/link_peak_gene/#single-cell-atac-seq-identifying-candidate-cis-regulatory-elements-ccres",
     
-    "relUrl": "/sATAC-seq-analysis/link_peak_genes/#chromatin-accessibility-downstream-analysis-for-high-confidence-peaks"
+    "relUrl": "/sATAC-seq-analysis/link_peak_gene/#single-cell-atac-seq-identifying-candidate-cis-regulatory-elements-ccres"
   },"6": {
-    "doc": "Linking peaks to genes",
-    "title": "Background",
-    "content": "These notes focus on strategies and resources for downstream analysis of high-confidence chromatin accessibility peaks. The goal is to gather resources to explore/deepen strategies to identify candidate cis-regulatory elements (cCREs) for advanced analysis. ",
-    "url": "/sATAC-seq-analysis/link_peak_genes/#background",
+    "doc": "Identifying candidate cis-regulatory elements (cCREs)",
+    "title": "Welcome!",
+    "content": "Hi there 👋 . I hope you’re doing well, and that you find these notes useful for your analysis. You probably landed here because you’re: . | looking for a quick overview of snATAC-seq strategies, | searching for considerations when running downstream analysis, or | simply exploring out of curiosity | . Whatever the reason, welcome 🙌 . This space is a collection of my working notes on snATAC-seq downstream analysis “…not a full reproducible repo — there are already plenty of those out there. With the rise of AI coding assistants like ChatGPT, Gemini, or Claude, anyone can generate a decent pipeline if they know what to ask” (But that’s a topic for another day 😉). Instead, my goal is to share the kind of material I often find missing: resources that are neither oversimplified (skipping important steps) nor overly specific to a single research question. So these notes focus on six main areas: . | Background – What these notes gather | Key Literature – Papers, papers, and more papers | Vignettes &amp; Tutorials – Broad, but still helpful | Core Functions &amp; References – What’s most relevant now | Custom Repo Practices – Tips from my own workflows | Behind-the-Scenes Tools &amp; File Formats – The underrated but essential stuff | . From time to time, I also add quick sketches or diagrams — nothing fancy, just visual aids that help me (and hopefully you) grasp the concepts better. “Enjoy exploring, and feel free to share feedback. It helps make this resource better for the whole community” . ",
+    "url": "/sATAC-seq-analysis/link_peak_gene/#welcome",
     
-    "relUrl": "/sATAC-seq-analysis/link_peak_genes/#background"
+    "relUrl": "/sATAC-seq-analysis/link_peak_gene/#welcome"
   },"7": {
-    "doc": "Linking peaks to genes",
-    "title": "Key Literature",
-    "content": ". | Chawla et al., 2025 (Nat Genet) Single-nucleus chromatin accessibility profiling identifies cell types and functional variants contributing to major depression. DOI link Code for DAR (cell-type/cluster-specific cCREs &amp; TFs): GitHub repo . | Zeng et al., 2024 (Science) Genetic regulation of cell type–specific chromatin accessibility shapes brain disease etiology. DOI link . | Anderson et al., 2023 (Cell Genomics) Single nucleus multiomics identifies ZEB1 and MAFB as candidate regulators of Alzheimer’s disease-specific cis-regulatory elements. DOI link Code for peak calling: Workflow . | . ",
-    "url": "/sATAC-seq-analysis/link_peak_genes/#key-literature",
+    "doc": "Identifying candidate cis-regulatory elements (cCREs)",
+    "title": "1. Background",
+    "content": "These notes highlight strategies and resources for the downstream analysis of single-cell chromatin accessibility. The main goal is to compile practical references and methods to support the identification of candidate cis-regulatory elements (cCREs) for advanced analysis — including tasks such as linking peaks to genes or computing differentially accessible regions (DARs). ",
+    "url": "/sATAC-seq-analysis/link_peak_gene/#1-background",
     
-    "relUrl": "/sATAC-seq-analysis/link_peak_genes/#key-literature"
+    "relUrl": "/sATAC-seq-analysis/link_peak_gene/#1-background"
   },"8": {
-    "doc": "Linking peaks to genes",
-    "title": "Vignettes &amp; Tutorials",
-    "content": ". | Data structures &amp; object interaction (Signac) | Linking peaks to genes (10x Multiome) | Calling Peaks with MACS2 | Motif analysis with Signac | Co-accessible networks with Cicero | . ",
-    "url": "/sATAC-seq-analysis/link_peak_genes/#vignettes--tutorials",
+    "doc": "Identifying candidate cis-regulatory elements (cCREs)",
+    "title": "2. Key Literature",
+    "content": ". | Chawla et al., 2025 (Nat Genet) Single-nucleus chromatin accessibility profiling identifies cell types and functional variants contributing to major depression. DOI link Includes code for DAR analysis (cell-type/cluster-specific cCREs and TFs): GitHub repo . | Zeng et al., 2024 (Science) Genetic regulation of cell type–specific chromatin accessibility shapes brain disease etiology. DOI link . | Anderson et al., 2023 (Cell Genomics) Single nucleus multiomics identifies ZEB1 and MAFB as candidate regulators of Alzheimer’s disease-specific cis-regulatory elements. DOI link Includes code for peak calling: Workflow . | . ",
+    "url": "/sATAC-seq-analysis/link_peak_gene/#2-key-literature",
     
-    "relUrl": "/sATAC-seq-analysis/link_peak_genes/#vignettes--tutorials"
+    "relUrl": "/sATAC-seq-analysis/link_peak_gene/#2-key-literature"
   },"9": {
-    "doc": "Linking peaks to genes",
-    "title": "Core Functions &amp; References",
-    "content": ". | Signac . | CallPeaks | CRAN docs | . | FeatureMatrix | RegionStats | LinkedPeaks | . | GenomicRanges . | reduce | IRanges methods | . | . | Seurat v5+ . | AggregateExpression | . | . ",
-    "url": "/sATAC-seq-analysis/link_peak_genes/#core-functions--references",
+    "doc": "Identifying candidate cis-regulatory elements (cCREs)",
+    "title": "3. Vignettes &amp; Tutorials",
+    "content": ". | Data structures &amp; object interaction (Signac) | Linking peaks to genes (10x Multiome) | Calling Peaks with MACS2 | Motif analysis with Signac | Co-accessible networks with Cicero | . ",
+    "url": "/sATAC-seq-analysis/link_peak_gene/#3-vignettes--tutorials",
     
-    "relUrl": "/sATAC-seq-analysis/link_peak_genes/#core-functions--references"
+    "relUrl": "/sATAC-seq-analysis/link_peak_gene/#3-vignettes--tutorials"
   },"10": {
-    "doc": "Linking peaks to genes",
-    "title": "Custom Repo Practices",
-    "content": ". | Peak calling workflows: scMultiomics_AD repo | Link detection strategies: . | Filter MACS peak calls (e.g., by expression or cell type). | Keep only genes with sufficient UMIs (e.g., ≥200). | Restrict peak–gene links by distance (≤100 kb from TSS). | Example: link filtering. | . | . ",
-    "url": "/sATAC-seq-analysis/link_peak_genes/#custom-repo-practices",
+    "doc": "Identifying candidate cis-regulatory elements (cCREs)",
+    "title": "4. Core Functions",
+    "content": ". | Signac . | CallPeaks | FeatureMatrix | RegionStats | LinkedPeaks | . | GenomicRanges . | reduce | IRanges methods | . | Seurat v5+ . | AggregateExpression | . | . ",
+    "url": "/sATAC-seq-analysis/link_peak_gene/#4-core-functions",
     
-    "relUrl": "/sATAC-seq-analysis/link_peak_genes/#custom-repo-practices"
+    "relUrl": "/sATAC-seq-analysis/link_peak_gene/#4-core-functions"
   },"11": {
-    "doc": "Linking peaks to genes",
-    "title": "Behind-the-Scenes Tools &amp; File Formats",
-    "content": ". | MACS Project: GitHub | Changelog | . | | Installation: MACS2 guide | MACS3 guide | . | BED file format: UCSC FAQ | . ",
-    "url": "/sATAC-seq-analysis/link_peak_genes/#behind-the-scenes-tools--file-formats",
+    "doc": "Identifying candidate cis-regulatory elements (cCREs)",
+    "title": "5. Custom Repo Practices",
+    "content": ". | Peak calling workflows: scMultiomics_AD repo | Link detection strategies: . | Filter MACS peak calls (e.g., by expression or cell type). | Keep only genes with sufficient UMIs (e.g., ≥200). | Restrict peak–gene links by distance (≤100 kb from TSS). | Example: link filtering. | . | . ",
+    "url": "/sATAC-seq-analysis/link_peak_gene/#5-custom-repo-practices",
     
-    "relUrl": "/sATAC-seq-analysis/link_peak_genes/#behind-the-scenes-tools--file-formats"
+    "relUrl": "/sATAC-seq-analysis/link_peak_gene/#5-custom-repo-practices"
   },"12": {
-    "doc": "Linking peaks to genes",
-    "title": "Outline",
-    "content": ". | Chromatin Accessibility Downstream Analysis for High-Confidence Peaks | Background | Key Literature | Vignettes &amp; Tutorials | Core Functions &amp; References | Custom Repo Practices | Behind-the-Scenes Tools &amp; File Formats | . ",
-    "url": "/sATAC-seq-analysis/link_peak_genes/#outline",
+    "doc": "Identifying candidate cis-regulatory elements (cCREs)",
+    "title": "6. Behind-the-Scenes Tools &amp; File Formats",
+    "content": "To run some functions, like Signac::CallPeaks (which internally invokes MACS), you might be interested in reading a bit about how MACS work, as you need to install it to let CallPeaks operate. Here, I am listing the most elementary resources for making happen, these are: . | MACS Project: GitHub and Changelog | Installation: MACS2 guide and MACS3 guide | BED = Browser Extensible Data format (standard for genomic intervals): UCSC FAQ | . If you are wondering, Why get into BED format ? The short story is that CallPeaks() calls MACS2, which produces BED/narrowPeak files. Then Signac reads those into GRanges, discarding the need for you to handle files manually. The relation is direct: CallPeaks() = automated creation + import of MACS2 BED output into R . This matter if you want to: . | Export: you can always export Signac’s GRanges peaks back into a BED file (with rtracklayer::export()). Useful if you want to load them in IGV, UCSC Genome Browser, or compare with ENCODE cCREs. | Import: if you already have BED peaks (e.g., ENCODE, or your own MACS2 runs outside of Signac), you can load them with rtracklayer::import() and use them directly in Signac. | Consistency: this BED ↔ GRanges conversion makes it easy to interoperate between R and external genomics tools. | . Thanks for reading through these notes. I hope they give you a useful starting point or spark new ideas for your own analysis. Feel free to share thoughts, suggestions, or resources. Collaboration makes the whole community stronger. Until next time, happy exploring! . Cynthia SC . ",
+    "url": "/sATAC-seq-analysis/link_peak_gene/#6-behind-the-scenes-tools--file-formats",
     
-    "relUrl": "/sATAC-seq-analysis/link_peak_genes/#outline"
+    "relUrl": "/sATAC-seq-analysis/link_peak_gene/#6-behind-the-scenes-tools--file-formats"
   },"13": {
-    "doc": "Linking peaks to genes",
-    "title": "Linking peaks to genes",
+    "doc": "Identifying candidate cis-regulatory elements (cCREs)",
+    "title": "Identifying candidate cis-regulatory elements (cCREs)",
     "content": " ",
-    "url": "/sATAC-seq-analysis/link_peak_genes/",
+    "url": "/sATAC-seq-analysis/link_peak_gene/",
     
-    "relUrl": "/sATAC-seq-analysis/link_peak_genes/"
+    "relUrl": "/sATAC-seq-analysis/link_peak_gene/"
   },"14": {
     "doc": "more about me",
     "title": "More about me",
