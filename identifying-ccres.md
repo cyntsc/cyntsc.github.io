@@ -3,98 +3,128 @@ title: "Identifying candidate cis-regulatory elements (cCREs)"
 parent: "2 scATAC-seq analysis (multiome)"
 nav_order: 1
 permalink: /sATAC-seq-analysis/identifying-ccres/
+parent: "2 scATAC-seq analysis (multiome)"
+parent_permalink: /sATAC-seq-analysis/
 ---
 
-# Single Cell ATAC-seq: Identifying candidate cis-regulatory elements (cCREs) 
-*R workflow using snATACseq with regular tools like Seurat, Signac, MACS2 and GRanges*
-
+# Single Cell ATAC-seq
+## Identifying candidate cis-regulatory elements (cCREs) 
 **Notebook:** 08-28-2025
 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?logo=linkedin&logoColor=white&style=for-the-badge)](https://www.linkedin.com/in/cynthiacardinault)
-[![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white&style=for-the-badge)](https://github.com/cyntsc)
+<!--[![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white&style=for-the-badge)](https://github.com/cyntsc)-->
+[![Email](https://img.shields.io/badge/-Email-D14836?logo=gmail&logoColor=white&style=for-the-badge)](mailto:bioinformatic2019@gmail.com)
 
----
+<hr style="border: none; height: 4px; background-color: #444; margin: 30px 0;">
 
-# Welcome!  
-
-Hi there 👋  
-
-I hope you’re doing well, and that you find these notes useful for your analysis.  
-
-You probably landed here because you’re:  
-- looking for a quick overview of **snATAC-seq strategies**,  
-- searching for considerations when running downstream analysis, or  
-- simply exploring out of curiosity  
-
-Whatever the reason, **welcome** 🙌  
-
-This space is a collection of my working notes on **snATAC-seq downstream analysis** "...not a full reproducible repo — there are already plenty of those out there. With the rise of AI coding assistants like ChatGPT, Gemini, or Claude, anyone can generate a decent pipeline if they know what to ask" (But that’s a topic for another day 😉).  
-
-Instead, my goal is to share the kind of material I often find missing:  
-resources that are neither **oversimplified** (skipping important steps) nor **overly specific** to a single research question.  
-
-So these notes focus on six main areas:  (*click on the links*)
-
-<div style="background-color:#f5f5f5; padding:15px; border-radius:8px;">
-
-<ol>
-  <li><a href="#1-background"><strong>Background</strong></a> – What these notes gather</li>
-  <li><a href="#2-key-literature"><strong>Key Literature</strong></a> – Papers, papers, and more papers</li>
-  <li><a href="#3-vignettes--tutorials"><strong>Vignettes & Tutorials</strong></a> – Broad, but still helpful</li>
-  <li><a href="#4-core-functions"><strong>Core Functions & References</strong></a> – What’s most relevant now</li>
-  <li><a href="#5-custom-repo-practices"><strong>Custom Repo Practices</strong></a> – Tips from my own workflows</li>
-  <li><a href="#6-behind-the-scenes-tools--file-formats"><strong>Behind-the-Scenes Tools & File Formats</strong></a> – The underrated but essential stuff</li>
-</ol>
-
+<div style="background-color:#fff9db; padding:12px; border-radius:6px; border-left:5px solid #facc15;" markdown="1">
+<strong>📌 Note:</strong> For a better understanding of the design of this notebook, please read the
+<a href="{{ page.parent_permalink | relative_url }}" style="font-weight:bold; color:#2563eb;">main section page</a> first. Thanks 🙏
 </div>
 
 
-From time to time, I also add quick sketches or diagrams — nothing fancy, just visual aids that help me (and hopefully you) grasp the concepts better.  
+- [Single Cell ATAC-seq](#single-cell-atac-seq)
+  - [Identifying candidate cis-regulatory elements (cCREs)](#identifying-candidate-cis-regulatory-elements-ccres)
+  - [1. Background](#1-background)
+    - [Calling snATAC-seq peaks using MACS2 and linking peaks to genes](#calling-snatac-seq-peaks-using-macs2-and-linking-peaks-to-genes)
+    - [Diagrams and concept maps](#diagrams-and-concept-maps)
+  - [2. Technical Support Notes](#2-technical-support-notes)
+    - [a. Key Literature](#a-key-literature)
+    - [b. Vignettes \& Tutorials](#b-vignettes--tutorials)
+    - [c. Core Functions](#c-core-functions)
+    - [d. Custom Repo Practices](#d-custom-repo-practices)
+    - [e. Behind-the-Scenes Tools \& File Formats](#e-behind-the-scenes-tools--file-formats)
 
-"Enjoy exploring, and feel free to share feedback. It helps make this resource better for the whole community"
 
----
+<hr style="border: none; height: 4px; background-color: #444; margin: 30px 0;">
 
 ## 1. Background  
 <br>
 These notes highlight strategies and resources for the **downstream analysis of single-cell chromatin accessibility**.  
 The main goal is to compile practical references and methods to support the identification of candidate cis-regulatory elements (cCREs) for advanced analysis — including tasks such as linking peaks to genes or computing differentially accessible regions (DARs).  
 
-### Identifying Peaks: CellRanger vs CallPeaks  
+---
+
+### Calling snATAC-seq peaks using MACS2 and linking peaks to genes
+<br>
+The following video provides a summary of the main topics discussed in this section:  
+
+<iframe width="560" height="315" 
+src="https://www.youtube.com/embed/PpgpBkpisO0" 
+title="YouTube video player" 
+frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+
+A big thanks to **Leonardo Collado-Torres** from *Lieber Institute for Brain Development* for compiling and editing this recording.  
+
+---
+
+### Diagrams and concept maps
+
+When working with multiome data (RNA + ATAC), Cell Ranger ARC processes the raw data and identifies valid barcodes that contain both RNA and ATAC information. From here, we can build two parallel matrices: one for gene expression counts and another for peak accessibility counts (<span style="background-color:#fff9c4; font-weight:bold;">Image 1</span>).
+
 <div style="background-color:#fff9db; padding:10px; border-radius:8px;">
-
-<details>
-<summary>Sketch 1 – CellRanger default peak calls</summary>
+<details open>
+<summary>CellRanger default peak calls</summary>
+<p align="center">
 <img src="{{ '/images/atac_cisRE/1.jpg' | relative_url }}" alt="Sketch 1" width="300">
+</p>
 </details>
+</div>
 
+To explore regulatory landscapes, we visualize read coverage and chromatin features with CoveragePlot(), which overlays MACS2-called peaks, linked peak–gene relationships, and the gene model (<span style="background-color:#fff9c4; font-weight:bold;">Images 2–3</span>). This provides a clear view of how open chromatin regions may regulate transcription.
+
+<div style="background-color:#fff9db; padding:10px; border-radius:8px;">
 <details>
-<summary>Sketch 2 – Peak overview</summary>
+<summary>Peak overview (click to open)</summary>
 <p align="center">
   <img src="{{ '/images/atac_cisRE/2.jpg' | relative_url }}" alt="Sketch 2" width="45%">
   <img src="{{ '/images/atac_cisRE/2b.jpg' | relative_url }}" alt="Sketch 2b" width="45%">
 </p>
 </details>
+</div>
 
+Next, we create a chromatin assay: performing GC bias correction, normalization (TF-IDF), and standardization. Then, using Signac::LinkPeaks, we correlate peaks with nearby genes across windows (e.g., ±500 kb around a TSS), evaluating the strength of each regulatory connection (<span style="background-color:#fff9c4; font-weight:bold;">Image 4</span>).
+
+There are two complementary strategies:
+
+*Global peak linking*, where peaks are defined across all cells, merged, normalized, and then linked to genes (broad overview).
+
+*Local peak linking*, where peaks are defined per cluster (via MACS2), quantified, normalized, and linked (more cell-type-specific view) (<span style="background-color:#fff9c4; font-weight:bold;">Image 5</span>).
+
+<div style="background-color:#fff9db; padding:10px; border-radius:8px;">
 <details>
-<summary>Sketch 3 – Global vs local peaks</summary>
+<summary>Global vs local peaks (click to open)</summary>
 <p align="center">
   <img src="{{ '/images/atac_cisRE/3.jpg' | relative_url }}" alt="Sketch 3" width="45%">
   <img src="{{ '/images/atac_cisRE/4.jpg' | relative_url }}" alt="Sketch 4" width="45%">
 </p>
 </details>
+</div>
 
+The basic “cell-to-cell” approach follows a straightforward workflow: load the Seurat object, load and quantify MACS2 peaks, build the chromatin assay, normalize, and then perform downstream analyses like LinkPeaks or differential accessibility (DARs) (<span style="background-color:#fff9c4; font-weight:bold;">Image 6</span>).
+
+Finally, we can compare cell-to-cell vs pseudobulk strategies. In cell-to-cell, we build a shared peak set (using reduce), quantify fragments, and construct a chromatin assay for fine-grained resolution. In pseudobulk, we aggregate expression at the cluster level for broader, more robust signals. Both converge into analyses of peak–gene links and differential accessibility, but at different resolutions (<span style="background-color:#fff9c4; font-weight:bold;">Image 7</span>).
+
+<div style="background-color:#fff9db; padding:10px; border-radius:8px;">
 <details>
-<summary>Sketch 4 – Cell-to-cell vs pseudobulk</summary>
+<summary>Cell-to-cell vs pseudobulk (click to open)</summary>
 <p align="center">
   <img src="{{ '/images/atac_cisRE/5.jpg' | relative_url }}" alt="Sketch 5" width="45%">
   <img src="{{ '/images/atac_cisRE/6.jpg' | relative_url }}" alt="Sketch 6" width="45%">
 </p>
 </details>
 </div>
----
 
-## 2. Key Literature  
+Together, these steps form a pipeline for uncovering how chromatin accessibility influences gene expression across cell states, balancing global robustness with local specificity.
+
+<hr style="border: none; height: 4px; background-color: #444; margin: 30px 0;">
+
+
+## 2. Technical Support Notes
+
+### a. Key Literature  
 
 - **Chawla et al., 2025 (Nat Genet)**  
   *Single-nucleus chromatin accessibility profiling identifies cell types and functional variants contributing to major depression.*  
@@ -112,7 +142,7 @@ The main goal is to compile practical references and methods to support the iden
 
 ---
 
-## 3. Vignettes & Tutorials  
+### b. Vignettes & Tutorials  
 
 - [Data structures & object interaction (Signac)](https://stuartlab.org/signac/1.11.0/articles/data_structures)  
 - [Linking peaks to genes (10x Multiome)](https://stuartlab.org/signac/articles/pbmc_multiomic)  
@@ -122,7 +152,7 @@ The main goal is to compile practical references and methods to support the iden
 
 ---
 
-## 4. Core Functions
+### c. Core Functions
 
 - **Signac**  
   - [CallPeaks](https://stuartlab.org/signac/reference/callpeaks)
@@ -139,7 +169,7 @@ The main goal is to compile practical references and methods to support the iden
 
 ---
 
-## 5. Custom Repo Practices  
+### d. Custom Repo Practices  
 
 - **Peak calling workflows:** [scMultiomics_AD repo](https://aanderson54.github.io/scMultiomics_AD/#peak-calling)  
 - **Link detection strategies:**  
@@ -150,7 +180,7 @@ The main goal is to compile practical references and methods to support the iden
 
 ---
 
-## 6. Behind-the-Scenes Tools & File Formats 
+### e. Behind-the-Scenes Tools & File Formats 
 <br>
 To run some functions, like `Signac::CallPeaks` (which internally invokes MACS), you might be interested in reading a bit about how MACS work, as you need to install it to let `CallPeaks` operate. Here, I am listing the most elementary resources for making happen, these are:
 
@@ -177,6 +207,8 @@ I hope they give you a useful starting point or spark new ideas for your own ana
 Feel free to share thoughts, suggestions, or resources. Collaboration makes the whole community stronger.  
 
 Until next time, happy exploring!
+
+---
 
 *Cynthia SC*
 

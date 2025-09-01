@@ -1,10 +1,10 @@
 ---
-title: more about me
+title: About me
 nav_order: 1
 permalink: /more-about-me/
 ---
 
-# More about me
+# About me
 <!--
 ![Cynthia](Cynthia.jpeg)
 
@@ -51,7 +51,7 @@ Most of my current project repositories are private for now, but these are plann
 
 ---
 
-## Most recent project in progress
+## A recent project in action is
 
 *"My Bioinformatics Notebook"*. Planned to be a growing collection with weekly updated, containing workflows, tips, and insights for *scRNA-seq*, *scATAC-seq*, *multiome*, and *Visium spatial transcriptomics*, along with plot interpretations, favorite tools, and curated references.  
 
