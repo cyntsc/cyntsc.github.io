@@ -29,7 +29,7 @@
   },"4": {
     "doc": "Welcome",
     "title": "📓 Welcome to my Bioinformatics Notebook",
-    "content": "Notebook: 08-01-2025 . Hi there 👋 . I hope you’re doing well, and that you find these notes useful for your analysis. You probably landed here because you’re: . | looking for a quick overview for single cell | searching for considerations when running downstream analysis, or | simply exploring out of curiosity | . Whatever the reason, welcome 🙌 . This space is a collection of my working notes on single-cell RNA-seq, multiome (snRNA-seq + snATAC-seq), and Visium Spatial Transcriptomics. It’s a work in progress and not meant to be a full start-to-finish guide for replicating pipelines, there are already a lot of reds of excellent resources out there, many far more comprehensive than I could write. Plus, each project comes with its own technical quirks and biological context. Most of my real solutions are pieced together from a mix of solid references and adapted to fit the specific problems at hand. Instead, my aim here is to share the kind of material I often find relevant, missed or scattered: notes that go beyond tutorials which are some times too simplified or too narrow (tied to a single research context). These entries are intended as practical, high-level references with sketches, conceptual maps, and notes that help me (and hopefully you) connect the dots more clearly. I’m always happy to connect! If you’d like to swap workflows, brainstorm methods, or talk about new opportunities, feel free to reach out. ",
+    "content": "Notebook: 08-01-2025 . Hi there 👋 . I hope you’re doing well, and that you find these notes useful for your analysis. You probably landed here because you’re: . | looking for a quick overview for single cell | searching for considerations when running downstream analysis, or | simply exploring out of curiosity | . Whatever the reason, welcome 🙌 . This space is a collection of my working notes on single-cell RNA-seq, multiome (snRNA-seq + snATAC-seq), and Visium Spatial Transcriptomics. It’s a work in progress and not meant to be a full start-to-finish guide for replicating pipelines, there are already a lot of reds of excellent resources out there, many far more comprehensive than I could write. Plus, each project comes with its own technical quirks and biological context. Most of my real solutions are pieced together from a mix of solid references and adapted to fit the specific problems at hand. Instead, my aim here is to share the kind of material I often find relevant, missed or scattered: notes that go beyond tutorials which are some times too simplified or too narrow (tied to a single research context). These entries are intended as practical, high-level references with links to papers, sketches, conceptual maps, and notes that help me (and hopefully you) connect the dots more clearly. I’m always happy to connect! If you’d like to swap workflows, brainstorm methods, or talk about new opportunities, feel free to reach out. ",
     "url": "/#-welcome-to-my-bioinformatics-notebook",
     
     "relUrl": "/#-welcome-to-my-bioinformatics-notebook"
@@ -85,7 +85,7 @@
   },"12": {
     "doc": "About me",
     "title": "A recent project in action is",
-    "content": "“My Bioinformatics Notebook”. Planned to be a growing collection with weekly updated, containing workflows, tips, and insights for scRNA-seq, scATAC-seq, multiome, and Visium spatial transcriptomics, along with plot interpretations, favorite tools, and curated references. Here’s a preview of the expected content: Bioinformatic_Notebook . ",
+    "content": "“My Bioinformatics Notebook”. Planned to be a growing collection with bi-weekly updates, containing links to papers, workflows, conceptual maps, and insights for scRNA-seq, scATAC-seq, multiome, and Visium spatial transcriptomics. Here’s a preview of the expected content: Bioinformatic_Notebook . ",
     "url": "/more-about-me/#a-recent-project-in-action-is",
     
     "relUrl": "/more-about-me/#a-recent-project-in-action-is"
@@ -145,5 +145,82 @@
     "url": "/sRNA-seq-analysis/",
     
     "relUrl": "/sRNA-seq-analysis/"
+  },"21": {
+    "doc": "Getting started with single-cell",
+    "title": "Single Cell RNA-seq Analysis: “Cell Ranger Pipeline”",
+    "content": "Notebook: 09-25-2025 . 📌 Notebook design, go to main section page . | Single Cell RNA-seq Analysis: “Cell Ranger Pipeline” . | 1. Getting Started with 10x Genomics Cell Ranger | 2. Technical Support Notes | . | . ",
+    "url": "/single_cell_RNA-seq/starting/#single-cell-rna-seq-analysis-cell-ranger-pipeline",
+    
+    "relUrl": "/single_cell_RNA-seq/starting/#single-cell-rna-seq-analysis-cell-ranger-pipeline"
+  },"22": {
+    "doc": "Getting started with single-cell",
+    "title": "1. Getting Started with 10x Genomics Cell Ranger",
+    "content": ". If you’ve just generated your first single-cell dataset on the 10x Genomics Chromium platform, chances are you’ll meet Cell Ranger—the software suite that transforms raw sequencing output into clean, interpretable data. Think of Cell Ranger as your pipeline companion: it takes messy raw files straight from the sequencer and turns them into gene-by-cell count matrices, quality metrics, and interactive reports. From there, you can dive deeper into clustering, dimensionality reduction, and downstream biological insights. What Does Cell Ranger Do? . Here’s a bird’s-eye view of the core steps: . | Step | What Happens | What You Get | . | 1. cellranger mkfastq | Converts raw sequencing BCL files into FASTQ files and demultiplexes samples. | FASTQ files | . | 2. cellranger count | Aligns reads, identifies barcodes and UMIs, filters noise, and builds the expression matrix. | Gene-barcode matrix, BAM file, summary report, .cloupe file | . | 3. cellranger aggr | Combines results from multiple runs into one dataset. | Aggregated gene-barcode matrix | . | 4. Secondary Analysis | Calls real cells, reduces dimensions (PCA, UMAP/t-SNE), and clusters cells. | Filtered matrix + interactive Loupe Browser exploration | . ",
+    "url": "/single_cell_RNA-seq/starting/#1-getting-started-with-10x-genomics-cell-ranger",
+    
+    "relUrl": "/single_cell_RNA-seq/starting/#1-getting-started-with-10x-genomics-cell-ranger"
+  },"23": {
+    "doc": "Getting started with single-cell",
+    "title": "2. Technical Support Notes",
+    "content": ". | Official 10X web page getting started guide. | . Hope you have a useful starting point. Feel free to share thoughts, suggestions, or resources here or in my social networks . Collaboration makes the whole community stronger. . Cynthia SC . ",
+    "url": "/single_cell_RNA-seq/starting/#2-technical-support-notes",
+    
+    "relUrl": "/single_cell_RNA-seq/starting/#2-technical-support-notes"
+  },"24": {
+    "doc": "Getting started with single-cell",
+    "title": "Getting started with single-cell",
+    "content": " ",
+    "url": "/single_cell_RNA-seq/starting/",
+    
+    "relUrl": "/single_cell_RNA-seq/starting/"
+  },"25": {
+    "doc": "Cell Ranger Run Modes",
+    "title": "Single Cell RNA-seq Analysis",
+    "content": " ",
+    "url": "/ingle_cell_RNA-seq/run_modes/#single-cell-rna-seq-analysis",
+    
+    "relUrl": "/ingle_cell_RNA-seq/run_modes/#single-cell-rna-seq-analysis"
+  },"26": {
+    "doc": "Cell Ranger Run Modes",
+    "title": "Cell Ranger Run Modes",
+    "content": "Notebook: 09-25-2025 . 📌 Note: For a better understanding of the design of this notebook, please read the main section page first. Thanks 🙏 . | Single Cell RNA-seq Analysis . | Cell Ranger Run Modes | How Can You Run It? . | 🔹 Local or Institutional HPC | 10x Genomics Cloud Analysis | General Cloud Platforms | Alternatives to Cell Ranger | . | Wrapping Up | . | . ",
+    "url": "/ingle_cell_RNA-seq/run_modes/",
+    
+    "relUrl": "/ingle_cell_RNA-seq/run_modes/"
+  },"27": {
+    "doc": "Cell Ranger Run Modes",
+    "title": "How Can You Run It?",
+    "content": "Depending on your setup, you have a few options: . 🔹 Local or Institutional HPC . Most researchers run Cell Ranger on an institutional High-Performance Computing (HPC) cluster or a dedicated Linux server. A typical run may need 64 GB RAM or more plus multiple CPU cores—so if your lab has access to an HPC, that’s often the easiest path. Installation tutorial . 10x Genomics Cloud Analysis . Don’t have a big server? No problem. The 10x Genomics Cloud Analysis platform is available almost everywhere (except China, Hong Kong, and embargoed countries). Good news: Mexico and most of Latin America are included. | Free tier: Up to 50 analyses per month—perfect for starting out. | Extras: You can transfer projects between accounts, and collaborative features are on the way. | Caveat: Paid upgrades are mostly limited to the U.S. and Canada. | . 👉 Cloud availability FAQ . General Cloud Platforms . If you prefer flexibility, you can spin up a virtual machine on AWS, Google Cloud, or another provider. Just pick a high-memory instance, install Cell Ranger, upload your FASTQs, and pay only for what you use. This is a great option if you need scalability on demand. Alternatives to Cell Ranger . While Cell Ranger is the gold standard, you might explore community tools too: . | STARsolo – efficient and highly comparable to Cell Ranger. | kallisto/bustools (Alevin-fry) – much faster and lighter on memory. | . 👉 Curious how they stack up? Here’s a benchmarking comparison. ",
+    "url": "/ingle_cell_RNA-seq/run_modes/#how-can-you-run-it",
+    
+    "relUrl": "/ingle_cell_RNA-seq/run_modes/#how-can-you-run-it"
+  },"28": {
+    "doc": "Cell Ranger Run Modes",
+    "title": "Wrapping Up",
+    "content": "Cell Ranger may look intimidating at first, but once you run it a couple of times you’ll realize it’s a solid, reliable backbone for single-cell data processing. Whether you use an HPC, the free cloud tier, or your own server, it’s the first step in turning sequencing reads into biological insights. ✨ My advice? Start with the simplest setup you have access to (often your institution’s HPC or the 10x Cloud free tier), then scale up once your projects get bigger. Thanks for reading through these notes. I hope they give you a useful starting point or spark new ideas for your own analysis. Feel free to share thoughts, suggestions, or resources. Collaboration makes the whole community stronger. Until next time, happy exploring! . Cynthia SC . ",
+    "url": "/ingle_cell_RNA-seq/run_modes/#wrapping-up",
+    
+    "relUrl": "/ingle_cell_RNA-seq/run_modes/#wrapping-up"
+  },"29": {
+    "doc": "3 scRNA-seq analysis",
+    "title": "📓 Single Cell RNA-seq Analysis",
+    "content": " ",
+    "url": "/single_cell_RNA-seq/#-single-cell-rna-seq-analysis",
+    
+    "relUrl": "/single_cell_RNA-seq/#-single-cell-rna-seq-analysis"
+  },"30": {
+    "doc": "3 scRNA-seq analysis",
+    "title": "Welcome!",
+    "content": "Notebook: 08-25-2025 . In the following sections, for consistency, my notes will generally follow this layout: . | Background – a quick overview of the topic (conceptual maps, videos, etc) | Technical Support Notes – organized into five areas (papers, vignettes, tutorials, etc), as described below: . | Key Literature – Papers, papers, and more papers | Vignettes &amp; Tutorials – Broad, but still helpful | Core Functions &amp; References – What’s most relevant now | Custom Repo Practices – Tips from my own workflows | Behind-the-Scenes Tools &amp; File Formats – The underrated but essential stuff | . | . ",
+    "url": "/single_cell_RNA-seq/#welcome",
+    
+    "relUrl": "/single_cell_RNA-seq/#welcome"
+  },"31": {
+    "doc": "3 scRNA-seq analysis",
+    "title": "3 scRNA-seq analysis",
+    "content": " ",
+    "url": "/single_cell_RNA-seq/",
+    
+    "relUrl": "/single_cell_RNA-seq/"
   }
 }

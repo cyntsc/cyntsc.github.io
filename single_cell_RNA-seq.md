@@ -1,5 +1,5 @@
 ---
-title: "2 scRNA-seq analysis"
+title: "3 scRNA-seq analysis"
 nav_order: 2
 has_children: true
 permalink: /single_cell_RNA-seq/
@@ -18,7 +18,7 @@ permalink: /single_cell_RNA-seq/
 
 <div style="background-color:#f5f5f5; padding:15px; border-radius:8px;" markdown="1">
 
-A quick reminder. In the following sections, for consistency, my notes will generally follow this layout:
+In the following sections, for consistency, my notes will generally follow this layout:
 
 1. **Background** – a quick overview of the topic (conceptual maps, videos, etc) 
 2. **Technical Support Notes** – organized into five areas (papers, vignettes, tutorials, etc), as described below:
