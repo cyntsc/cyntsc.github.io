@@ -26,7 +26,7 @@ Whatever the reason, **welcome** 🙌
 
 This space is a collection of my working notes on **single-cell RNA-seq, multiome (snRNA-seq + snATAC-seq), and Visium Spatial Transcriptomics**. It’s a work in progress and not meant to be a full start-to-finish guide for replicating pipelines, there are already a lot of reds of excellent resources out there, many far more comprehensive than I could write. Plus, each project comes with its own technical quirks and biological context. Most of my real solutions are pieced together from a mix of solid references and adapted to fit the specific problems at hand.  
 
-Instead, my aim here is to share the kind of material I often find relevant, missed or scattered: notes that go beyond tutorials which are some times **too simplified** or **too narrow** (tied to a single research context). These entries are intended as practical, high-level references with sketches, conceptual maps, and notes that help me (and hopefully you) connect the dots more clearly.  
+Instead, my aim here is to share the kind of material I often find relevant, missed or scattered: notes that go beyond tutorials which are some times **too simplified** or **too narrow** (tied to a single research context). These entries are intended as practical, high-level references with links to papers, sketches, conceptual maps, and notes that help me (and hopefully you) connect the dots more clearly.  
 
 I’m always happy to connect! If you’d like to swap workflows, brainstorm methods, or talk about new opportunities, feel free to reach out.  
 
