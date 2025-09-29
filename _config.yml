@@ -8,6 +8,8 @@ aux_links:
     - "https://github.com/cyntsc/cyntsc.github.io"
 just_the_docs:
   search_enabled: true
+  
+remote_theme: just-the-docs/just-the-docs
 sass:
   sass_dir: _sass
 include:

@@ -2461,5 +2461,5 @@ body { font-size: 17px; /* default is usually 16px */ line-height: 1.7; /* keep 
 
 .main-content table th, .main-content table td { padding: 10px 12px !important; }
 
-/* Disclaimer text style */
-.disclaimer { font-size: 0.85rem !important; /* smaller font */ color: #6b7280 !important; /* gray */ font-style: italic; /* optional: italic for emphasis */ margin-top: 8px; }
+/* Disclaimer style */
+.main-content p.disclaimer { font-size: 0.85rem !important; color: #6b7280 !important; font-style: italic; margin-top: 8px; }
