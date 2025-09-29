@@ -1,5 +1,5 @@
 ---
-title: "2 scATAC-seq analysis (multiome)"
+title: "3 Multiome scATAC-seq"
 nav_order: 2
 has_children: true
 permalink: /sATAC-seq-analysis/

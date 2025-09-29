@@ -1,223 +1,237 @@
 {"0": {
-    "doc": "Identifying candidate cis-regulatory elements (cCREs)",
+    "doc": "Candidate Regulatory Elements (cCREs)",
     "title": "Single Cell ATAC-seq",
     "content": " ",
     "url": "/sATAC-seq-analysis/identifying-ccres/#single-cell-atac-seq",
     
     "relUrl": "/sATAC-seq-analysis/identifying-ccres/#single-cell-atac-seq"
   },"1": {
-    "doc": "Identifying candidate cis-regulatory elements (cCREs)",
+    "doc": "Candidate Regulatory Elements (cCREs)",
     "title": "Identifying candidate cis-regulatory elements (cCREs)",
     "content": "Notebook: 08-28-2025 . 📌 Note: For a better understanding of the design of this notebook, please read the main section page first. Thanks 🙏 . | Single Cell ATAC-seq . | Identifying candidate cis-regulatory elements (cCREs) | 1. Background . | Calling snATAC-seq peaks using MACS2 and linking peaks to genes | Diagrams and concept maps | . | 2. Technical Support Notes . | a. Key Literature | b. Vignettes \\&amp; Tutorials | c. Core Functions | d. Custom Repo Practices | e. Behind-the-Scenes Tools \\&amp; File Formats | . | . | . ",
-    "url": "/sATAC-seq-analysis/identifying-ccres/",
+    "url": "/sATAC-seq-analysis/identifying-ccres/#identifying-candidate-cis-regulatory-elements-ccres",
     
-    "relUrl": "/sATAC-seq-analysis/identifying-ccres/"
+    "relUrl": "/sATAC-seq-analysis/identifying-ccres/#identifying-candidate-cis-regulatory-elements-ccres"
   },"2": {
-    "doc": "Identifying candidate cis-regulatory elements (cCREs)",
+    "doc": "Candidate Regulatory Elements (cCREs)",
     "title": "1. Background",
     "content": "These notes highlight strategies and resources for the downstream analysis of single-cell chromatin accessibility. The main goal is to compile practical references and methods to support the identification of candidate cis-regulatory elements (cCREs) for advanced analysis — including tasks such as linking peaks to genes or computing differentially accessible regions (DARs). Calling snATAC-seq peaks using MACS2 and linking peaks to genes . The following video provides a summary of the main topics discussed in this section: . A big thanks to Leonardo Collado-Torres from Lieber Institute for Brain Development for compiling and editing this recording. Diagrams and concept maps . When working with multiome data (RNA + ATAC), Cell Ranger ARC processes the raw data and identifies valid barcodes that contain both RNA and ATAC information. From here, we can build two parallel matrices: one for gene expression counts and another for peak accessibility counts (Image 1). CellRanger default peak calls . To explore regulatory landscapes, we visualize read coverage and chromatin features with CoveragePlot(), which overlays MACS2-called peaks, linked peak–gene relationships, and the gene model (Images 2–3). This provides a clear view of how open chromatin regions may regulate transcription. Peak overview (click to open) . Next, we create a chromatin assay: performing GC bias correction, normalization (TF-IDF), and standardization. Then, using Signac::LinkPeaks, we correlate peaks with nearby genes across windows (e.g., ±500 kb around a TSS), evaluating the strength of each regulatory connection (Image 4). There are two complementary strategies: . Global peak linking, where peaks are defined across all cells, merged, normalized, and then linked to genes (broad overview). Local peak linking, where peaks are defined per cluster (via MACS2), quantified, normalized, and linked (more cell-type-specific view) (Image 5). Global vs local peaks (click to open) . The basic “cell-to-cell” approach follows a straightforward workflow: load the Seurat object, load and quantify MACS2 peaks, build the chromatin assay, normalize, and then perform downstream analyses like LinkPeaks or differential accessibility (DARs) (Image 6). Finally, we can compare cell-to-cell vs pseudobulk strategies. In cell-to-cell, we build a shared peak set (using reduce), quantify fragments, and construct a chromatin assay for fine-grained resolution. In pseudobulk, we aggregate expression at the cluster level for broader, more robust signals. Both converge into analyses of peak–gene links and differential accessibility, but at different resolutions (Image 7). Cell-to-cell vs pseudobulk (click to open) . Together, these steps form a pipeline for uncovering how chromatin accessibility influences gene expression across cell states, balancing global robustness with local specificity. ",
     "url": "/sATAC-seq-analysis/identifying-ccres/#1-background",
     
     "relUrl": "/sATAC-seq-analysis/identifying-ccres/#1-background"
   },"3": {
-    "doc": "Identifying candidate cis-regulatory elements (cCREs)",
+    "doc": "Candidate Regulatory Elements (cCREs)",
     "title": "2. Technical Support Notes",
     "content": "a. Key Literature . | Chawla et al., 2025 (Nat Genet) Single-nucleus chromatin accessibility profiling identifies cell types and functional variants contributing to major depression. DOI link Includes code for DAR analysis (cell-type/cluster-specific cCREs and TFs): GitHub repo . | Zeng et al., 2024 (Science) Genetic regulation of cell type–specific chromatin accessibility shapes brain disease etiology. DOI link . | Anderson et al., 2023 (Cell Genomics) Single nucleus multiomics identifies ZEB1 and MAFB as candidate regulators of Alzheimer’s disease-specific cis-regulatory elements. DOI link Includes code for peak calling: Workflow . | . b. Vignettes &amp; Tutorials . | Data structures &amp; object interaction (Signac) | Linking peaks to genes (10x Multiome) | Calling Peaks with MACS2 | Motif analysis with Signac | Co-accessible networks with Cicero | . c. Core Functions . | Signac . | CallPeaks | FeatureMatrix | RegionStats | LinkedPeaks | . | GenomicRanges . | reduce | IRanges methods | . | Seurat v5+ . | AggregateExpression | . | . d. Custom Repo Practices . | Peak calling workflows: scMultiomics_AD repo | Link detection strategies: . | Filter MACS peak calls (e.g., by expression or cell type). | Keep only genes with sufficient UMIs (e.g., ≥200). | Restrict peak–gene links by distance (≤100 kb from TSS). | Example: link filtering. | . | . e. Behind-the-Scenes Tools &amp; File Formats . To run some functions, like Signac::CallPeaks (which internally invokes MACS), you might be interested in reading a bit about how MACS work, as you need to install it to let CallPeaks operate. Here, I am listing the most elementary resources for making happen, these are: . | MACS Project: GitHub and Changelog | Installation: MACS2 guide and MACS3 guide | BED = Browser Extensible Data format (standard for genomic intervals): UCSC FAQ | . If you are wondering, Why get into BED format ? The short story is that CallPeaks() calls MACS2, which produces BED/narrowPeak files. Then Signac reads those into GRanges, discarding the need for you to handle files manually. The relation is direct: CallPeaks() = automated creation + import of MACS2 BED output into R . This matter if you want to: . | Export: you can always export Signac’s GRanges peaks back into a BED file (with rtracklayer::export()). Useful if you want to load them in IGV, UCSC Genome Browser, or compare with ENCODE cCREs. | Import: if you already have BED peaks (e.g., ENCODE, or your own MACS2 runs outside of Signac), you can load them with rtracklayer::import() and use them directly in Signac. | Consistency: this BED ↔ GRanges conversion makes it easy to interoperate between R and external genomics tools. | . Thanks for reading through these notes. I hope they give you a useful starting point or spark new ideas for your own analysis. Feel free to share thoughts, suggestions, or resources. Collaboration makes the whole community stronger. Until next time, happy exploring! . Cynthia SC . ",
     "url": "/sATAC-seq-analysis/identifying-ccres/#2-technical-support-notes",
     
     "relUrl": "/sATAC-seq-analysis/identifying-ccres/#2-technical-support-notes"
   },"4": {
+    "doc": "Candidate Regulatory Elements (cCREs)",
+    "title": "Candidate Regulatory Elements (cCREs)",
+    "content": " ",
+    "url": "/sATAC-seq-analysis/identifying-ccres/",
+    
+    "relUrl": "/sATAC-seq-analysis/identifying-ccres/"
+  },"5": {
     "doc": "Welcome",
     "title": "📓 Welcome to my Bioinformatics Notebook",
     "content": "Notebook: 08-01-2025 . Hi there 👋 . I hope you’re doing well, and that you find these notes useful for your analysis. You probably landed here because you’re: . | looking for a quick overview for single cell | searching for considerations when running downstream analysis, or | simply exploring out of curiosity | . Whatever the reason, welcome 🙌 . This space is a collection of my working notes on single-cell RNA-seq, multiome (snRNA-seq + snATAC-seq), and Visium Spatial Transcriptomics. It’s a work in progress and not meant to be a full start-to-finish guide for replicating pipelines, there are already a lot of reds of excellent resources out there, many far more comprehensive than I could write. Plus, each project comes with its own technical quirks and biological context. Most of my real solutions are pieced together from a mix of solid references and adapted to fit the specific problems at hand. Instead, my aim here is to share the kind of material I often find relevant, missed or scattered: notes that go beyond tutorials which are some times too simplified or too narrow (tied to a single research context). These entries are intended as practical, high-level references with links to papers, sketches, conceptual maps, and notes that help me (and hopefully you) connect the dots more clearly. I’m always happy to connect! If you’d like to swap workflows, brainstorm methods, or talk about new opportunities, feel free to reach out. ",
     "url": "/#-welcome-to-my-bioinformatics-notebook",
     
     "relUrl": "/#-welcome-to-my-bioinformatics-notebook"
-  },"5": {
+  },"6": {
     "doc": "Welcome",
     "title": "What you’ll find here",
     "content": "Concise, high-level notes, often illustrated with videos, conceptual maps, sketches, or visualizations to highlight specific analyses (Section I). In addition, you’ll find technical support notes organized into five main areas (Section II): . | Key Literature – I value a lot published work, so papers are used to refer cases that provide essential context | Vignettes &amp; Tutorials – broad but practical guides | Core Functions &amp; References – relevant functions and documentation | Custom Repo Practices – workflow tips from real projects found on the network | Behind-the-Scenes Tools &amp; File Formats – underrated but essential resources | . ",
     "url": "/#what-youll-find-here",
     
     "relUrl": "/#what-youll-find-here"
-  },"6": {
+  },"7": {
     "doc": "Welcome",
     "title": "Why share this?",
     "content": "Have you ask yourself … “why on earth did I think that would work?” moments. By sharing my notes, I hope to reach any of the following goals: . | Help others dodge some of the same pitfalls (My friend. You are not alone!) At least feel less alone while falling it, every one started with a single line | Gather links to papers, vignettes, blog posts, Twitter threads, and other resources that have shaped my work (and probably saved me from disaster more than once) | Show the kind of experience (and occasional stubbornness) it takes to get from raw data to conclusions | Build a transparent portfolio of how I think through data | . 💡 If you spot mistakes, have suggestions, or just want to geek out about data, your feedback is very welcome. I’m always tweaking things here to make it more useful, for myself and hopefully for others, and if you’d like to reach out directly, feel free to use the contact info in my contact data above (LinkedIn or email). Have a wonderful day 🌱🧠 Cynthia S. Cardinault . ",
     "url": "/#why-share-this",
     
     "relUrl": "/#why-share-this"
-  },"7": {
+  },"8": {
     "doc": "Welcome",
     "title": "Welcome",
     "content": " ",
     "url": "/",
     
     "relUrl": "/"
-  },"8": {
+  },"9": {
     "doc": "About me",
     "title": "About me",
     "content": ". ",
     "url": "/more-about-me/",
     
     "relUrl": "/more-about-me/"
-  },"9": {
+  },"10": {
     "doc": "About me",
     "title": "Bio",
     "content": "I’m Cynthia S Cardinault, a bioinformatician passionate about bringing biology and data science together to tackle complex questions. At the Lieber Institute, my current work centers on multiome (transcriptomic and epigenomic) and spatial transcriptomics in the human brain habenula, where we are building an integrated atlas of cell-type signatures, their regulatory elements, and their spatial organization. I’m excited to see a preprint of this work coming soon. I began my genomics career during my doctorate at CICY, studying plant–pathogen interactions in Arabidopsis. Using bulk RNA data and co-expression networks, I identified key defense gene modules against ascomycete fungi, relevant topic for food security in the face of climate change. Before that, during my master’s degree, I researched educational technologies of the future, analyzing interoperability between the Moodle LMS and purpose-built educational applications. I study IMS-LTI–based services that strengthened connections between learning platforms. I see bioinformatics as a borderless field, unconstrained by species, languages, or methods. I’m driven to contribute to projects that advance human health, agriculture, and other global challenges. ",
     "url": "/more-about-me/#bio",
     
     "relUrl": "/more-about-me/#bio"
-  },"10": {
+  },"11": {
     "doc": "About me",
     "title": "Scientific Open Resources | SpeakerDeck | YouTube",
     "content": "Presentations and public talks on bioinformatics, neuroscience and plant biology: . 🎥 Walkthroughs in multiomics | YouTube Playlist Title: LIEBER - Behind the Scenes of Spatial an Multiomic Data Analysis in Neuroscience 🧠🧬 Playlist featuring walkthroughs of my work with a focus on the human brain. Multiome pipelines like CellRanger ARC and Data-driven discussions. Thanks to PhD Collado who compiled, edited and allocated all these recordings. Youtube . 📑 My SpeakerDeck | SpeakerDeck Title: LIEBER - Slides for talks Spatial transcriptomics and multiomics. Material used for internal talks, the R-StatClub and conferences. SpeakerDeck . 🎥 Transcriptomic Analysis in Arabidopsis thaliana | YouTube Playlist | Posters Title: CICY – Arabidopsis Pathogenesis Compiles a set of talks and presentations in which I discussed topics in molecular biology, plant genetics, and transcriptomic analysis in Arabidopsis thaliana. YouTube . ",
     "url": "/more-about-me/#scientific-open-resources--speakerdeck--youtube",
     
     "relUrl": "/more-about-me/#scientific-open-resources--speakerdeck--youtube"
-  },"11": {
+  },"12": {
     "doc": "About me",
     "title": "My GitHub Repo",
     "content": "Most of my current project repositories are private for now, but these are planned to be public next year. In the meantime, you can check out my activity and contributions from this year: 🔗 GitHub Profile – cyntsc . ",
     "url": "/more-about-me/#my-github-repo",
     
     "relUrl": "/more-about-me/#my-github-repo"
-  },"12": {
+  },"13": {
     "doc": "About me",
     "title": "A recent project in action is",
     "content": "“My Bioinformatics Notebook”. Planned to be a growing collection with bi-weekly updates, containing links to papers, workflows, conceptual maps, and insights for scRNA-seq, scATAC-seq, multiome, and Visium spatial transcriptomics. Here’s a preview of the expected content: Bioinformatic_Notebook . ",
     "url": "/more-about-me/#a-recent-project-in-action-is",
     
     "relUrl": "/more-about-me/#a-recent-project-in-action-is"
-  },"13": {
+  },"14": {
     "doc": "About me",
     "title": "Technical Skills",
     "content": "The short answer: any language or package I need to get the job done. But a more detailed view: I work across R, Python (Jupyter), and Shell/Bash for high-performance, SLURM-managed workflows, with GitHub for reproducible documentation. My toolkit includes: . | R packages: Seurat, Signac, SpatialExperiment, spatialLIBD, scran, scater, bluster, WGCNA, DeconvoBuddies, dendextend, ComplexHeatmap, ggplot2, tidyverse | Technologies &amp; data types: scRNA-seq, scATAC-seq, multiome, Visium spatial transcriptomics | 10x Pipleines: Cell Ranger, Cell Ranger ARC, Space Ranger | RNA-seq preprocessing &amp; assembly tools: FastQC, Trimmomatic, STAR, HISAT2, Salmon, Kallisto, HTSeq | AI-assisted workflows: ChatGPT, Gemini for accelerating analysis and problem-solving | . ",
     "url": "/more-about-me/#technical-skills",
     
     "relUrl": "/more-about-me/#technical-skills"
-  },"14": {
+  },"15": {
     "doc": "About me",
     "title": "My publications",
     "content": "Soto-Cardinault C, Childs KL, Góngora-Castillo E. Network Analysis of Publicly Available RNA-seq Provides Insights into the Molecular Mechanisms of Plant Defense against Multiple Fungal Pathogens in Arabidopsis thaliana. Genes (Basel). 2023 Dec 16;14(12):2223. doi: 10.3390/genes14122223. PMID: 38137044; PMCID: PMC10743233 Link . Soto-Cardinault CG, Duarte-Aké F, De-la-Peña C, Góngora-Castillo E. DNA Methylation and Transcriptomic Next-Generation Technologies in Cereal Genomics. Methods Mol Biol. 2020;2072:65-84. [doi: 10.1007/978-1-4939-9865-4_7. PMID: 31541439] Book-chapter . Soto, C., Ucán, J. P., &amp; Aguilar, R. A. (2018). Diseñando entornos virtuales de aprendizaje para el análisis de la colaboración con UWE. Abstraction &amp; Application, 20, 55–67. México. ISSN:2007-2635 . Soto, C., Menéndez, V. y Aguilar, R. (2015) Interoperabilidad entre el LMS Moodle y aplicaciones educativas de propósito específico utilizando servicios del IMS-LTI. Revista Apertura. Vol. 7 No. 2. Índice de Revistas Mexicanas de Investigación Científica y Tecnológica. ISSN:2007-1094 . Soto, C., Menéndez, V &amp; Aguilar, R. (2014) Methodological framework for the development of virtual environments for collaborative-ludic sceneries and integration to learning management systems. Proceedings of the International Conference on Education and New Learning Technologies (Edulearn 2014).Julio 7-9. Spain: Barcelona. pp. 2534-2540. ISBN: 978-84-6170557-3 / ISSN: 2340-1117. Indexed in Web Of Science. EDULEARN14 . ",
     "url": "/more-about-me/#my-publications",
     
     "relUrl": "/more-about-me/#my-publications"
-  },"15": {
+  },"16": {
     "doc": "About me",
     "title": "My Formal Education",
     "content": ". | Doctor in Biology Sciences Biotechnology Specialist Thesis: “Análisis de redes de coexpresión RNA-Seq para identificar patrones genéticos consenso en Arabidopsis en respuesta a la infección por hongos ascomycetes” Centro de Investigación Científica de Yucatán, Yucatán, Mx. CONACYT 552999 January 2019 - January 2023 . | Master in Computer Science Thesis: “Modelo para el Análisis de la Interacción en Entornos Virtuales de Aprendizaje Colaborativo” Universidad Autónoma de Yucatán, Yucatán, Mx. CONACYT 552999 September 2013 - May 2016 . | Bachelor in Computer Science Universidad Autónoma de Tamaulipas, Tamaulipas, Mx. January 1993 - January 1997 . | . ",
     "url": "/more-about-me/#my-formal-education",
     
     "relUrl": "/more-about-me/#my-formal-education"
-  },"16": {
-    "doc": "2 scATAC-seq analysis (multiome)",
+  },"17": {
+    "doc": "3 Multiome scATAC-seq",
     "title": "📓 Single Cell ATAC-seq Analysis",
     "content": " ",
     "url": "/sATAC-seq-analysis/#-single-cell-atac-seq-analysis",
     
     "relUrl": "/sATAC-seq-analysis/#-single-cell-atac-seq-analysis"
-  },"17": {
-    "doc": "2 scATAC-seq analysis (multiome)",
+  },"18": {
+    "doc": "3 Multiome scATAC-seq",
     "title": "Welcome!",
     "content": "Notebook: 08-01-2025 . A quick reminder. In the following sections, for consistency, my notes will generally follow this layout: . | Background – a quick overview of the topic (conceptual maps, videos, etc) | Technical Support Notes – organized into five areas (papers, vignettes, tutorials, etc), as described below: . | Key Literature – Papers, papers, and more papers | Vignettes &amp; Tutorials – Broad, but still helpful | Core Functions &amp; References – What’s most relevant now | Custom Repo Practices – Tips from my own workflows | Behind-the-Scenes Tools &amp; File Formats – The underrated but essential stuff | . | . ",
     "url": "/sATAC-seq-analysis/#welcome",
     
     "relUrl": "/sATAC-seq-analysis/#welcome"
-  },"18": {
-    "doc": "2 scATAC-seq analysis (multiome)",
-    "title": "2 scATAC-seq analysis (multiome)",
+  },"19": {
+    "doc": "3 Multiome scATAC-seq",
+    "title": "3 Multiome scATAC-seq",
     "content": " ",
     "url": "/sATAC-seq-analysis/",
     
     "relUrl": "/sATAC-seq-analysis/"
-  },"19": {
-    "doc": "1 scRNA-seq analysis (multiome)",
+  },"20": {
+    "doc": "2 Multiome scRNA-seq",
     "title": "📓 scRNA-seq analysis",
     "content": "⚠️ This section is under construction — content will be expanded soon. Outline the core workflow: . | QC (mito %, nFeatures, nCounts) | Normalization (SCTransform / log-normalize) | Dimensionality reduction (PCA / UMAP) | Clustering &amp; markers | Integration across samples | Differential expression &amp; enrichment | . ",
     "url": "/sRNA-seq-analysis/#-scrna-seq-analysis",
     
     "relUrl": "/sRNA-seq-analysis/#-scrna-seq-analysis"
-  },"20": {
-    "doc": "1 scRNA-seq analysis (multiome)",
-    "title": "1 scRNA-seq analysis (multiome)",
+  },"21": {
+    "doc": "2 Multiome scRNA-seq",
+    "title": "2 Multiome scRNA-seq",
     "content": " ",
     "url": "/sRNA-seq-analysis/",
     
     "relUrl": "/sRNA-seq-analysis/"
-  },"21": {
-    "doc": "Getting started with single-cell",
-    "title": "Single Cell RNA-seq Analysis: “Cell Ranger Pipeline”",
-    "content": "Notebook: 09-25-2025 . 📌 Notebook design, go to main section page . | Single Cell RNA-seq Analysis: “Cell Ranger Pipeline” . | 1. Getting Started with 10x Genomics Cell Ranger | 2. Technical Support Notes | . | . ",
-    "url": "/single_cell_RNA-seq/starting/#single-cell-rna-seq-analysis-cell-ranger-pipeline",
-    
-    "relUrl": "/single_cell_RNA-seq/starting/#single-cell-rna-seq-analysis-cell-ranger-pipeline"
   },"22": {
     "doc": "Getting started with single-cell",
-    "title": "1. Getting Started with 10x Genomics Cell Ranger",
-    "content": ". If you’ve just generated your first single-cell dataset on the 10x Genomics Chromium platform, chances are you’ll meet Cell Ranger—the software suite that transforms raw sequencing output into clean, interpretable data. Think of Cell Ranger as your pipeline companion: it takes messy raw files straight from the sequencer and turns them into gene-by-cell count matrices, quality metrics, and interactive reports. From there, you can dive deeper into clustering, dimensionality reduction, and downstream biological insights. What Does Cell Ranger Do? . Here’s a bird’s-eye view of the core steps: . | Step | What Happens | What You Get | . | 1. cellranger mkfastq | Converts raw sequencing BCL files into FASTQ files and demultiplexes samples. | FASTQ files | . | 2. cellranger count | Aligns reads, identifies barcodes and UMIs, filters noise, and builds the expression matrix. | Gene-barcode matrix, BAM file, summary report, .cloupe file | . | 3. cellranger aggr | Combines results from multiple runs into one dataset. | Aggregated gene-barcode matrix | . | 4. Secondary Analysis | Calls real cells, reduces dimensions (PCA, UMAP/t-SNE), and clusters cells. | Filtered matrix + interactive Loupe Browser exploration | . ",
-    "url": "/single_cell_RNA-seq/starting/#1-getting-started-with-10x-genomics-cell-ranger",
+    "title": "Single Cell RNA-seq Analysis with the “Cell Ranger Pipeline”",
+    "content": "Notebook: 09-25-2025 . | Single Cell RNA-seq Analysis with the “Cell Ranger Pipeline” . | What is single cell? | Starting with 10x Genomics Cell Ranger | Core Steps of Cell Ranger | Modes to Run Cell Ranger | Wrapping Up | Benchmarking Run Modes | References | . | . Before get into my notes, it’s worth highlighting that single-cell analysis isn’t limited to RNA—it can also be applied to DNA, proteins, and even metabolism. That said, my notes will focus on the transcriptomic side, which is probably the most widely adopted application of this technique. Beyond that, there’s also the concept of multi-omics, where two or more of these approaches are combined. These may or may not be performed within the same experimental protocol, and integrating such diverse datasets is an entire topic of its own. For now, let’s focus on transcriptomics itself. ",
+    "url": "/single_cell_RNA-seq/starting/#single-cell-rna-seq-analysis-with-the-cell-ranger-pipeline",
     
-    "relUrl": "/single_cell_RNA-seq/starting/#1-getting-started-with-10x-genomics-cell-ranger"
+    "relUrl": "/single_cell_RNA-seq/starting/#single-cell-rna-seq-analysis-with-the-cell-ranger-pipeline"
   },"23": {
     "doc": "Getting started with single-cell",
-    "title": "2. Technical Support Notes",
-    "content": ". | Official 10X web page getting started guide. | . Hope you have a useful starting point. Feel free to share thoughts, suggestions, or resources here or in my social networks . Collaboration makes the whole community stronger. . Cynthia SC . ",
-    "url": "/single_cell_RNA-seq/starting/#2-technical-support-notes",
+    "title": "What is single cell?",
+    "content": "When we think about biology, it’s easy to picture tissues, organs, or even whole organisms, but the real action happens at the level of individual cells. Each cell carries its own blueprint, reads out specific sets of instructions, and plays a unique role in the bigger picture. This is where single-cell analysis comes in. Instead of blending signals across millions of cells, this field lets us zoom in and explore each one on its own terms—its DNA (genomics), RNA (transcriptomics), proteins (proteomics), or even its metabolism (metabolomics). By teasing apart this cellular diversity, researchers can uncover hidden subpopulations, map cell states, and better understand how complex tissues function in health and disease. And this is exactly why platforms like 10x Genomics Chromium and its companion software, Cell Ranger, were created. They bridge the gap between raw sequencing data and meaningful biological insights. In other words, they take the overwhelming complexity of single-cell experiments and make it accessible, reproducible, and ready for discovery. In the following video (the first of nine-part mini learning series) discover the advantages of single cell techniques versus traditional bulk technologies, such as PCR, microarray, and bulk RNA-seq. ",
+    "url": "/single_cell_RNA-seq/starting/#what-is-single-cell",
     
-    "relUrl": "/single_cell_RNA-seq/starting/#2-technical-support-notes"
+    "relUrl": "/single_cell_RNA-seq/starting/#what-is-single-cell"
   },"24": {
+    "doc": "Getting started with single-cell",
+    "title": "Starting with 10x Genomics Cell Ranger",
+    "content": "If you’ve just generated your first single-cell dataset with the 10x Genomics Chromium platform, chances are you’ll meet Cell Ranger 🧬 — the software suite that transforms raw sequencing output into clean, interpretable data. Think of Cell Ranger as your pipeline companion: it takes messy raw files and make the count matrices, quality metrics, and interactive reports. From there, you can dive into clustering, dimensionality reduction, and downstream biological insights. ",
+    "url": "/single_cell_RNA-seq/starting/#starting-with-10x-genomics-cell-ranger",
+    
+    "relUrl": "/single_cell_RNA-seq/starting/#starting-with-10x-genomics-cell-ranger"
+  },"25": {
+    "doc": "Getting started with single-cell",
+    "title": "Core Steps of Cell Ranger",
+    "content": "Here’s a bird’s-eye view of the core steps: . | Step | What Happens | What You Get | . | 1. cellranger mkfastq | Converts raw sequencing BCL files into FASTQ files and demultiplexes samples. | FASTQ files | . | 2. cellranger count | Aligns reads, identifies barcodes and UMIs, filters noise, and builds the expression matrix. | Gene-barcode matrix, BAM file, summary report, .cloupe file | . | 3. cellranger aggr | Combines results from multiple runs into one dataset. | Aggregated gene-barcode matrix | . | 4. Secondary Analysis | Calls real cells, reduces dimensions (PCA, UMAP/t-SNE), and clusters cells. | Filtered matrix + interactive Loupe Browser exploration | . ",
+    "url": "/single_cell_RNA-seq/starting/#core-steps-of-cell-ranger",
+    
+    "relUrl": "/single_cell_RNA-seq/starting/#core-steps-of-cell-ranger"
+  },"26": {
+    "doc": "Getting started with single-cell",
+    "title": "Modes to Run Cell Ranger",
+    "content": "Depending on your setup, you have a few options: . Local or Institutional HPC . Most researchers run Cell Ranger on an institutional High-Performance Computing (HPC) cluster or a dedicated Linux server. A typical run may need 64 GB RAM or more plus multiple CPU cores—so if your lab has access to an HPC, that’s often the easiest path. Genomics Cloud Analysis . Don’t have a big server? No problem. The 10x Genomics Cloud Analysis platform is available almost everywhere (except China, Hong Kong, and embargoed countries). Good news Mexico and most of Latin America are included. | Free tier: Up to 50 analyses per month—perfect for starting out. | Extras: You can transfer projects between accounts, and collaborative features are on the way. | Caveat: Paid upgrades are mostly limited to the U.S. and Canada. | . General Cloud Platforms . If you prefer flexibility, you can spin up a virtual machine on AWS, Google Cloud, or another provider. Just pick a high-memory instance, install Cell Ranger, upload your FASTQs, and pay only for what you use. This is a great option if you need scalability on demand. Alternatives to Cell Ranger . While Cell Ranger is the gold standard, you might explore community tools too: . | STARsolo – efficient and highly comparable to Cell Ranger. | kallisto/bustools (Alevin-fry) – much faster and lighter on memory. | . ",
+    "url": "/single_cell_RNA-seq/starting/#modes-to-run-cell-ranger",
+    
+    "relUrl": "/single_cell_RNA-seq/starting/#modes-to-run-cell-ranger"
+  },"27": {
+    "doc": "Getting started with single-cell",
+    "title": "Wrapping Up",
+    "content": "Cell Ranger may look intimidating at first, but once you run it a couple of times you’ll realize it’s a solid, reliable backbone for single-cell data processing. Whether you use an HPC, the free cloud tier, or your own server, it’s the first step in turning sequencing reads into biological insights. My advice? Start with the simplest setup you have access to (often your institution’s HPC or the 10x Cloud free tier), then scale up once your projects get bigger. ",
+    "url": "/single_cell_RNA-seq/starting/#wrapping-up",
+    
+    "relUrl": "/single_cell_RNA-seq/starting/#wrapping-up"
+  },"28": {
+    "doc": "Getting started with single-cell",
+    "title": "Benchmarking Run Modes",
+    "content": "Curious how they stack up? . Hope you have a useful starting point. Dont’t miss my next notes talking about How to prepare your data? and Run Cell Ranger . Feel free to share thoughts, suggestions, or resources here or in my social networks . Collaboration makes the whole community stronger. Cynthia SC . ",
+    "url": "/single_cell_RNA-seq/starting/#benchmarking-run-modes",
+    
+    "relUrl": "/single_cell_RNA-seq/starting/#benchmarking-run-modes"
+  },"29": {
+    "doc": "Getting started with single-cell",
+    "title": "References",
+    "content": "Tour of the Single Cell Analysis . Installation tutorial . Download Cell Ranger . Cloud availability FAQ . System Requirements . getting started guide. Disclaimer: The characters in this image are styled after the Minions, which are the copyrighted and trademarked property of Universal Studios / Illumination Entertainment. This image was generated by a large language model based on a user-provided concept and is intended for illustrative and educational purposes only. ",
+    "url": "/single_cell_RNA-seq/starting/#references",
+    
+    "relUrl": "/single_cell_RNA-seq/starting/#references"
+  },"30": {
     "doc": "Getting started with single-cell",
     "title": "Getting started with single-cell",
     "content": " ",
     "url": "/single_cell_RNA-seq/starting/",
     
     "relUrl": "/single_cell_RNA-seq/starting/"
-  },"25": {
-    "doc": "Cell Ranger Run Modes",
-    "title": "Single Cell RNA-seq Analysis",
-    "content": " ",
-    "url": "/ingle_cell_RNA-seq/run_modes/#single-cell-rna-seq-analysis",
-    
-    "relUrl": "/ingle_cell_RNA-seq/run_modes/#single-cell-rna-seq-analysis"
-  },"26": {
-    "doc": "Cell Ranger Run Modes",
-    "title": "Cell Ranger Run Modes",
-    "content": "Notebook: 09-25-2025 . 📌 Note: For a better understanding of the design of this notebook, please read the main section page first. Thanks 🙏 . | Single Cell RNA-seq Analysis . | Cell Ranger Run Modes | How Can You Run It? . | 🔹 Local or Institutional HPC | 10x Genomics Cloud Analysis | General Cloud Platforms | Alternatives to Cell Ranger | . | Wrapping Up | . | . ",
-    "url": "/ingle_cell_RNA-seq/run_modes/",
-    
-    "relUrl": "/ingle_cell_RNA-seq/run_modes/"
-  },"27": {
-    "doc": "Cell Ranger Run Modes",
-    "title": "How Can You Run It?",
-    "content": "Depending on your setup, you have a few options: . 🔹 Local or Institutional HPC . Most researchers run Cell Ranger on an institutional High-Performance Computing (HPC) cluster or a dedicated Linux server. A typical run may need 64 GB RAM or more plus multiple CPU cores—so if your lab has access to an HPC, that’s often the easiest path. Installation tutorial . 10x Genomics Cloud Analysis . Don’t have a big server? No problem. The 10x Genomics Cloud Analysis platform is available almost everywhere (except China, Hong Kong, and embargoed countries). Good news: Mexico and most of Latin America are included. | Free tier: Up to 50 analyses per month—perfect for starting out. | Extras: You can transfer projects between accounts, and collaborative features are on the way. | Caveat: Paid upgrades are mostly limited to the U.S. and Canada. | . 👉 Cloud availability FAQ . General Cloud Platforms . If you prefer flexibility, you can spin up a virtual machine on AWS, Google Cloud, or another provider. Just pick a high-memory instance, install Cell Ranger, upload your FASTQs, and pay only for what you use. This is a great option if you need scalability on demand. Alternatives to Cell Ranger . While Cell Ranger is the gold standard, you might explore community tools too: . | STARsolo – efficient and highly comparable to Cell Ranger. | kallisto/bustools (Alevin-fry) – much faster and lighter on memory. | . 👉 Curious how they stack up? Here’s a benchmarking comparison. ",
-    "url": "/ingle_cell_RNA-seq/run_modes/#how-can-you-run-it",
-    
-    "relUrl": "/ingle_cell_RNA-seq/run_modes/#how-can-you-run-it"
-  },"28": {
-    "doc": "Cell Ranger Run Modes",
-    "title": "Wrapping Up",
-    "content": "Cell Ranger may look intimidating at first, but once you run it a couple of times you’ll realize it’s a solid, reliable backbone for single-cell data processing. Whether you use an HPC, the free cloud tier, or your own server, it’s the first step in turning sequencing reads into biological insights. ✨ My advice? Start with the simplest setup you have access to (often your institution’s HPC or the 10x Cloud free tier), then scale up once your projects get bigger. Thanks for reading through these notes. I hope they give you a useful starting point or spark new ideas for your own analysis. Feel free to share thoughts, suggestions, or resources. Collaboration makes the whole community stronger. Until next time, happy exploring! . Cynthia SC . ",
-    "url": "/ingle_cell_RNA-seq/run_modes/#wrapping-up",
-    
-    "relUrl": "/ingle_cell_RNA-seq/run_modes/#wrapping-up"
-  },"29": {
-    "doc": "3 scRNA-seq analysis",
+  },"31": {
+    "doc": "1 Single-Cell RNA-seq",
     "title": "📓 Single Cell RNA-seq Analysis",
     "content": " ",
     "url": "/single_cell_RNA-seq/#-single-cell-rna-seq-analysis",
     
     "relUrl": "/single_cell_RNA-seq/#-single-cell-rna-seq-analysis"
-  },"30": {
-    "doc": "3 scRNA-seq analysis",
+  },"32": {
+    "doc": "1 Single-Cell RNA-seq",
     "title": "Welcome!",
-    "content": "Notebook: 08-25-2025 . In the following sections, for consistency, my notes will generally follow this layout: . | Background – a quick overview of the topic (conceptual maps, videos, etc) | Technical Support Notes – organized into five areas (papers, vignettes, tutorials, etc), as described below: . | Key Literature – Papers, papers, and more papers | Vignettes &amp; Tutorials – Broad, but still helpful | Core Functions &amp; References – What’s most relevant now | Custom Repo Practices – Tips from my own workflows | Behind-the-Scenes Tools &amp; File Formats – The underrated but essential stuff | . | . ",
+    "content": "Notebook: 09-25-2025 . For consistency, my notes will generally follow next layout: . | Background – a quick overview of the topic (conceptual maps, videos, etc) | Technical Support Notes – organized into five areas, usually reference papers/tools/packages, vignettes, tutorials, etc. | . ",
     "url": "/single_cell_RNA-seq/#welcome",
     
     "relUrl": "/single_cell_RNA-seq/#welcome"
-  },"31": {
-    "doc": "3 scRNA-seq analysis",
-    "title": "3 scRNA-seq analysis",
+  },"33": {
+    "doc": "1 Single-Cell RNA-seq",
+    "title": "1 Single-Cell RNA-seq",
     "content": " ",
     "url": "/single_cell_RNA-seq/",
     

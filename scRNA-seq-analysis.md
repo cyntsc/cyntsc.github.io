@@ -1,5 +1,5 @@
 ---
-title: "1 scRNA-seq analysis (multiome)"
+title: "2 Multiome scRNA-seq"
 nav_order: 1
 has_children: true
 permalink: /sRNA-seq-analysis/

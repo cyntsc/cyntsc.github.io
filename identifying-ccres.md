@@ -1,9 +1,8 @@
 ---
-title: "Identifying candidate cis-regulatory elements (cCREs)"
-parent: "2 scATAC-seq analysis (multiome)"
+title: "Candidate Regulatory Elements (cCREs)"
+parent: "3 Multiome scATAC-seq"
 nav_order: 1
 permalink: /sATAC-seq-analysis/identifying-ccres/
-parent: "2 scATAC-seq analysis (multiome)"
 parent_permalink: /sATAC-seq-analysis/
 ---
 
