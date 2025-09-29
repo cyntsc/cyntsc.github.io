@@ -15,7 +15,7 @@ permalink: /sATAC-seq-analysis/
 <!--[![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white&style=for-the-badge)](https://github.com/cyntsc)-->
 [![Email](https://img.shields.io/badge/-Email-D14836?logo=gmail&logoColor=white&style=for-the-badge)](mailto:bioinformatic2019@gmail.com)
 
-
+<!--
 <div style="background-color:#f5f5f5; padding:15px; border-radius:8px;" markdown="1">
 
 A quick reminder. In the following sections, for consistency, my notes will generally follow this layout:
@@ -32,7 +32,7 @@ A quick reminder. In the following sections, for consistency, my notes will gene
     </ol>
 
 </div>
-
+-->
 <!--
 ## Content:
 

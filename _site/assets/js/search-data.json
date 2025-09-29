@@ -127,7 +127,7 @@
   },"18": {
     "doc": "3 Multiome scATAC-seq",
     "title": "Welcome!",
-    "content": "Notebook: 08-01-2025 . A quick reminder. In the following sections, for consistency, my notes will generally follow this layout: . | Background – a quick overview of the topic (conceptual maps, videos, etc) | Technical Support Notes – organized into five areas (papers, vignettes, tutorials, etc), as described below: . | Key Literature – Papers, papers, and more papers | Vignettes &amp; Tutorials – Broad, but still helpful | Core Functions &amp; References – What’s most relevant now | Custom Repo Practices – Tips from my own workflows | Behind-the-Scenes Tools &amp; File Formats – The underrated but essential stuff | . | . ",
+    "content": "Notebook: 08-01-2025 . ",
     "url": "/sATAC-seq-analysis/#welcome",
     
     "relUrl": "/sATAC-seq-analysis/#welcome"
@@ -153,83 +153,104 @@
     
     "relUrl": "/sRNA-seq-analysis/"
   },"22": {
-    "doc": "Getting started with single-cell",
-    "title": "Single Cell RNA-seq Analysis with the “Cell Ranger Pipeline”",
-    "content": "Notebook: 09-25-2025 . | Single Cell RNA-seq Analysis with the “Cell Ranger Pipeline” . | What is single cell? | Starting with 10x Genomics Cell Ranger | Core Steps of Cell Ranger | Modes to Run Cell Ranger | Wrapping Up | Benchmarking Run Modes | References | . | . Before get into my notes, it’s worth highlighting that single-cell analysis isn’t limited to RNA—it can also be applied to DNA, proteins, and even metabolism. That said, my notes will focus on the transcriptomic side, which is probably the most widely adopted application of this technique. Beyond that, there’s also the concept of multi-omics, where two or more of these approaches are combined. These may or may not be performed within the same experimental protocol, and integrating such diverse datasets is an entire topic of its own. For now, let’s focus on transcriptomics itself. ",
-    "url": "/single_cell_RNA-seq/starting/#single-cell-rna-seq-analysis-with-the-cell-ranger-pipeline",
+    "doc": "Getting started",
+    "title": "Starting with Single Cell RNA-seq",
+    "content": "Notebook: 09-25-2025 . Cynthia S. Cardinault . | Starting with Single Cell RNA-seq . | But wait, What is single cell? | Starting with Cell Ranger | The 4 Core Steps of Cell Ranger | References | . | . Before get into the technical, it’s worth highlighting that single-cell analysis isn’t limited to RNA. Single cell can be applied to DNA, proteins, and even metabolism. That said, my notes will focus on the transcriptomic side, which is probably the most widely adopted application of this technique until now. There is also a single-cell version of ATAC-seq, key for identifying cell states, differentiation trajectories, and the specific gene regulatory elements active in rare cell populations. Beyond that, the actual frontiers in single-cell analysis is expanding beyond the initial individual “omics” layers into two major, interconnected areas: Multi-Omics and Spatial context. These may or may not be performed within the same experimental protocol, and integrating such diverse datasets is an entire topic of its own. For now, let’s focus on transcriptomics itself. As way of illustration, the diagram represents 4 key players. All it happens looking at inside the cell, Genomics is holding the “instruction manual” (the DNA double helix), showing what the cell could possibly do. While in Transcriptomics is acting as the “loudspeaker” broadcasting which instructions are currently being read out. Proteomics is the muscular “workforce”, representing the actual functional molecules that build and perform all the cell’s tasks. Metabolomics is running around with all the stuff, keeping track of the “energy and supplies” (the small chemicals consumed and produced) to power the whole operation. ",
+    "url": "/single_cell_RNA-seq/starting/#starting-with-single-cell-rna-seq",
     
-    "relUrl": "/single_cell_RNA-seq/starting/#single-cell-rna-seq-analysis-with-the-cell-ranger-pipeline"
+    "relUrl": "/single_cell_RNA-seq/starting/#starting-with-single-cell-rna-seq"
   },"23": {
-    "doc": "Getting started with single-cell",
-    "title": "What is single cell?",
-    "content": "When we think about biology, it’s easy to picture tissues, organs, or even whole organisms, but the real action happens at the level of individual cells. Each cell carries its own blueprint, reads out specific sets of instructions, and plays a unique role in the bigger picture. This is where single-cell analysis comes in. Instead of blending signals across millions of cells, this field lets us zoom in and explore each one on its own terms—its DNA (genomics), RNA (transcriptomics), proteins (proteomics), or even its metabolism (metabolomics). By teasing apart this cellular diversity, researchers can uncover hidden subpopulations, map cell states, and better understand how complex tissues function in health and disease. And this is exactly why platforms like 10x Genomics Chromium and its companion software, Cell Ranger, were created. They bridge the gap between raw sequencing data and meaningful biological insights. In other words, they take the overwhelming complexity of single-cell experiments and make it accessible, reproducible, and ready for discovery. In the following video (the first of nine-part mini learning series) discover the advantages of single cell techniques versus traditional bulk technologies, such as PCR, microarray, and bulk RNA-seq. ",
-    "url": "/single_cell_RNA-seq/starting/#what-is-single-cell",
+    "doc": "Getting started",
+    "title": "But wait, What is single cell?",
+    "content": "When we think about biology, it’s easy to picture tissues, organs, or even whole organisms, but the real action happens at the level of individual cells. Each cell carries its own blueprint, reads out specific sets of instructions, and plays a unique role in the bigger picture. This is where single-cell analysis comes in. Instead of blending signals across millions of cells, this field lets us zoom in and explore each one on its own terms – genomics, transcriptomics, epigenomics, proteomics, metabolomics. By teasing apart this cellular diversity, researchers can uncover hidden subpopulations, map cell states, and better understand how complex tissues function in health and disease. And this is exactly why platforms like 10x Genomics Chromium and its companion software, Cell Ranger, were created. They bridge the gap between raw sequencing data and meaningful biological insights. In the following video (the first of nine-part mini learning series) you can explore more about single cell techniques versus traditional bulk technologies, such as PCR, microarray, and bulk RNA-seq. The video is part of the official collection released by 10x Genomics. ",
+    "url": "/single_cell_RNA-seq/starting/#but-wait-what-is-single-cell",
     
-    "relUrl": "/single_cell_RNA-seq/starting/#what-is-single-cell"
+    "relUrl": "/single_cell_RNA-seq/starting/#but-wait-what-is-single-cell"
   },"24": {
-    "doc": "Getting started with single-cell",
-    "title": "Starting with 10x Genomics Cell Ranger",
-    "content": "If you’ve just generated your first single-cell dataset with the 10x Genomics Chromium platform, chances are you’ll meet Cell Ranger 🧬 — the software suite that transforms raw sequencing output into clean, interpretable data. Think of Cell Ranger as your pipeline companion: it takes messy raw files and make the count matrices, quality metrics, and interactive reports. From there, you can dive into clustering, dimensionality reduction, and downstream biological insights. ",
-    "url": "/single_cell_RNA-seq/starting/#starting-with-10x-genomics-cell-ranger",
+    "doc": "Getting started",
+    "title": "Starting with Cell Ranger",
+    "content": "If you’ve just generated your first single-cell dataset with the 10x Genomics Chromium platform, chances are you’ll meet Cell Ranger. The software suite that transforms raw sequencing output into clean, interpretable data. Think of Cell Ranger as your pipeline companion: it takes messy raw files and make the count matrices, quality metrics, and interactive reports. From there, you can dive into clustering, dimensionality reduction, and downstream biological insights. ",
+    "url": "/single_cell_RNA-seq/starting/#starting-with-cell-ranger",
     
-    "relUrl": "/single_cell_RNA-seq/starting/#starting-with-10x-genomics-cell-ranger"
+    "relUrl": "/single_cell_RNA-seq/starting/#starting-with-cell-ranger"
   },"25": {
-    "doc": "Getting started with single-cell",
-    "title": "Core Steps of Cell Ranger",
-    "content": "Here’s a bird’s-eye view of the core steps: . | Step | What Happens | What You Get | . | 1. cellranger mkfastq | Converts raw sequencing BCL files into FASTQ files and demultiplexes samples. | FASTQ files | . | 2. cellranger count | Aligns reads, identifies barcodes and UMIs, filters noise, and builds the expression matrix. | Gene-barcode matrix, BAM file, summary report, .cloupe file | . | 3. cellranger aggr | Combines results from multiple runs into one dataset. | Aggregated gene-barcode matrix | . | 4. Secondary Analysis | Calls real cells, reduces dimensions (PCA, UMAP/t-SNE), and clusters cells. | Filtered matrix + interactive Loupe Browser exploration | . ",
-    "url": "/single_cell_RNA-seq/starting/#core-steps-of-cell-ranger",
+    "doc": "Getting started",
+    "title": "The 4 Core Steps of Cell Ranger",
+    "content": "Here’s a bird’s-eye view of the core steps: . | Step | What Happens | What You Get | . | cellranger mkfastq | Converts raw sequencing BCL files into FASTQ files and demultiplexes samples. | FASTQ files | . | cellranger count | Aligns reads, identifies barcodes and UMIs, filters noise, and builds the expression matrix. | Gene-barcode matrix, BAM file, summary report, .cloupe file | . | cellranger aggr | Combines results from multiple runs into one dataset. | Aggregated gene-barcode matrix | . | Secondary Analysis | Calls real cells, reduces dimensions (PCA, UMAP/t-SNE), and clusters cells. | Filtered matrix + interactive Loupe Browser exploration | . Hope you have a useful starting point. Dont’t miss my next notes talking about Modes to run Cell Ranger. Cynthia SC . ",
+    "url": "/single_cell_RNA-seq/starting/#the-4-core-steps-of-cell-ranger",
     
-    "relUrl": "/single_cell_RNA-seq/starting/#core-steps-of-cell-ranger"
+    "relUrl": "/single_cell_RNA-seq/starting/#the-4-core-steps-of-cell-ranger"
   },"26": {
-    "doc": "Getting started with single-cell",
-    "title": "Modes to Run Cell Ranger",
-    "content": "Depending on your setup, you have a few options: . Local or Institutional HPC . Most researchers run Cell Ranger on an institutional High-Performance Computing (HPC) cluster or a dedicated Linux server. A typical run may need 64 GB RAM or more plus multiple CPU cores—so if your lab has access to an HPC, that’s often the easiest path. Genomics Cloud Analysis . Don’t have a big server? No problem. The 10x Genomics Cloud Analysis platform is available almost everywhere (except China, Hong Kong, and embargoed countries). Good news Mexico and most of Latin America are included. | Free tier: Up to 50 analyses per month—perfect for starting out. | Extras: You can transfer projects between accounts, and collaborative features are on the way. | Caveat: Paid upgrades are mostly limited to the U.S. and Canada. | . General Cloud Platforms . If you prefer flexibility, you can spin up a virtual machine on AWS, Google Cloud, or another provider. Just pick a high-memory instance, install Cell Ranger, upload your FASTQs, and pay only for what you use. This is a great option if you need scalability on demand. Alternatives to Cell Ranger . While Cell Ranger is the gold standard, you might explore community tools too: . | STARsolo – efficient and highly comparable to Cell Ranger. | kallisto/bustools (Alevin-fry) – much faster and lighter on memory. | . ",
-    "url": "/single_cell_RNA-seq/starting/#modes-to-run-cell-ranger",
-    
-    "relUrl": "/single_cell_RNA-seq/starting/#modes-to-run-cell-ranger"
-  },"27": {
-    "doc": "Getting started with single-cell",
-    "title": "Wrapping Up",
-    "content": "Cell Ranger may look intimidating at first, but once you run it a couple of times you’ll realize it’s a solid, reliable backbone for single-cell data processing. Whether you use an HPC, the free cloud tier, or your own server, it’s the first step in turning sequencing reads into biological insights. My advice? Start with the simplest setup you have access to (often your institution’s HPC or the 10x Cloud free tier), then scale up once your projects get bigger. ",
-    "url": "/single_cell_RNA-seq/starting/#wrapping-up",
-    
-    "relUrl": "/single_cell_RNA-seq/starting/#wrapping-up"
-  },"28": {
-    "doc": "Getting started with single-cell",
-    "title": "Benchmarking Run Modes",
-    "content": "Curious how they stack up? . Hope you have a useful starting point. Dont’t miss my next notes talking about How to prepare your data? and Run Cell Ranger . Feel free to share thoughts, suggestions, or resources here or in my social networks . Collaboration makes the whole community stronger. Cynthia SC . ",
-    "url": "/single_cell_RNA-seq/starting/#benchmarking-run-modes",
-    
-    "relUrl": "/single_cell_RNA-seq/starting/#benchmarking-run-modes"
-  },"29": {
-    "doc": "Getting started with single-cell",
+    "doc": "Getting started",
     "title": "References",
-    "content": "Tour of the Single Cell Analysis . Installation tutorial . Download Cell Ranger . Cloud availability FAQ . System Requirements . getting started guide. Disclaimer: The characters in this image are styled after the Minions, which are the copyrighted and trademarked property of Universal Studios / Illumination Entertainment. This image was generated by a large language model based on a user-provided concept and is intended for illustrative and educational purposes only. ",
+    "content": "Tour of the Single Cell Analysis . Disclaimer: The characters in the image(s) are styled after the Minions, which are the copyrighted and trademarked property of Universal Studios / Illumination Entertainment. The image(s) was generated by a large language model based on a user-provided concept and is intended for illustrative and educational purposes only. ",
     "url": "/single_cell_RNA-seq/starting/#references",
     
     "relUrl": "/single_cell_RNA-seq/starting/#references"
-  },"30": {
-    "doc": "Getting started with single-cell",
-    "title": "Getting started with single-cell",
+  },"27": {
+    "doc": "Getting started",
+    "title": "Getting started",
     "content": " ",
     "url": "/single_cell_RNA-seq/starting/",
     
     "relUrl": "/single_cell_RNA-seq/starting/"
+  },"28": {
+    "doc": "Cell Ranger Run Modes",
+    "title": "Running 10x Cell Ranger Pipeline",
+    "content": "Notebook: 09-25-2025 . Cynthia S. Cardinault . | Running 10x Cell Ranger Pipeline . | Modes to Run Cell Ranger | Wrapping Up | Benchmarking Run Modes | References | . | . ",
+    "url": "/single_cell_RNA-seq/RunModes/#running-10x-cell-ranger-pipeline",
+    
+    "relUrl": "/single_cell_RNA-seq/RunModes/#running-10x-cell-ranger-pipeline"
+  },"29": {
+    "doc": "Cell Ranger Run Modes",
+    "title": "Modes to Run Cell Ranger",
+    "content": "Depending on your setup, you have a few options: . Local or Institutional HPC . Most researchers run Cell Ranger on an institutional High-Performance Computing (HPC) cluster or a dedicated Linux server. A typical run may need 64 GB RAM or more plus multiple CPU cores. So if your lab has access to an HPC, that’s often the easiest path. Genomics Cloud Analysis . Don’t have a big server? No problem. The 10x Genomics Cloud Analysis platform is available almost everywhere (except China, Hong Kong, and embargoed countries). Good news Mexico and most of Latin America are included. | Free tier: Up to 50 analyses per month—perfect for starting out. | Extras: You can transfer projects between accounts, and collaborative features are on the way. | Caveat: Paid upgrades are mostly limited to the U.S. and Canada. | . General Cloud Platforms . If you prefer flexibility, you can spin up a virtual machine on AWS, Google Cloud, or another provider. Just pick a high-memory instance, install Cell Ranger, upload your FASTQs, and pay only for what you use. This is a great option if you need scalability on demand. Alternatives to Cell Ranger . While Cell Ranger is the gold standard, you might explore community tools too: . | STARsolo – efficient and highly comparable to Cell Ranger. | kallisto/bustools (Alevin-fry) – much faster and lighter on memory. | . ",
+    "url": "/single_cell_RNA-seq/RunModes/#modes-to-run-cell-ranger",
+    
+    "relUrl": "/single_cell_RNA-seq/RunModes/#modes-to-run-cell-ranger"
+  },"30": {
+    "doc": "Cell Ranger Run Modes",
+    "title": "Wrapping Up",
+    "content": "Cell Ranger may look intimidating at first, but once you run it a couple of times you’ll realize it’s a solid, reliable backbone for single-cell data processing. Whether you use an HPC, the free cloud tier, or your own server, it’s the first step in turning sequencing reads into biological insights. My advice? Start with the simplest setup you have access to (often your institution’s HPC or the 10x Cloud free tier), then scale up once your projects get bigger. ",
+    "url": "/single_cell_RNA-seq/RunModes/#wrapping-up",
+    
+    "relUrl": "/single_cell_RNA-seq/RunModes/#wrapping-up"
   },"31": {
+    "doc": "Cell Ranger Run Modes",
+    "title": "Benchmarking Run Modes",
+    "content": "Curious how they stack up? . Hope you have a find useful alternatives to run your pipeline. Dont’t miss my next notes talking about Secondary Analysis Alternatives . ",
+    "url": "/single_cell_RNA-seq/RunModes/#benchmarking-run-modes",
+    
+    "relUrl": "/single_cell_RNA-seq/RunModes/#benchmarking-run-modes"
+  },"32": {
+    "doc": "Cell Ranger Run Modes",
+    "title": "References",
+    "content": "Installation tutorial . Download Cell Ranger . Cloud availability FAQ . System Requirements . getting started guide. Disclaimer: Some image(s) were generated by a large language model based on a user-provided concept and is intended for illustrative and educational purposes only. ",
+    "url": "/single_cell_RNA-seq/RunModes/#references",
+    
+    "relUrl": "/single_cell_RNA-seq/RunModes/#references"
+  },"33": {
+    "doc": "Cell Ranger Run Modes",
+    "title": "Cell Ranger Run Modes",
+    "content": " ",
+    "url": "/single_cell_RNA-seq/RunModes/",
+    
+    "relUrl": "/single_cell_RNA-seq/RunModes/"
+  },"34": {
     "doc": "1 Single-Cell RNA-seq",
     "title": "📓 Single Cell RNA-seq Analysis",
     "content": " ",
     "url": "/single_cell_RNA-seq/#-single-cell-rna-seq-analysis",
     
     "relUrl": "/single_cell_RNA-seq/#-single-cell-rna-seq-analysis"
-  },"32": {
+  },"35": {
     "doc": "1 Single-Cell RNA-seq",
     "title": "Welcome!",
-    "content": "Notebook: 09-25-2025 . For consistency, my notes will generally follow next layout: . | Background – a quick overview of the topic (conceptual maps, videos, etc) | Technical Support Notes – organized into five areas, usually reference papers/tools/packages, vignettes, tutorials, etc. | . ",
+    "content": "Notebook: 09-25-2025 . ",
     "url": "/single_cell_RNA-seq/#welcome",
     
     "relUrl": "/single_cell_RNA-seq/#welcome"
-  },"33": {
+  },"36": {
     "doc": "1 Single-Cell RNA-seq",
     "title": "1 Single-Cell RNA-seq",
     "content": " ",

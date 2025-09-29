@@ -1,0 +1,112 @@
+---
+title: "Cell Ranger Run Modes"
+parent: "1 Single-Cell RNA-seq"
+nav_order: 1
+permalink: /single_cell_RNA-seq/RunModes/
+parent_permalink: /single_cell_RNA-seq/
+---
+
+# Running 10x Cell Ranger Pipeline
+**Notebook:** 09-25-2025
+
+*Cynthia S. Cardinault*
+
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?logo=linkedin&logoColor=white&style=for-the-badge)](https://www.linkedin.com/in/cynthiacardinault)
+<!--[![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white&style=for-the-badge)](https://github.com/cyntsc)-->
+[![Email](https://img.shields.io/badge/-Email-D14836?logo=gmail&logoColor=white&style=for-the-badge)](mailto:bioinformatic2019@gmail.com)
+
+
+<hr style="border: none; height: 4px; background-color: #444; margin: 30px 0;">
+
+- [Running 10x Cell Ranger Pipeline](#running-10x-cell-ranger-pipeline)
+  - [Modes to Run Cell Ranger](#modes-to-run-cell-ranger)
+  - [Wrapping Up](#wrapping-up)
+  - [Benchmarking Run Modes](#benchmarking-run-modes)
+  - [References](#references)
+
+
+<hr style="border: none; height: 4px; background-color: #444; margin: 30px 0;">
+
+<!--
+[![LinkedIn post](https://img.shields.io/badge/See%20on-LinkedIn-blue?logo=linkedin)](https://www.linkedin.com/posts/...)
+
+[![X post](https://img.shields.io/badge/See%20on-X-black?logo=twitter)](https://twitter.com/handle/status/1234567890123456789)
+
+<hr style="border: none; height: 4px; background-color: #444; margin: 30px 0;">
+-->
+
+## <span class="gradient-heading">Modes to Run Cell Ranger</span>
+
+Depending on your setup, you have a few options:
+
+<p align="center">
+  <img src="{{ '/images/scRNAseq/CellRanger_runs_ChatGPT_Image.png' | relative_url }}" alt="Sketch 1" style="max-width:90%; height:auto;">
+</p>
+
+<span class="heading-subsection2">Local or Institutional HPC</span>
+
+Most researchers run Cell Ranger on an institutional **High-Performance Computing (HPC)** cluster or a dedicated Linux server. A typical run may need **64 GB RAM or more** plus multiple CPU cores. So if your lab has access to an HPC, that’s often the easiest path.
+
+<span class="heading-subsection2">Genomics Cloud Analysis</span>
+
+Don’t have a big server? No problem. The **10x Genomics Cloud Analysis** platform is available almost everywhere (except China, Hong Kong, and embargoed countries). Good news Mexico and most of Latin America are included.
+
+* **Free tier:** Up to 50 analyses per month—perfect for starting out.  
+* **Extras:** You can transfer projects between accounts, and collaborative features are on the way.  
+* **Caveat:** Paid upgrades are mostly limited to the U.S. and Canada.  
+
+<span class="heading-subsection2">General Cloud Platforms</span>
+
+If you prefer flexibility, you can spin up a **virtual machine** on AWS, Google Cloud, or another provider. Just pick a high-memory instance, install Cell Ranger, upload your FASTQs, and pay only for what you use. This is a great option if you need scalability on demand.
+
+<span class="heading-subsection2">Alternatives to Cell Ranger</span>
+
+While Cell Ranger is the gold standard, you might explore community tools too:
+
+* **STARsolo** – efficient and highly comparable to Cell Ranger.  
+* **kallisto/bustools (Alevin-fry)** – much faster and lighter on memory.  
+
+---
+
+## <span class="gradient-heading">Wrapping Up</span>
+
+Cell Ranger may look intimidating at first, but once you run it a couple of times you’ll realize it’s a **solid, reliable backbone for single-cell data processing**. Whether you use an HPC, the free cloud tier, or your own server, it’s the first step in turning sequencing reads into biological insights.
+
+My advice? Start with the simplest setup you have access to (often your institution’s HPC or the 10x Cloud free tier), then scale up once your projects get bigger.
+
+## <span class="gradient-heading">Benchmarking Run Modes</span>
+
+Curious how they stack up? 
+
+<div class="ref-box" markdown="1">
+  <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8848315/#:~:text=While%20STARsolo%2C%20Cell%20Ranger%206,which%20are%20likely%20mapping%20artefacts" target="_blank">
+    <img src="{{ '/images/scRNAseq/benchmarking.png' | relative_url }}" alt="PMC">
+  </a>
+  <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8848315/#:~:text=While%20STARsolo%2C%20Cell%20Ranger%206,which%20are%20likely%20mapping%20artefacts">
+  </a>
+</div>
+
+---
+
+Hope you have a find useful alternatives to run your pipeline. Dont't miss my next notes talking about *Secondary Analysis Alternatives* 
+
+---
+
+## <span class="gradient-heading">References</span>
+
+[Installation tutorial](https://www.10xgenomics.com/support/software/cell-ranger/latest/tutorials/cr-tutorial-in)
+
+[Download Cell Ranger](https://www.10xgenomics.com/support/software/cell-ranger/downloads#download-links)
+
+[Cloud availability FAQ](https://www.10xgenomics.com/support/software/cloud-analysis/latest/faqs/CA-frequently-asked-questions#regional-availability)
+
+[System Requirements](https://www.10xgenomics.com/support/software/cell-ranger/downloads/cr-system-requirements)
+
+[getting started guide](https://www.10xgenomics.com/support/software/cell-ranger/latest/getting-started).
+
+
+---
+
+<div class="disclaimer" markdown="1">
+Disclaimer: Some image(s) were generated by a large language model based on a user-provided concept and is intended for illustrative and educational purposes only.
+</div>
