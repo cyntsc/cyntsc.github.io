@@ -37,7 +37,9 @@ parent_permalink: /single_cell_RNA-seq/
 
 ## <span class="gradient-heading">Modes to Run Cell Ranger</span>
 
-Depending on your setup, you have a few options:
+Running Cell Ranger isn’t a one-size-fits-all process. Depending on your setup, you can choose between different modes each with its own flavor, a bit like deciding whether to cook at home, order takeout, or head to a cafeteria.
+
+So, depending on your setup, you have a few options:
 
 <p align="center">
   <img src="{{ '/images/scRNAseq/CellRanger_runs_ChatGPT_Image.png' | relative_url }}" alt="Sketch 1" style="max-width:90%; height:auto;">

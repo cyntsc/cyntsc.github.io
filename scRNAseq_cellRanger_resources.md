@@ -19,7 +19,7 @@ parent_permalink: /single_cell_RNA-seq/
 <hr style="border: none; height: 4px; background-color: #444; margin: 30px 0;">
 
 - [Starting with Single Cell RNA-seq](#starting-with-single-cell-rna-seq)
-  - [But wait, What is single cell?](#but-wait-what-is-single-cell)
+  - [But wait, What is indeed single cell analysis?](#but-wait-what-is-indeed-single-cell-analysis)
   - [Starting with Cell Ranger](#starting-with-cell-ranger)
   - [The 4 Core Steps of Cell Ranger](#the-4-core-steps-of-cell-ranger)
   - [References](#references)
@@ -27,16 +27,18 @@ parent_permalink: /single_cell_RNA-seq/
 
 <hr style="border: none; height: 4px; background-color: #444; margin: 30px 0;">
 
-Before get into the technical, it’s worth highlighting that single-cell analysis isn’t limited to RNA. Single cell can be applied to DNA, proteins, and even metabolism. That said, my notes will focus on the **transcriptomic** side, which is probably the most widely adopted application of this technique until now. There is also a single-cell version of ATAC-seq, key for identifying cell states, differentiation trajectories, and the specific gene regulatory elements active in rare cell populations. 
+Let’s start by talking about single-cell analysis, and it’s not just about RNA. The same approach can also be applied to DNA, proteins, and even metabolism. In this note, though, I’ll focus on the transcriptomic side (RNA), which remains the most widely adopted application of the technology so far.
 
-Beyond that, the actual frontiers in single-cell analysis is expanding beyond the initial individual "omics" layers into two major, interconnected areas: **Multi-Omics** and **Spatial** context. These may or may not be performed within the same experimental protocol, and integrating such diverse datasets is an entire topic of its own. For now, let’s focus on **transcriptomics** itself.
+It’s worth mentioning that there’s also a single-cell version of ATAC-seq, a powerful method for identifying active gene regulatory elements, mapping cell states, and tracing differentiation trajectories. I’ve covered those notes separately in another section.
+
+Beyond that, the actual frontiers in single-cell is expanding beyond the initial individual "omics" layers into two major, interconnected areas: **Multi-Omics** and **Spatial** context. These may or may not be performed within the same experimental protocol, and integrating such diverse datasets is an entire topic of its own. 
 
 <p align="center">
   <img src="{{ '/images/scRNAseq/Gemini_Generated_minion.png' | relative_url }}" alt="Sketch 1" style="max-width:90%; height:auto;">
 </p>
 
-As way of illustration, the diagram represents 4 key players. All it happens looking at inside the cell, *Genomics* is holding the "instruction manual" (the DNA double helix), showing what the cell could possibly do. While in *Transcriptomics* is acting as the "loudspeaker" broadcasting which instructions are currently being read out.
-*Proteomics* is the muscular "workforce", representing the actual functional molecules that build and perform all the cell's tasks. *Metabolomics* is running around with all the stuff, keeping track of the "energy and supplies" (the small chemicals consumed and produced) to power the whole operation.
+As way of illustration, the diagram represents 4 key players. And, as observed, all it happens looking at inside the cell. We have *Genomics*  holding the "instruction manual" (the DNA double helix), showing what the cell could possibly do. While *Transcriptomics* is acting as the "loudspeaker" broadcasting which instructions are currently being read out.
+*Proteomics* is the muscular "workforce", representing the actual functional molecules that build and perform all the cell's tasks. *Metabolomics* is running around with all the stuff, keeping track of the "energy and supplies", depicting the small chemicals consumed and produced to power the whole operation.
 
 <!--
 <hr style="border: none; height: 4px; background-color: #444; margin: 30px 0;">
@@ -50,26 +52,27 @@ As way of illustration, the diagram represents 4 key players. All it happens loo
 
 ---
 
-## <span class="gradient-heading">But wait, What is single cell?</span>
+## <span class="gradient-heading">But wait, What is indeed single cell analysis?</span>
 
-When we think about biology, it’s easy to picture tissues, organs, or even whole organisms, but the real action happens at the level of individual cells. Each cell carries its own blueprint, reads out specific sets of instructions, and plays a unique role in the bigger picture. This is where single-cell analysis comes in. Instead of blending signals across millions of cells, this field lets us zoom in and explore each one on its own terms -- *genomics, transcriptomics, epigenomics, proteomics, metabolomics*. By teasing apart this cellular diversity, researchers can uncover hidden subpopulations, map cell states, and better understand how complex tissues function in health and disease.
+When we think about biology, it’s easy to picture tissues, organs, or even whole organisms, but human-invisible action happens at the level of individual cells, where each cell carries its own blueprint, reads out specific sets of instructions, and plays a unique role in the bigger picture.
 
-And this is exactly why platforms like **10x Genomics Chromium** and its companion software, **Cell Ranger**, were created. They bridge the gap between raw sequencing data and meaningful biological insights. 
+This is where single-cell analysis comes in. Instead of averaging signals across thousands or millions of cells, this field allows us to zoom in and study each cell on its own terms, whether that’s through genomics, transcriptomics, epigenomics, proteomics, or metabolomics. By teasing apart cellular diversity, researchers can uncover hidden subpopulations, map cell states, and gain a deeper understanding of how complex tissues function in both health and disease.
 
-In the following video (the first of nine-part mini learning series) you can explore more about single cell techniques versus traditional bulk technologies, such as PCR, microarray, and bulk RNA-seq. 
+That’s exactly why platforms like 10x Genomics Chromium and its companion software, Cell Ranger, were developed: to bridge the gap between raw sequencing data and meaningful biological insights.
+
+📺 In the video below (the first in a nine-part mini learning series), you’ll find a great introduction to single-cell techniques and how they compare with traditional bulk approaches such as PCR, microarrays, and bulk RNA-seq. The 10x Genomics website is also well-documented and packed with beginner-friendly resources if you’d like to explore further.
 
 <br>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pKngHhBCnHU?si=hGZhGpafV0DWzInK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-The video is part of the official collection released by **10x Genomics**.
 
 ---
 
 ## <span class="gradient-heading">Starting with Cell Ranger</span>
 
-If you’ve just generated your first single-cell dataset with the <strong style="color:#2563eb;">10x Genomics Chromium</strong> platform, chances are you’ll meet <strong style="color:#dc2626;">Cell Ranger</strong>. The software suite that transforms raw sequencing output into clean, interpretable data.
+If you’ve just generated your first single-cell dataset with the <strong style="color:#2563eb;">10x Genomics Chromium</strong> platform, chances are you’ll meet <strong style="color:#dc2626;">Cell Ranger</strong>. This is a suite of software that transforms raw sequencing output into clean, interpretable data.
 
-Think of Cell Ranger as your pipeline companion: it takes messy raw files and make the count matrices, quality metrics, and interactive reports.  From there, you can dive into <span style="color:#16a34a; font-weight:700;">clustering</span>, <span style="color:#9333ea; font-weight:700;">dimensionality reduction</span>, and <span style="color:#e11d48; font-weight:700;">downstream biological insights</span>.
+Think of it as a way to take messy raw files and make the count matrices, quality metrics, and interactive reports, with relative few steps.  From there, you can dive into <span style="color:#16a34a; font-weight:700;">clustering</span>, <span style="color:#9333ea; font-weight:700;">dimensionality reduction</span>, and <span style="color:#e11d48; font-weight:700;">downstream biological insights</span>.
 
 ---
 
@@ -92,7 +95,9 @@ Here’s a bird’s-eye view of the core steps:
 
 ---
 
-Hope you have a useful starting point. Dont't miss my next notes talking about **Modes to run Cell Ranger**.
+In most workflows, you’ll receive sequencing data that’s already demultiplexed and aligned, making **cellranger count** your starting point. This step transforms raw reads into a gene-barcode matrix, the foundation for all downstream analyses. From here, you can assess quality metrics, explore clustering, and eventually uncover patterns of gene expression that shed light on cell identity, state, and function.
+
+Hope you have a useful starting introduction. Dont't miss my next notes talking about **Modes to run Cell Ranger**.
 
 *Cynthia SC*
 
