@@ -2451,7 +2451,7 @@ body { font-size: 17px; /* default is usually 16px */ line-height: 1.7; /* keep 
 .ref-box a:hover { text-decoration: underline; }
 
 /* Gradient heading style */
-.gradient-heading { font-size: 26px; font-weight: 800; background: linear-gradient(90deg, #1114d7, #330eaa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.gradient-heading, h2#linkedin, h2#XTwitter { font-size: 26px; font-weight: 800; background: linear-gradient(90deg, #1114d7, #330eaa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
 /* Gradient heading style */
 .heading-subsection2 { font-size: 22px; font-weight: 800; background: linear-gradient(90deg, #04053e, #050113); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
@@ -2463,3 +2463,5 @@ body { font-size: 17px; /* default is usually 16px */ line-height: 1.7; /* keep 
 
 /* Disclaimer style */
 .main-content .disclaimer { font-size: 0.85rem !important; color: #6b7280 !important; font-style: italic; margin-top: 8px; }
+
+/* Apply gradient heading style to specific headings */

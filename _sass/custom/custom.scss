@@ -108,3 +108,12 @@ body {
   font-style: italic;
   margin-top: 8px;
 }
+
+/* Apply gradient heading style to specific headings */
+h2#linkedin {
+  @extend .gradient-heading;
+}
+h2#XTwitter {
+  @extend .gradient-heading;
+}
+
