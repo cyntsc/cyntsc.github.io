@@ -3,6 +3,8 @@ title: "Cynthia's BIN"
 description: "Workflows, notes, and visual checks in scRNA-seq, scATAC-seq, multiome, spatial"
 remote_theme: just-the-docs/just-the-docs  ##  tell Jekyll to use the theme via remote_theme
 # Optional: show GitHub link in the header
+url: "https://cyntsc.github.io"
+baseurl: ""
 aux_links:
   "GitHub":
     - "https://github.com/cyntsc/cyntsc.github.io"
@@ -11,4 +13,6 @@ just_the_docs:
 sass:
   sass_dir: _sass
 include:
+  - _pages
+  - docs
   - assets/css

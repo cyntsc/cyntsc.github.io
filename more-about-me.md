@@ -29,9 +29,20 @@ I could list the many tools, platforms, and workflows I’ve mastered, but hones
 
 ## My GitHub Activity
 
-[![Cynthia's GitHub stats](https://github.com/cyntsc?tab=overview&from=2024-01-01&to=2024-12-31)](https://github.com/cyntsc)
+You can explore my current GitHub contributions and stats here:
 
-![Cynthia’s GitHub streak](https://github-readme-streak-stats.herokuapp.com/?user=cyntsc&theme=default&hide_border=true)
+<p style="text-align:center;">
+  <a href="{{ site.baseurl }}/github-activity/">
+    <img 
+      src="https://ghchart.rshah.org/cyntsc" 
+      alt="GitHub contribution chart for cyntsc"
+      style="width:100%; max-width:600px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.15); display:block; margin:auto;">
+  </a>
+  <br>
+  <a href="{{ site.baseurl }}/github-activity/" style="text-decoration:none; color:#0366d6;">
+    → View full GitHub Activity page
+  </a>
+</p>
 
 
 ## Scientific Open Resources | SpeakerDeck | YouTube
