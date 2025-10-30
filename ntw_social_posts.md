@@ -4,7 +4,7 @@ nav_order: 1
 permalink: /ntw_posts/
 ---
 
-# My Posts
+# My Selected Posts
 09-30-2025
 
 *Cynthia S. Cardinault*
@@ -113,3 +113,4 @@ function scrollCarousel(direction) {
 </script>
 
 ## XTwitter 2025 {#XTwitter}
+

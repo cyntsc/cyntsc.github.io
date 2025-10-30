@@ -14,15 +14,24 @@ permalink: /more-about-me/
 
 ## Bio
 
-I’m Cynthia S Cardinault, a bioinformatician passionate about bringing biology and data science together to tackle complex questions. At the Lieber Institute, my current work centers on multiome (transcriptomic and epigenomic) and spatial transcriptomics in the human brain habenula, where we are building an integrated atlas of cell-type signatures, their regulatory elements, and their spatial organization. I’m excited to see a preprint of this work coming soon.
+I’m a passionate data scientist who loves bringing together biology, statistics, and computer science to tackle complex biological questions.  
 
-I began my genomics career during my doctorate at CICY, studying plant–pathogen interactions in Arabidopsis. Using bulk RNA data and co-expression networks, I identified key defense gene modules against ascomycete fungi, relevant topic for food security in the face of climate change.
+I began my Ph.D. in *Biological Sciences* in *2018* at the *Centro de Investigación Científica de Yucatán (CICY)*, where I studied *Arabidopsis thaliana* under the guidance of *Dra. Elsa Gongora*. Using public bulk RNA-seq datasets from plants infected by ascomycete fungi, a widespread pathogen responsible for major crop losses worldwide, I identified key defense gene modules linked to food security and agricultural resilience.  
 
-Before that, during my master’s degree, I researched educational technologies of the future, analyzing interoperability between the Moodle LMS and purpose-built educational applications. I study IMS-LTI–based services that strengthened connections between learning platforms.
+Earlier, in *2013*, I completed my master’s degree in *Computer Sciences*, focusing on IMS-LTI–based services that strengthened connections between learning platforms and educational applications. My thesis earned *first place* in the *Computing Category* of the *XXIX National Contest of Computer Science (ANIEI, 2016)*. This early experience in computing sparked my lasting enthusiasm for the fast-growing field of artificial intelligence in bioinformatics.  
 
-I see bioinformatics as a borderless field, unconstrained by species, languages, or methods. I’m driven to contribute to projects that advance human health, agriculture, and other global challenges.
+At the *Lieber Institute for Brain Development (LIBD)*, my current work focuses on data-driven analyses of the *human brain habenula*. Together with *Kelsey Montgomery* and under the leadership of *Dr. Kristen Maynard* and *Dr. Leonardo Collado-Torres*, our team aims to characterize habenular cell subpopulations, canonical and novel gene markers, and candidate regulatory elements, all within their spatial context. Our integrative approach combines cutting-edge single-cell and spatial technologies, including **multiome (snRNA-seq + snATAC-seq)** and **spatial transcriptomics (Visium and Visium HD)**. We look forward to sharing our preprint soon!  
+
+I could list the many tools, platforms, and workflows I’ve mastered, but honestly, bioinformatics moves at bullet-train speed, staying connected and curious is what truly matters.  Bioinformatics is a borderless field, unconstrained by species, languages, or methods. I’m driven to contribute to projects that advance human health, agriculture, and other global challenges. If you’d like to collaborate or share ideas, don’t hesitate to reach out.  I’m always open to meaningful conversations and projects where my skills can help answer complex biological questions.  
+
 
 ---
+
+## My GitHub Activity
+
+[![Cynthia's GitHub stats](https://github.com/cyntsc?tab=overview&from=2024-01-01&to=2024-12-31)](https://github.com/cyntsc)
+
+![Cynthia’s GitHub streak](https://github-readme-streak-stats.herokuapp.com/?user=cyntsc&theme=default&hide_border=true)
 
 
 ## Scientific Open Resources | SpeakerDeck | YouTube
@@ -34,13 +43,51 @@ Presentations and public talks on bioinformatics, neuroscience and plant biology
   Playlist featuring walkthroughs of my work with a focus on the human brain.
   Multiome pipelines like CellRanger ARC and Data-driven discussions. Thanks to PhD Collado who compiled, edited and allocated all these recordings. [Youtube](https://www.youtube.com/playlist?list=PLArO1MFHqSWgCECfO__GEp7TZnRmcJEFY)
 
+<div style="text-align: center;">
+  <iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/videoseries?list=PLArO1MFHqSWgCECfO__GEp7TZnRmcJEFY" 
+    title="YouTube playlist player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen>
+  </iframe>
+</div>
+
 📑 My SpeakerDeck | SpeakerDeck <br>
-  Title: LIEBER - Slides for talks <br>
-  Spatial transcriptomics and multiomics. Material used for internal talks, the R-StatClub and conferences. [SpeakerDeck](https://speakerdeck.com/cyntsc)
+Title: LIEBER - Slides for talks <br>
+Spatial transcriptomics and multiomics. Material used for internal talks, the R-StatClub and conferences. 
+<a href="https://speakerdeck.com/cyntsc" target="_blank">SpeakerDeck</a>
+
+<div style="text-align: center;">
+  <a href="https://speakerdeck.com/cyntsc" target="_blank">
+    <img 
+      src="/images/speakerDeck.jpeg" 
+      alt="View my presentations on SpeakerDeck" 
+      style="width:100%; max-width:500px; border-radius:12px; box-shadow:0 4px 8px rgba(0,0,0,0.2); display:block; margin:auto;">
+  </a>
+</div>
 
 🎥 Transcriptomic Analysis in Arabidopsis thaliana | YouTube Playlist | Posters <br>
-  Title: CICY – Arabidopsis Pathogenesis <br>
-  Compiles a set of talks and presentations in which I discussed topics in molecular biology, plant genetics, and transcriptomic analysis in Arabidopsis thaliana. [YouTube](https://www.youtube.com/playlist?list=PLArO1MFHqSWhIGLpZg5Ne_f6k1B9Ods53)
+Title: CICY – Arabidopsis Pathogenesis <br>
+Compiles a set of talks and presentations in which I discussed topics in molecular biology, plant genetics, and transcriptomic analysis in *Arabidopsis thaliana*. 
+<a href="https://www.youtube.com/playlist?list=PLArO1MFHqSWhIGLpZg5Ne_f6k1B9Ods53" target="_blank">YouTube Playlist</a>
+
+<div style="text-align: center;">
+  <iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/videoseries?list=PLArO1MFHqSWhIGLpZg5Ne_f6k1B9Ods53" 
+    title="YouTube playlist player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen>
+  </iframe>
+</div>
+
 
 ---
 
@@ -61,8 +108,8 @@ Here’s a preview of the expected content: [Bioinformatic_Notebook](/index.md/)
 
 ## Technical Skills
 
-**The short answer:** any language or package I need to get the job done. But a more detailed view: 
-I work across **R**, **Python** (Jupyter), and **Shell/Bash** for high-performance, **SLURM**-managed workflows, with **GitHub** for reproducible documentation.  
+Any language or package I need to get the job done. 
+I work across **R**, **Python** (Jupyter), and **Shell/Bash** for high-performance, **SLURM**-managed workflows, with **GitHub** for reproducibility.
 
 **My toolkit includes:**  
 - **R packages:** Seurat, Signac, SpatialExperiment, spatialLIBD, scran, scater, bluster, WGCNA, DeconvoBuddies, dendextend, ComplexHeatmap, ggplot2, tidyverse  
@@ -70,21 +117,6 @@ I work across **R**, **Python** (Jupyter), and **Shell/Bash** for high-performan
 - **10x Pipleines:** Cell Ranger, Cell Ranger ARC, Space Ranger  
 - **RNA-seq preprocessing & assembly tools:** FastQC, Trimmomatic, STAR, HISAT2, Salmon, Kallisto, HTSeq  
 - **AI-assisted workflows:** ChatGPT, Gemini for accelerating analysis and problem-solving
-
-<!--
-**The short answer:** any language or package I need to get the job done.  
-
-**For a more detailed view:**  
-My work draws on a combination of programming languages and computational environments, including **R**, **Python** (primarily in Jupyter notebooks), and **Shell/Bash** scripting for cluster-based workflows. I regularly use **GitHub** for version control and reproducible documentation, and run analyses on high-performance computing systems managed by **SLURM**. Command-line tools such as **Cell Ranger**, **Cell Ranger ARC**, and **Space Ranger** are integral to my workflows for single-cell, multiome, and spatial transcriptomics data.  
-
-Within **R** and **Bioconductor**, I use a broad toolkit for data handling, visualization, and specialized analyses:  
-- **Core analysis packages:** Seurat, Signac, SpatialExperiment, spatialLIBD, scran, scater, bluster, WGCNA, DeconvoBuddies, dendextend, ComplexHeatmap, ggplot2  
-- **Tidyverse packages:** dplyr, tidyr, readr  
-
-These tools support workflows across **scRNA-seq**, **scATAC-seq**, **multiome** (snRNA + snATAC), and **Visium** spatial data — from quality control and clustering to co-expression network analysis, peak-to-gene linkage, and spatial domain identification.  
-
-I also integrate **AI tools** such as **ChatGPT** and **Gemini** into my day-to-day work, which significantly accelerates analysis and troubleshooting. I am convinced these technologies will be central to the future of bioinformatics and data science.
---> 
 
 ---
 
