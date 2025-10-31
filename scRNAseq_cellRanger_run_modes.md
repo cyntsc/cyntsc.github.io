@@ -6,34 +6,20 @@ permalink: /single_cell_RNA-seq/RunModes/
 parent_permalink: /single_cell_RNA-seq/
 ---
 
-# Running 10x Cell Ranger Pipeline
-**Notebook:** 09-25-2025
-
-*Cynthia S. Cardinault*
+*Cynthia SC* (09-25-2025)
 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?logo=linkedin&logoColor=white&style=for-the-badge)](https://www.linkedin.com/in/cynthiacardinault)
 <!--[![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white&style=for-the-badge)](https://github.com/cyntsc)-->
 [![Email](https://img.shields.io/badge/-Email-D14836?logo=gmail&logoColor=white&style=for-the-badge)](mailto:bioinformatic2019@gmail.com)
 
 
-<hr style="border: none; height: 4px; background-color: #444; margin: 30px 0;">
-
-- [Running 10x Cell Ranger Pipeline](#running-10x-cell-ranger-pipeline)
-  - [Modes to Run Cell Ranger](#modes-to-run-cell-ranger)
-  - [Wrapping Up](#wrapping-up)
-  - [Benchmarking Run Modes](#benchmarking-run-modes)
-  - [References](#references)
+- [Modes to Run Cell Ranger](#modes-to-run-cell-ranger)
+- [Wrapping Up](#wrapping-up)
+- [Benchmarking Run Modes](#benchmarking-run-modes)
+- [References](#references)
 
 
-<hr style="border: none; height: 4px; background-color: #444; margin: 30px 0;">
-
-<!--
-[![LinkedIn post](https://img.shields.io/badge/See%20on-LinkedIn-blue?logo=linkedin)](https://www.linkedin.com/posts/...)
-
-[![X post](https://img.shields.io/badge/See%20on-X-black?logo=twitter)](https://twitter.com/handle/status/1234567890123456789)
-
-<hr style="border: none; height: 4px; background-color: #444; margin: 30px 0;">
--->
+---
 
 ## <span class="gradient-heading">Modes to Run Cell Ranger</span>
 

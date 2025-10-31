@@ -1,16 +1,12 @@
 ---
 title: "3 Multiome scATAC-seq"
-nav_order: 3
+nav_order: 9
 has_children: true
 parent: "Bioinformatics Notebooks"
 permalink: /sATAC-seq-analysis/
 ---
 
-
-# 📓 Single Cell ATAC-seq Analysis
-
-## Welcome!  
-**Notebook:** 08-01-2025
+*Cynthia SC* (08-01-2025)
 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?logo=linkedin&logoColor=white&style=for-the-badge)](https://www.linkedin.com/in/cynthiacardinault)
 [![Email](https://img.shields.io/badge/-Email-D14836?logo=gmail&logoColor=white&style=for-the-badge)](mailto:bioinformatic2019@gmail.com)

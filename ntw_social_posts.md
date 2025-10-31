@@ -1,17 +1,12 @@
 ---
-title: My selected posts
-nav_order: 1
+title: Selected posts
+nav_order: 4
 permalink: /ntw_posts/
 ---
 
-# Selected Posts
-09-30-2025
-
-*Cynthia S. Cardinault*
+*Cynthia SC* (09-30-2025)
 
 [![Email](https://img.shields.io/badge/-Email-D14836?logo=gmail&logoColor=white&style=for-the-badge)](mailto:bioinformatic2019@gmail.com)
-
-<hr style="border: none; height: 4px; background-color: #444; margin: 30px 0;">
 
 * TOC
 {:toc}

@@ -5,12 +5,8 @@ has_children: true
 parent: "Bioinformatics Notebooks"
 permalink: /single_cell_RNA-seq/
 ---
-
-
-# 📓 Single Cell RNA-seq Analysis
-
-## Welcome!  
-**Notebook:** 09-25-2025
+ 
+*Cynthia SC* 09-25-2025
 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?logo=linkedin&logoColor=white&style=for-the-badge)](https://www.linkedin.com/in/cynthiacardinault)
 <!--[![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white&style=for-the-badge)](https://github.com/cyntsc)-->

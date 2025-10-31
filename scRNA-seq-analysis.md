@@ -6,7 +6,11 @@ parent: "Bioinformatics Notebooks"
 permalink: /multiome-scrna-seq/
 ---
 
-# 📓 scRNA-seq analysis  
+*Cynthia SC* 09-25-2025
+
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?logo=linkedin&logoColor=white&style=for-the-badge)](https://www.linkedin.com/in/cynthiacardinault)
+<!--[![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white&style=for-the-badge)](https://github.com/cyntsc)-->
+[![Email](https://img.shields.io/badge/-Email-D14836?logo=gmail&logoColor=white&style=for-the-badge)](mailto:bioinformatic2019@gmail.com)
 
 <div style="background-color:#f5f5f5; padding:10px; border-radius:6px; font-style:italic;">
 ⚠️ This section is under construction — content will be expanded soon.

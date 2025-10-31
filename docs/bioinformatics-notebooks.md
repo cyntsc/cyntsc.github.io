@@ -5,8 +5,6 @@ permalink: /bioinformatics-notebooks/
 has_children: true
 ---
 
-# My Bioinformatics Notebook
-
 *Cynthia SC* (08-01-2025)
 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?logo=linkedin&logoColor=white&style=for-the-badge)](https://www.linkedin.com/in/cynthiacardinault)

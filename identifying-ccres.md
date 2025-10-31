@@ -6,36 +6,32 @@ permalink: /sATAC-seq-analysis/identifying-ccres/
 parent_permalink: /sATAC-seq-analysis/
 ---
 
-# Single Cell ATAC-seq
-## Identifying candidate cis-regulatory elements (cCREs) 
-**Notebook:** 08-28-2025
+*Cynthia SC* (08-28-2025)
 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?logo=linkedin&logoColor=white&style=for-the-badge)](https://www.linkedin.com/in/cynthiacardinault)
 <!--[![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white&style=for-the-badge)](https://github.com/cyntsc)-->
 [![Email](https://img.shields.io/badge/-Email-D14836?logo=gmail&logoColor=white&style=for-the-badge)](mailto:bioinformatic2019@gmail.com)
 
-<hr style="border: none; height: 4px; background-color: #444; margin: 30px 0;">
 
+<!--
 <div style="background-color:#fff9db; padding:12px; border-radius:6px; border-left:5px solid #facc15;" markdown="1">
 <strong>📌 Note:</strong> For a better understanding of the design of this notebook, please read the
 <a href="{{ page.parent_permalink | relative_url }}" style="font-weight:bold; color:#2563eb;">main section page</a> first. Thanks 🙏
 </div>
+-->
+
+- [1. Background](#1-background)
+  - [Calling snATAC-seq peaks using MACS2 and linking peaks to genes](#calling-snatac-seq-peaks-using-macs2-and-linking-peaks-to-genes)
+  - [Diagrams and concept maps](#diagrams-and-concept-maps)
+- [2. Technical Support Notes](#2-technical-support-notes)
+  - [a. Key Literature](#a-key-literature)
+  - [b. Vignettes \& Tutorials](#b-vignettes--tutorials)
+  - [c. Core Functions](#c-core-functions)
+  - [d. Custom Repo Practices](#d-custom-repo-practices)
+  - [e. Behind-the-Scenes Tools \& File Formats](#e-behind-the-scenes-tools--file-formats)
 
 
-- [Single Cell ATAC-seq](#single-cell-atac-seq)
-  - [Identifying candidate cis-regulatory elements (cCREs)](#identifying-candidate-cis-regulatory-elements-ccres)
-  - [1. Background](#1-background)
-    - [Calling snATAC-seq peaks using MACS2 and linking peaks to genes](#calling-snatac-seq-peaks-using-macs2-and-linking-peaks-to-genes)
-    - [Diagrams and concept maps](#diagrams-and-concept-maps)
-  - [2. Technical Support Notes](#2-technical-support-notes)
-    - [a. Key Literature](#a-key-literature)
-    - [b. Vignettes \& Tutorials](#b-vignettes--tutorials)
-    - [c. Core Functions](#c-core-functions)
-    - [d. Custom Repo Practices](#d-custom-repo-practices)
-    - [e. Behind-the-Scenes Tools \& File Formats](#e-behind-the-scenes-tools--file-formats)
-
-
-<hr style="border: none; height: 4px; background-color: #444; margin: 30px 0;">
+---
 
 ## 1. Background  
 <br>

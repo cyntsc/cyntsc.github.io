@@ -1,6 +1,6 @@
 ---
 title: Open Resources
-nav_order: 1
+nav_order: 2
 permalink: /open_resources/
 ---
 
@@ -17,7 +17,7 @@ permalink: /open_resources/
 
 A growing collection with bi-weekly updates, containing links to papers, workflows, conceptual maps, and insights for *scRNA-seq*, *scATAC-seq*, *multiome*, and *Visium spatial transcriptomics*.
 
-[Go --> Bioinformatic_Notebook](/index.md/)
+[Go --> Bioinformatic_Notebook](/bioinformatics-notebooks.md/)
 
 ---
 

@@ -6,25 +6,19 @@ permalink: /single_cell_RNA-seq/starting/
 parent_permalink: /single_cell_RNA-seq/
 ---
 
-# Starting with Single Cell RNA-seq
-**Notebook:** 09-25-2025
-
-*Cynthia S. Cardinault*
+*Cynthia SC* (09-25-2025)
 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?logo=linkedin&logoColor=white&style=for-the-badge)](https://www.linkedin.com/in/cynthiacardinault)
 [![Email](https://img.shields.io/badge/-Email-D14836?logo=gmail&logoColor=white&style=for-the-badge)](mailto:bioinformatic2019@gmail.com)
 
 
-<hr style="border: none; height: 4px; background-color: #444; margin: 30px 0;">
-
-- [Starting with Single Cell RNA-seq](#starting-with-single-cell-rna-seq)
-  - [But wait, What is indeed single cell analysis?](#but-wait-what-is-indeed-single-cell-analysis)
-  - [Starting with Cell Ranger](#starting-with-cell-ranger)
-  - [The 4 Core Steps of Cell Ranger](#the-4-core-steps-of-cell-ranger)
-  - [References](#references)
+- [But wait, What is indeed single cell analysis?](#but-wait-what-is-indeed-single-cell-analysis)
+- [Starting with Cell Ranger](#starting-with-cell-ranger)
+- [The 4 Core Steps of Cell Ranger](#the-4-core-steps-of-cell-ranger)
+- [References](#references)
 
 
-<hr style="border: none; height: 4px; background-color: #444; margin: 30px 0;">
+---
 
 Let’s start by talking about single-cell analysis, and it’s not just about RNA. The same approach can also be applied to DNA, proteins, and even metabolism. In this note, though, I’ll focus on the transcriptomic side (RNA), which remains the most widely adopted application of the technology so far.
 
