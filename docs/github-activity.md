@@ -1,6 +1,6 @@
 ---
 title: "GitHub Activity"
-nav_order: 10
+nav_order: 5
 permalink: /github-activity/
 layout: default
 ---
