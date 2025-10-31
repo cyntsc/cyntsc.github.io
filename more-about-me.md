@@ -4,15 +4,10 @@ nav_order: 1
 permalink: /more-about-me/
 ---
 
-# About me
-<!--
-![Cynthia](Cynthia.jpeg)
+# About me | Bio
 
 [LinkedIn](https://www.linkedin.com/in/cynthiacardinault/) | [Twitter](https://twitter.com/cynthiasotocar) | [GitHub](https://github.com/cyntsc) | [Email](mailto:cyntsc10@gmail.com)
--->
----
 
-## Bio
 
 I’m a passionate data scientist who loves bringing together biology, statistics, and computer science to tackle complex biological questions.  
 
@@ -26,10 +21,10 @@ I could list the many tools, platforms, and workflows I’ve mastered, but hones
 
 
 ---
-
+<!--
 ## My GitHub Activity
 
-You can explore my current GitHub contributions and stats here:
+My recent GitHub contributions are private projects for now, planned to be public next year. In the meantime, you can explore my current GitHub contributions and stats here:
 
 <p style="text-align:center;">
   <a href="{{ site.baseurl }}/github-activity/">
@@ -44,78 +39,7 @@ You can explore my current GitHub contributions and stats here:
   </a>
 </p>
 
-
-## Scientific Open Resources | SpeakerDeck | YouTube
-
-Presentations and public talks on bioinformatics, neuroscience and plant biology:
-
-🎥 Walkthroughs in multiomics | YouTube Playlist <br>
-  Title: LIEBER - Behind the Scenes of Spatial an Multiomic Data Analysis in Neuroscience 🧠🧬 <br>
-  Playlist featuring walkthroughs of my work with a focus on the human brain.
-  Multiome pipelines like CellRanger ARC and Data-driven discussions. Thanks to PhD Collado who compiled, edited and allocated all these recordings. [Youtube](https://www.youtube.com/playlist?list=PLArO1MFHqSWgCECfO__GEp7TZnRmcJEFY)
-
-<div style="text-align: center;">
-  <iframe 
-    width="560" 
-    height="315" 
-    src="https://www.youtube.com/embed/videoseries?list=PLArO1MFHqSWgCECfO__GEp7TZnRmcJEFY" 
-    title="YouTube playlist player" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-    referrerpolicy="strict-origin-when-cross-origin" 
-    allowfullscreen>
-  </iframe>
-</div>
-
-📑 My SpeakerDeck | SpeakerDeck <br>
-Title: LIEBER - Slides for talks <br>
-Spatial transcriptomics and multiomics. Material used for internal talks, the R-StatClub and conferences. 
-<a href="https://speakerdeck.com/cyntsc" target="_blank">SpeakerDeck</a>
-
-<div style="text-align: center;">
-  <a href="https://speakerdeck.com/cyntsc" target="_blank">
-    <img 
-      src="/images/speakerDeck.jpeg" 
-      alt="View my presentations on SpeakerDeck" 
-      style="width:100%; max-width:500px; border-radius:12px; box-shadow:0 4px 8px rgba(0,0,0,0.2); display:block; margin:auto;">
-  </a>
-</div>
-
-🎥 Transcriptomic Analysis in Arabidopsis thaliana | YouTube Playlist | Posters <br>
-Title: CICY – Arabidopsis Pathogenesis <br>
-Compiles a set of talks and presentations in which I discussed topics in molecular biology, plant genetics, and transcriptomic analysis in *Arabidopsis thaliana*. 
-<a href="https://www.youtube.com/playlist?list=PLArO1MFHqSWhIGLpZg5Ne_f6k1B9Ods53" target="_blank">YouTube Playlist</a>
-
-<div style="text-align: center;">
-  <iframe 
-    width="560" 
-    height="315" 
-    src="https://www.youtube.com/embed/videoseries?list=PLArO1MFHqSWhIGLpZg5Ne_f6k1B9Ods53" 
-    title="YouTube playlist player" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-    referrerpolicy="strict-origin-when-cross-origin" 
-    allowfullscreen>
-  </iframe>
-</div>
-
-
----
-
-## My GitHub Repo
-
-Most of my current project repositories are private for now, but these are planned to be public next year. In the meantime, you can check out my activity and contributions from this year:  
-🔗 [GitHub Profile – cyntsc](https://github.com/cyntsc)
-
----
-
-## A recent project in action is
-
-*"My Bioinformatics Notebook"*. Planned to be a growing collection with bi-weekly updates, containing links to papers, workflows, conceptual maps, and insights for *scRNA-seq*, *scATAC-seq*, *multiome*, and *Visium spatial transcriptomics*.
-
-Here’s a preview of the expected content: [Bioinformatic_Notebook](/index.md/)
-
----
+-->
 
 ## Technical Skills
 

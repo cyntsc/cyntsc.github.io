@@ -1,7 +1,7 @@
 {"0": {
     "doc": "GitHub Activity",
     "title": "My Weekly GitHub Contributions",
-    "content": "Below is a live snapshot of my contribution activity, green-square grid that updates automatically every week based on my public and private commits. Data source: GitHub API (auto-updates daily) . 📈 View detailed stats . | Full activity graph → | . ",
+    "content": "My recent GitHub contributions are private projects for now, planned to be public next year. In the meantime, you can explore my current GitHub contributions and stats here. Data source: GitHub API (auto-updates daily) . 📈 View detailed stats . | Full activity graph → | . ",
     "url": "/github-activity/#my-weekly-github-contributions",
     
     "relUrl": "/github-activity/#my-weekly-github-contributions"
@@ -48,258 +48,265 @@
     
     "relUrl": "/sATAC-seq-analysis/identifying-ccres/"
   },"7": {
-    "doc": "Welcome",
-    "title": "📓 Welcome to my Bioinformatics Notebook",
-    "content": "Notebook: 08-01-2025 . Hi there 👋 . I hope you’re doing well, and that you find these notes useful for your analysis. You probably landed here because you’re: . | looking for a quick overview for single cell | searching for considerations when running downstream analysis, or | simply exploring out of curiosity | . Whatever the reason, welcome 🙌 . This space is a collection of my working notes on single-cell RNA-seq, multiome (snRNA-seq + snATAC-seq), and Visium Spatial Transcriptomics. It’s a work in progress and not meant to be a full start-to-finish guide for replicating pipelines, there are already a lot of reds of excellent resources out there, many far more comprehensive than I could write. Plus, each project comes with its own technical quirks and biological context. Most of my real solutions are pieced together from a mix of solid references and adapted to fit the specific problems at hand. Instead, my aim here is to share the kind of material I often find relevant, missed or scattered: notes that go beyond tutorials which are some times too simplified or too narrow (tied to a single research context). These entries are intended as practical, high-level references with links to papers, sketches, conceptual maps, and notes that help me (and hopefully you) connect the dots more clearly. I’m always happy to connect! If you’d like to swap workflows, brainstorm methods, or talk about new opportunities, feel free to reach out. ",
-    "url": "/#-welcome-to-my-bioinformatics-notebook",
+    "doc": "Bioinformatics Notebooks",
+    "title": "My Bioinformatics Notebook",
+    "content": "Cynthia SC (08-01-2025) . Hi there 👋 . I hope you’re doing well, and that you find these notes useful for your analysis. You probably landed here because you’re: . | looking for a quick overview for single cell | searching for considerations when running downstream analysis, or | simply exploring out of curiosity | . Whatever the reason, welcome 🙌 . This space is a collection of my working notes on single-cell RNA-seq, multiome (snRNA-seq + snATAC-seq), and Visium Spatial Transcriptomics. It’s a work in progress and not meant to be a full start-to-finish guide for replicating pipelines, there are already a lot of reds of excellent resources out there, many far more comprehensive than I could write. Plus, each project comes with its own technical quirks and biological context. Most of my real solutions are pieced together from a mix of solid references and adapted to fit the specific problems at hand. Instead, my aim here is to share the kind of material I often find relevant, missed or scattered: notes that go beyond tutorials which are some times too simplified or too narrow (tied to a single research context). These entries are intended as practical, high-level references with links to papers, sketches, conceptual maps, and notes that help me (and hopefully you) connect the dots more clearly. I’m always happy to connect! If you’d like to swap workflows, brainstorm methods, or talk about new opportunities, feel free to reach out. ",
+    "url": "/#my-bioinformatics-notebook",
     
-    "relUrl": "/#-welcome-to-my-bioinformatics-notebook"
+    "relUrl": "/#my-bioinformatics-notebook"
   },"8": {
-    "doc": "Welcome",
+    "doc": "Bioinformatics Notebooks",
     "title": "What you’ll find here",
     "content": "Concise, high-level notes, often illustrated with videos, conceptual maps, sketches, or visualizations to highlight specific analyses (Section I). In addition, you’ll find technical support notes organized into five main areas (Section II): . | Key Literature – I value a lot published work, so papers are used to refer cases that provide essential context | Vignettes &amp; Tutorials – broad but practical guides | Core Functions &amp; References – relevant functions and documentation | Custom Repo Practices – workflow tips from real projects found on the network | Behind-the-Scenes Tools &amp; File Formats – underrated but essential resources | . ",
     "url": "/#what-youll-find-here",
     
     "relUrl": "/#what-youll-find-here"
   },"9": {
-    "doc": "Welcome",
+    "doc": "Bioinformatics Notebooks",
     "title": "Why share this?",
     "content": "Have you ask yourself … “why on earth did I think that would work?” moments. By sharing my notes, I hope to reach any of the following goals: . | Help others dodge some of the same pitfalls (My friend. You are not alone!) At least feel less alone while falling it, every one started with a single line | Gather links to papers, vignettes, blog posts, Twitter threads, and other resources that have shaped my work (and probably saved me from disaster more than once) | Show the kind of experience (and occasional stubbornness) it takes to get from raw data to conclusions | Build a transparent portfolio of how I think through data | . 💡 If you spot mistakes, have suggestions, or just want to geek out about data, your feedback is very welcome. I’m always tweaking things here to make it more useful, for myself and hopefully for others, and if you’d like to reach out directly, feel free to use the contact info in my contact data above (LinkedIn or email). Have a wonderful day 🌱🧠 Cynthia S. Cardinault . ",
     "url": "/#why-share-this",
     
     "relUrl": "/#why-share-this"
   },"10": {
-    "doc": "Welcome",
-    "title": "Welcome",
+    "doc": "Bioinformatics Notebooks",
+    "title": "Bioinformatics Notebooks",
     "content": " ",
     "url": "/",
     
     "relUrl": "/"
   },"11": {
     "doc": "About me",
-    "title": "About me",
-    "content": ". ",
-    "url": "/more-about-me/",
+    "title": "About me | Bio",
+    "content": "| LinkedIn | Twitter | GitHub | Email | . I’m a passionate data scientist who loves bringing together biology, statistics, and computer science to tackle complex biological questions. I began my Ph.D. in Biological Sciences in 2018 at the Centro de Investigación Científica de Yucatán (CICY), where I studied Arabidopsis thaliana under the guidance of Dra. Elsa Gongora. Using public bulk RNA-seq datasets from plants infected by ascomycete fungi, a widespread pathogen responsible for major crop losses worldwide, I identified key defense gene modules linked to food security and agricultural resilience. Earlier, in 2013, I completed my master’s degree in Computer Sciences, focusing on IMS-LTI–based services that strengthened connections between learning platforms and educational applications. My thesis earned first place in the Computing Category of the XXIX National Contest of Computer Science (ANIEI, 2016). This early experience in computing sparked my lasting enthusiasm for the fast-growing field of artificial intelligence in bioinformatics. At the Lieber Institute for Brain Development (LIBD), my current work focuses on data-driven analyses of the human brain habenula. Together with Kelsey Montgomery and under the leadership of Dr. Kristen Maynard and Dr. Leonardo Collado-Torres, our team aims to characterize habenular cell subpopulations, canonical and novel gene markers, and candidate regulatory elements, all within their spatial context. Our integrative approach combines cutting-edge single-cell and spatial technologies, including multiome (snRNA-seq + snATAC-seq) and spatial transcriptomics (Visium and Visium HD). We look forward to sharing our preprint soon! . I could list the many tools, platforms, and workflows I’ve mastered, but honestly, bioinformatics moves at bullet-train speed, staying connected and curious is what truly matters. Bioinformatics is a borderless field, unconstrained by species, languages, or methods. I’m driven to contribute to projects that advance human health, agriculture, and other global challenges. If you’d like to collaborate or share ideas, don’t hesitate to reach out. I’m always open to meaningful conversations and projects where my skills can help answer complex biological questions. ",
+    "url": "/more-about-me/#about-me--bio",
     
-    "relUrl": "/more-about-me/"
+    "relUrl": "/more-about-me/#about-me--bio"
   },"12": {
-    "doc": "About me",
-    "title": "Bio",
-    "content": "I’m a passionate data scientist who loves bringing together biology, statistics, and computer science to tackle complex biological questions. I began my Ph.D. in Biological Sciences in 2018 at the Centro de Investigación Científica de Yucatán (CICY), where I studied Arabidopsis thaliana under the guidance of Dra. Elsa Gongora. Using public bulk RNA-seq datasets from plants infected by ascomycete fungi, a widespread pathogen responsible for major crop losses worldwide, I identified key defense gene modules linked to food security and agricultural resilience. Earlier, in 2013, I completed my master’s degree in Computer Sciences, focusing on IMS-LTI–based services that strengthened connections between learning platforms and educational applications. My thesis earned first place in the Computing Category of the XXIX National Contest of Computer Science (ANIEI, 2016). This early experience in computing sparked my lasting enthusiasm for the fast-growing field of artificial intelligence in bioinformatics. At the Lieber Institute for Brain Development (LIBD), my current work focuses on data-driven analyses of the human brain habenula. Together with Kelsey Montgomery and under the leadership of Dr. Kristen Maynard and Dr. Leonardo Collado-Torres, our team aims to characterize habenular cell subpopulations, canonical and novel gene markers, and candidate regulatory elements, all within their spatial context. Our integrative approach combines cutting-edge single-cell and spatial technologies, including multiome (snRNA-seq + snATAC-seq) and spatial transcriptomics (Visium and Visium HD). We look forward to sharing our preprint soon! . I could list the many tools, platforms, and workflows I’ve mastered, but honestly, bioinformatics moves at bullet-train speed, staying connected and curious is what truly matters. Bioinformatics is a borderless field, unconstrained by species, languages, or methods. I’m driven to contribute to projects that advance human health, agriculture, and other global challenges. If you’d like to collaborate or share ideas, don’t hesitate to reach out. I’m always open to meaningful conversations and projects where my skills can help answer complex biological questions. ",
-    "url": "/more-about-me/#bio",
-    
-    "relUrl": "/more-about-me/#bio"
-  },"13": {
-    "doc": "About me",
-    "title": "My GitHub Activity",
-    "content": "You can explore my current GitHub contributions and stats here: . → View full GitHub Activity page . ",
-    "url": "/more-about-me/#my-github-activity",
-    
-    "relUrl": "/more-about-me/#my-github-activity"
-  },"14": {
-    "doc": "About me",
-    "title": "Scientific Open Resources | SpeakerDeck | YouTube",
-    "content": "Presentations and public talks on bioinformatics, neuroscience and plant biology: . 🎥 Walkthroughs in multiomics | YouTube Playlist Title: LIEBER - Behind the Scenes of Spatial an Multiomic Data Analysis in Neuroscience 🧠🧬 Playlist featuring walkthroughs of my work with a focus on the human brain. Multiome pipelines like CellRanger ARC and Data-driven discussions. Thanks to PhD Collado who compiled, edited and allocated all these recordings. Youtube . 📑 My SpeakerDeck | SpeakerDeck Title: LIEBER - Slides for talks Spatial transcriptomics and multiomics. Material used for internal talks, the R-StatClub and conferences. SpeakerDeck . 🎥 Transcriptomic Analysis in Arabidopsis thaliana | YouTube Playlist | Posters Title: CICY – Arabidopsis Pathogenesis Compiles a set of talks and presentations in which I discussed topics in molecular biology, plant genetics, and transcriptomic analysis in Arabidopsis thaliana. YouTube Playlist . ",
-    "url": "/more-about-me/#scientific-open-resources--speakerdeck--youtube",
-    
-    "relUrl": "/more-about-me/#scientific-open-resources--speakerdeck--youtube"
-  },"15": {
-    "doc": "About me",
-    "title": "My GitHub Repo",
-    "content": "Most of my current project repositories are private for now, but these are planned to be public next year. In the meantime, you can check out my activity and contributions from this year: 🔗 GitHub Profile – cyntsc . ",
-    "url": "/more-about-me/#my-github-repo",
-    
-    "relUrl": "/more-about-me/#my-github-repo"
-  },"16": {
-    "doc": "About me",
-    "title": "A recent project in action is",
-    "content": "“My Bioinformatics Notebook”. Planned to be a growing collection with bi-weekly updates, containing links to papers, workflows, conceptual maps, and insights for scRNA-seq, scATAC-seq, multiome, and Visium spatial transcriptomics. Here’s a preview of the expected content: Bioinformatic_Notebook . ",
-    "url": "/more-about-me/#a-recent-project-in-action-is",
-    
-    "relUrl": "/more-about-me/#a-recent-project-in-action-is"
-  },"17": {
     "doc": "About me",
     "title": "Technical Skills",
     "content": "Any language or package I need to get the job done. I work across R, Python (Jupyter), and Shell/Bash for high-performance, SLURM-managed workflows, with GitHub for reproducibility. My toolkit includes: . | R packages: Seurat, Signac, SpatialExperiment, spatialLIBD, scran, scater, bluster, WGCNA, DeconvoBuddies, dendextend, ComplexHeatmap, ggplot2, tidyverse | Technologies &amp; data types: scRNA-seq, scATAC-seq, multiome, Visium spatial transcriptomics | 10x Pipleines: Cell Ranger, Cell Ranger ARC, Space Ranger | RNA-seq preprocessing &amp; assembly tools: FastQC, Trimmomatic, STAR, HISAT2, Salmon, Kallisto, HTSeq | AI-assisted workflows: ChatGPT, Gemini for accelerating analysis and problem-solving | . ",
     "url": "/more-about-me/#technical-skills",
     
     "relUrl": "/more-about-me/#technical-skills"
-  },"18": {
+  },"13": {
     "doc": "About me",
     "title": "My publications",
     "content": "Soto-Cardinault C, Childs KL, Góngora-Castillo E. Network Analysis of Publicly Available RNA-seq Provides Insights into the Molecular Mechanisms of Plant Defense against Multiple Fungal Pathogens in Arabidopsis thaliana. Genes (Basel). 2023 Dec 16;14(12):2223. doi: 10.3390/genes14122223. PMID: 38137044; PMCID: PMC10743233 Link . Soto-Cardinault CG, Duarte-Aké F, De-la-Peña C, Góngora-Castillo E. DNA Methylation and Transcriptomic Next-Generation Technologies in Cereal Genomics. Methods Mol Biol. 2020;2072:65-84. [doi: 10.1007/978-1-4939-9865-4_7. PMID: 31541439] Book-chapter . Soto, C., Ucán, J. P., &amp; Aguilar, R. A. (2018). Diseñando entornos virtuales de aprendizaje para el análisis de la colaboración con UWE. Abstraction &amp; Application, 20, 55–67. México. ISSN:2007-2635 . Soto, C., Menéndez, V. y Aguilar, R. (2015) Interoperabilidad entre el LMS Moodle y aplicaciones educativas de propósito específico utilizando servicios del IMS-LTI. Revista Apertura. Vol. 7 No. 2. Índice de Revistas Mexicanas de Investigación Científica y Tecnológica. ISSN:2007-1094 . Soto, C., Menéndez, V &amp; Aguilar, R. (2014) Methodological framework for the development of virtual environments for collaborative-ludic sceneries and integration to learning management systems. Proceedings of the International Conference on Education and New Learning Technologies (Edulearn 2014).Julio 7-9. Spain: Barcelona. pp. 2534-2540. ISBN: 978-84-6170557-3 / ISSN: 2340-1117. Indexed in Web Of Science. EDULEARN14 . ",
     "url": "/more-about-me/#my-publications",
     
     "relUrl": "/more-about-me/#my-publications"
-  },"19": {
+  },"14": {
     "doc": "About me",
     "title": "My Formal Education",
     "content": ". | Doctor in Biology Sciences Biotechnology Specialist Thesis: “Análisis de redes de coexpresión RNA-Seq para identificar patrones genéticos consenso en Arabidopsis en respuesta a la infección por hongos ascomycetes” Centro de Investigación Científica de Yucatán, Yucatán, Mx. CONACYT 552999 January 2019 - January 2023 . | Master in Computer Science Thesis: “Modelo para el Análisis de la Interacción en Entornos Virtuales de Aprendizaje Colaborativo” Universidad Autónoma de Yucatán, Yucatán, Mx. CONACYT 552999 September 2013 - May 2016 . | Bachelor in Computer Science Universidad Autónoma de Tamaulipas, Tamaulipas, Mx. January 1993 - January 1997 . | . ",
     "url": "/more-about-me/#my-formal-education",
     
     "relUrl": "/more-about-me/#my-formal-education"
-  },"20": {
-    "doc": "My selected posts",
-    "title": "My Selected Posts",
-    "content": "09-30-2025 . Cynthia S. Cardinault . | My Selected Posts . | LinkedIn 2025 | XTwitter 2025 | . | . ",
-    "url": "/ntw_posts/#my-selected-posts",
+  },"15": {
+    "doc": "About me",
+    "title": "About me",
+    "content": " ",
+    "url": "/more-about-me/",
     
-    "relUrl": "/ntw_posts/#my-selected-posts"
-  },"21": {
+    "relUrl": "/more-about-me/"
+  },"16": {
+    "doc": "My selected posts",
+    "title": "Selected Posts",
+    "content": "09-30-2025 . Cynthia S. Cardinault . | Selected Posts . | LinkedIn 2025 | XTwitter 2025 | . | . ",
+    "url": "/ntw_posts/#selected-posts",
+    
+    "relUrl": "/ntw_posts/#selected-posts"
+  },"17": {
     "doc": "My selected posts",
     "title": "LinkedIn 2025",
     "content": "&#8592; &#8594; ",
     "url": "/ntw_posts/#linkedin",
     
     "relUrl": "/ntw_posts/#linkedin"
-  },"22": {
+  },"18": {
     "doc": "My selected posts",
     "title": "XTwitter 2025",
     "content": " ",
     "url": "/ntw_posts/#XTwitter",
     
     "relUrl": "/ntw_posts/#XTwitter"
-  },"23": {
+  },"19": {
     "doc": "My selected posts",
     "title": "My selected posts",
     "content": " ",
     "url": "/ntw_posts/",
     
     "relUrl": "/ntw_posts/"
+  },"20": {
+    "doc": "Open Resources",
+    "title": "My Bioinformatics Notebooks",
+    "content": "A growing collection with bi-weekly updates, containing links to papers, workflows, conceptual maps, and insights for scRNA-seq, scATAC-seq, multiome, and Visium spatial transcriptomics. Go –&gt; Bioinformatic_Notebook . ",
+    "url": "/open_resources/#my-bioinformatics-notebooks",
+    
+    "relUrl": "/open_resources/#my-bioinformatics-notebooks"
+  },"21": {
+    "doc": "Open Resources",
+    "title": "Walkthroughs in multiomics | YouTube",
+    "content": "Title: LIEBER - Behind the Scenes of Spatial an Multiomic Data Analysis in Neuroscience 🧠🧬 Playlist featuring walkthroughs of my work with a focus on the human brain. Multiome pipelines like CellRanger ARC and Data-driven discussions. Thanks to PhD Collado who compiled, edited and allocated all these recordings. Youtube . ",
+    "url": "/open_resources/#walkthroughs-in-multiomics--youtube",
+    
+    "relUrl": "/open_resources/#walkthroughs-in-multiomics--youtube"
+  },"22": {
+    "doc": "Open Resources",
+    "title": "Multiomics Slides | SpeakerDeck",
+    "content": "Title: LIEBER - Slides for talks Spatial transcriptomics and multiomics. Material used for internal talks, the R-StatClub and conferences. SpeakerDeck . ",
+    "url": "/open_resources/#multiomics-slides--speakerdeck",
+    
+    "relUrl": "/open_resources/#multiomics-slides--speakerdeck"
+  },"23": {
+    "doc": "Open Resources",
+    "title": "Transcriptomics in Arabidopsis | Youtube playlist",
+    "content": "Title: CICY – Arabidopsis Pathogenesis Compiles a set of talks and presentations in which I discussed topics in molecular biology, plant genetics, and transcriptomic analysis in Arabidopsis thaliana. YouTube Playlist . ",
+    "url": "/open_resources/#transcriptomics-in-arabidopsis--youtube-playlist",
+    
+    "relUrl": "/open_resources/#transcriptomics-in-arabidopsis--youtube-playlist"
   },"24": {
+    "doc": "Open Resources",
+    "title": "Open Resources",
+    "content": "Cynthia SC (10-30-2025) . | My Bioinformatics Notebooks | Walkthroughs in multiomics | YouTube | Multiomics Slides | SpeakerDeck | Transcriptomics in Arabidopsis | Youtube playlist | . ",
+    "url": "/open_resources/",
+    
+    "relUrl": "/open_resources/"
+  },"25": {
     "doc": "3 Multiome scATAC-seq",
     "title": "📓 Single Cell ATAC-seq Analysis",
     "content": " ",
     "url": "/sATAC-seq-analysis/#-single-cell-atac-seq-analysis",
     
     "relUrl": "/sATAC-seq-analysis/#-single-cell-atac-seq-analysis"
-  },"25": {
+  },"26": {
     "doc": "3 Multiome scATAC-seq",
     "title": "Welcome!",
     "content": "Notebook: 08-01-2025 . ",
     "url": "/sATAC-seq-analysis/#welcome",
     
     "relUrl": "/sATAC-seq-analysis/#welcome"
-  },"26": {
+  },"27": {
     "doc": "3 Multiome scATAC-seq",
     "title": "3 Multiome scATAC-seq",
     "content": " ",
     "url": "/sATAC-seq-analysis/",
     
     "relUrl": "/sATAC-seq-analysis/"
-  },"27": {
+  },"28": {
     "doc": "2 Multiome scRNA-seq",
     "title": "📓 scRNA-seq analysis",
     "content": "⚠️ This section is under construction — content will be expanded soon. Outline the core workflow: . | QC (mito %, nFeatures, nCounts) | Normalization (SCTransform / log-normalize) | Dimensionality reduction (PCA / UMAP) | Clustering &amp; markers | Integration across samples | Differential expression &amp; enrichment | . ",
     "url": "/sRNA-seq-analysis/#-scrna-seq-analysis",
     
     "relUrl": "/sRNA-seq-analysis/#-scrna-seq-analysis"
-  },"28": {
+  },"29": {
     "doc": "2 Multiome scRNA-seq",
     "title": "2 Multiome scRNA-seq",
     "content": " ",
     "url": "/sRNA-seq-analysis/",
     
     "relUrl": "/sRNA-seq-analysis/"
-  },"29": {
+  },"30": {
     "doc": "Getting started",
     "title": "Starting with Single Cell RNA-seq",
     "content": "Notebook: 09-25-2025 . Cynthia S. Cardinault . | Starting with Single Cell RNA-seq . | But wait, What is indeed single cell analysis? | Starting with Cell Ranger | The 4 Core Steps of Cell Ranger | References | . | . Let’s start by talking about single-cell analysis, and it’s not just about RNA. The same approach can also be applied to DNA, proteins, and even metabolism. In this note, though, I’ll focus on the transcriptomic side (RNA), which remains the most widely adopted application of the technology so far. It’s worth mentioning that there’s also a single-cell version of ATAC-seq, a powerful method for identifying active gene regulatory elements, mapping cell states, and tracing differentiation trajectories. I’ve covered those notes separately in another section. Beyond that, the actual frontiers in single-cell is expanding beyond the initial individual “omics” layers into two major, interconnected areas: Multi-Omics and Spatial context. These may or may not be performed within the same experimental protocol, and integrating such diverse datasets is an entire topic of its own. As way of illustration, the diagram represents 4 key players. And, as observed, all it happens looking at inside the cell. We have Genomics holding the “instruction manual” (the DNA double helix), showing what the cell could possibly do. While Transcriptomics is acting as the “loudspeaker” broadcasting which instructions are currently being read out. Proteomics is the muscular “workforce”, representing the actual functional molecules that build and perform all the cell’s tasks. Metabolomics is running around with all the stuff, keeping track of the “energy and supplies”, depicting the small chemicals consumed and produced to power the whole operation. ",
     "url": "/single_cell_RNA-seq/starting/#starting-with-single-cell-rna-seq",
     
     "relUrl": "/single_cell_RNA-seq/starting/#starting-with-single-cell-rna-seq"
-  },"30": {
+  },"31": {
     "doc": "Getting started",
     "title": "But wait, What is indeed single cell analysis?",
     "content": "When we think about biology, it’s easy to picture tissues, organs, or even whole organisms, but human-invisible action happens at the level of individual cells, where each cell carries its own blueprint, reads out specific sets of instructions, and plays a unique role in the bigger picture. This is where single-cell analysis comes in. Instead of averaging signals across thousands or millions of cells, this field allows us to zoom in and study each cell on its own terms, whether that’s through genomics, transcriptomics, epigenomics, proteomics, or metabolomics. By teasing apart cellular diversity, researchers can uncover hidden subpopulations, map cell states, and gain a deeper understanding of how complex tissues function in both health and disease. That’s exactly why platforms like 10x Genomics Chromium and its companion software, Cell Ranger, were developed: to bridge the gap between raw sequencing data and meaningful biological insights. 📺 In the video below (the first in a nine-part mini learning series), you’ll find a great introduction to single-cell techniques and how they compare with traditional bulk approaches such as PCR, microarrays, and bulk RNA-seq. The 10x Genomics website is also well-documented and packed with beginner-friendly resources if you’d like to explore further. ",
     "url": "/single_cell_RNA-seq/starting/#but-wait-what-is-indeed-single-cell-analysis",
     
     "relUrl": "/single_cell_RNA-seq/starting/#but-wait-what-is-indeed-single-cell-analysis"
-  },"31": {
+  },"32": {
     "doc": "Getting started",
     "title": "Starting with Cell Ranger",
     "content": "If you’ve just generated your first single-cell dataset with the 10x Genomics Chromium platform, chances are you’ll meet Cell Ranger. This is a suite of software that transforms raw sequencing output into clean, interpretable data. Think of it as a way to take messy raw files and make the count matrices, quality metrics, and interactive reports, with relative few steps. From there, you can dive into clustering, dimensionality reduction, and downstream biological insights. ",
     "url": "/single_cell_RNA-seq/starting/#starting-with-cell-ranger",
     
     "relUrl": "/single_cell_RNA-seq/starting/#starting-with-cell-ranger"
-  },"32": {
+  },"33": {
     "doc": "Getting started",
     "title": "The 4 Core Steps of Cell Ranger",
     "content": "Here’s a bird’s-eye view of the core steps: . | Step | What Happens | What You Get | . | cellranger mkfastq | Converts raw sequencing BCL files into FASTQ files and demultiplexes samples. | FASTQ files | . | cellranger count | Aligns reads, identifies barcodes and UMIs, filters noise, and builds the expression matrix. | Gene-barcode matrix, BAM file, summary report, .cloupe file | . | cellranger aggr | Combines results from multiple runs into one dataset. | Aggregated gene-barcode matrix | . | Secondary Analysis | Calls real cells, reduces dimensions (PCA, UMAP/t-SNE), and clusters cells. | Filtered matrix + interactive Loupe Browser exploration | . In most workflows, you’ll receive sequencing data that’s already demultiplexed and aligned, making cellranger count your starting point. This step transforms raw reads into a gene-barcode matrix, the foundation for all downstream analyses. From here, you can assess quality metrics, explore clustering, and eventually uncover patterns of gene expression that shed light on cell identity, state, and function. Hope you have a useful starting introduction. Dont’t miss my next notes talking about Modes to run Cell Ranger. Cynthia SC . ",
     "url": "/single_cell_RNA-seq/starting/#the-4-core-steps-of-cell-ranger",
     
     "relUrl": "/single_cell_RNA-seq/starting/#the-4-core-steps-of-cell-ranger"
-  },"33": {
+  },"34": {
     "doc": "Getting started",
     "title": "References",
     "content": "Tour of the Single Cell Analysis . Disclaimer: The characters in the image(s) are styled after the Minions, which are the copyrighted and trademarked property of Universal Studios / Illumination Entertainment. The image(s) was generated by a large language model based on a user-provided concept and is intended for illustrative and educational purposes only. ",
     "url": "/single_cell_RNA-seq/starting/#references",
     
     "relUrl": "/single_cell_RNA-seq/starting/#references"
-  },"34": {
+  },"35": {
     "doc": "Getting started",
     "title": "Getting started",
     "content": " ",
     "url": "/single_cell_RNA-seq/starting/",
     
     "relUrl": "/single_cell_RNA-seq/starting/"
-  },"35": {
+  },"36": {
     "doc": "Cell Ranger Run Modes",
     "title": "Running 10x Cell Ranger Pipeline",
     "content": "Notebook: 09-25-2025 . Cynthia S. Cardinault . | Running 10x Cell Ranger Pipeline . | Modes to Run Cell Ranger | Wrapping Up | Benchmarking Run Modes | References | . | . ",
     "url": "/single_cell_RNA-seq/RunModes/#running-10x-cell-ranger-pipeline",
     
     "relUrl": "/single_cell_RNA-seq/RunModes/#running-10x-cell-ranger-pipeline"
-  },"36": {
+  },"37": {
     "doc": "Cell Ranger Run Modes",
     "title": "Modes to Run Cell Ranger",
     "content": "Running Cell Ranger isn’t a one-size-fits-all process. Depending on your setup, you can choose between different modes each with its own flavor, a bit like deciding whether to cook at home, order takeout, or head to a cafeteria. So, depending on your setup, you have a few options: . Local or Institutional HPC . Most researchers run Cell Ranger on an institutional High-Performance Computing (HPC) cluster or a dedicated Linux server. A typical run may need 64 GB RAM or more plus multiple CPU cores. So if your lab has access to an HPC, that’s often the easiest path. Genomics Cloud Analysis . Don’t have a big server? No problem. The 10x Genomics Cloud Analysis platform is available almost everywhere (except China, Hong Kong, and embargoed countries). Good news Mexico and most of Latin America are included. | Free tier: Up to 50 analyses per month—perfect for starting out. | Extras: You can transfer projects between accounts, and collaborative features are on the way. | Caveat: Paid upgrades are mostly limited to the U.S. and Canada. | . General Cloud Platforms . If you prefer flexibility, you can spin up a virtual machine on AWS, Google Cloud, or another provider. Just pick a high-memory instance, install Cell Ranger, upload your FASTQs, and pay only for what you use. This is a great option if you need scalability on demand. Alternatives to Cell Ranger . While Cell Ranger is the gold standard, you might explore community tools too: . | STARsolo – efficient and highly comparable to Cell Ranger. | kallisto/bustools (Alevin-fry) – much faster and lighter on memory. | . ",
     "url": "/single_cell_RNA-seq/RunModes/#modes-to-run-cell-ranger",
     
     "relUrl": "/single_cell_RNA-seq/RunModes/#modes-to-run-cell-ranger"
-  },"37": {
+  },"38": {
     "doc": "Cell Ranger Run Modes",
     "title": "Wrapping Up",
     "content": "Cell Ranger may look intimidating at first, but once you run it a couple of times you’ll realize it’s a solid, reliable backbone for single-cell data processing. Whether you use an HPC, the free cloud tier, or your own server, it’s the first step in turning sequencing reads into biological insights. My advice? Start with the simplest setup you have access to (often your institution’s HPC or the 10x Cloud free tier), then scale up once your projects get bigger. ",
     "url": "/single_cell_RNA-seq/RunModes/#wrapping-up",
     
     "relUrl": "/single_cell_RNA-seq/RunModes/#wrapping-up"
-  },"38": {
+  },"39": {
     "doc": "Cell Ranger Run Modes",
     "title": "Benchmarking Run Modes",
     "content": "Curious how they stack up? . Hope you have a find useful alternatives to run your pipeline. Dont’t miss my next notes talking about Secondary Analysis Alternatives . ",
     "url": "/single_cell_RNA-seq/RunModes/#benchmarking-run-modes",
     
     "relUrl": "/single_cell_RNA-seq/RunModes/#benchmarking-run-modes"
-  },"39": {
+  },"40": {
     "doc": "Cell Ranger Run Modes",
     "title": "References",
     "content": "Installation tutorial . Download Cell Ranger . Cloud availability FAQ . System Requirements . getting started guide. Disclaimer: Some image(s) were generated by a large language model based on a user-provided concept and is intended for illustrative and educational purposes only. ",
     "url": "/single_cell_RNA-seq/RunModes/#references",
     
     "relUrl": "/single_cell_RNA-seq/RunModes/#references"
-  },"40": {
+  },"41": {
     "doc": "Cell Ranger Run Modes",
     "title": "Cell Ranger Run Modes",
     "content": " ",
     "url": "/single_cell_RNA-seq/RunModes/",
     
     "relUrl": "/single_cell_RNA-seq/RunModes/"
-  },"41": {
+  },"42": {
     "doc": "1 Single-Cell RNA-seq",
     "title": "📓 Single Cell RNA-seq Analysis",
     "content": " ",
     "url": "/single_cell_RNA-seq/#-single-cell-rna-seq-analysis",
     
     "relUrl": "/single_cell_RNA-seq/#-single-cell-rna-seq-analysis"
-  },"42": {
+  },"43": {
     "doc": "1 Single-Cell RNA-seq",
     "title": "Welcome!",
     "content": "Notebook: 09-25-2025 . ",
     "url": "/single_cell_RNA-seq/#welcome",
     
     "relUrl": "/single_cell_RNA-seq/#welcome"
-  },"43": {
+  },"44": {
     "doc": "1 Single-Cell RNA-seq",
     "title": "1 Single-Cell RNA-seq",
     "content": " ",

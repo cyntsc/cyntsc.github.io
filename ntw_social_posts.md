@@ -4,7 +4,7 @@ nav_order: 1
 permalink: /ntw_posts/
 ---
 
-# My Selected Posts
+# Selected Posts
 09-30-2025
 
 *Cynthia S. Cardinault*

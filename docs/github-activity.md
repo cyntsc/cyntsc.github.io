@@ -8,7 +8,7 @@ layout: default
 
 # My Weekly GitHub Contributions
 
-Below is a live snapshot of my contribution activity, green-square grid that updates automatically every week based on my public and private commits.
+My recent GitHub contributions are private projects for now, planned to be public next year. In the meantime, you can explore my current GitHub contributions and stats here.
 
 ---
 
