@@ -1,7 +1,8 @@
 ---
 title: "1 Single-Cell RNA-seq"
-nav_order: 2
+nav_order: 7
 has_children: true
+parent: "Bioinformatics Notebooks"
 permalink: /single_cell_RNA-seq/
 ---
 
