@@ -1,8 +1,9 @@
 ---
 title: "2 Multiome scRNA-seq"
-nav_order: 1
+nav_order: 8
 has_children: true
-permalink: /sRNA-seq-analysis/
+parent: "Bioinformatics Notebooks"
+permalink: /multiome-scrna-seq/
 ---
 
 # 📓 scRNA-seq analysis  

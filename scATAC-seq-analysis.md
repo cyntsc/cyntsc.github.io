@@ -1,7 +1,8 @@
 ---
 title: "3 Multiome scATAC-seq"
-nav_order: 2
+nav_order: 3
 has_children: true
+parent: "Bioinformatics Notebooks"
 permalink: /sATAC-seq-analysis/
 ---
 
