@@ -51,7 +51,7 @@ I work across **R**, **Python** (Jupyter), and **Shell/Bash** for high-performan
 - **Technologies & data types:** scRNA-seq, scATAC-seq, multiome, Visium spatial transcriptomics  
 - **10x Pipleines:** Cell Ranger, Cell Ranger ARC, Space Ranger  
 - **RNA-seq preprocessing & assembly tools:** FastQC, Trimmomatic, STAR, HISAT2, Salmon, Kallisto, HTSeq  
-- **AI-assisted workflows:** ChatGPT, Gemini for accelerating analysis and problem-solving
+- **AI-assisted workflows:** ChatGPT, Gemini and Co-Pilot for accelerating analysis and problem-solving
 
 ---
 
@@ -69,7 +69,7 @@ Soto, C., Menéndez, V & Aguilar, R. (2014) Methodological framework for the dev
 
 ---
 
-## My Formal Education
+## Education
 
 - **Doctor in Biology Sciences** <br>
   Biotechnology Specialist <br>
