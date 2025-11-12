@@ -78,7 +78,7 @@
   },"11": {
     "doc": "About me",
     "title": "Technical Skills",
-    "content": "Any language or package I need to get the job done. I work across R, Python (Jupyter), and Shell/Bash for high-performance, SLURM-managed workflows, with GitHub for reproducibility. My toolkit includes: . | R packages: Seurat, Signac, SpatialExperiment, spatialLIBD, scran, scater, bluster, WGCNA, DeconvoBuddies, dendextend, ComplexHeatmap, ggplot2, tidyverse | Technologies &amp; data types: scRNA-seq, scATAC-seq, multiome, Visium spatial transcriptomics | 10x Pipleines: Cell Ranger, Cell Ranger ARC, Space Ranger | RNA-seq preprocessing &amp; assembly tools: FastQC, Trimmomatic, STAR, HISAT2, Salmon, Kallisto, HTSeq | AI-assisted workflows: ChatGPT, Gemini for accelerating analysis and problem-solving | . ",
+    "content": "Any language or package I need to get the job done. I work across R, Python (Jupyter), and Shell/Bash for high-performance, SLURM-managed workflows, with GitHub for reproducibility. My toolkit includes: . | R packages: Seurat, Signac, SpatialExperiment, spatialLIBD, scran, scater, bluster, WGCNA, DeconvoBuddies, dendextend, ComplexHeatmap, ggplot2, tidyverse | Technologies &amp; data types: scRNA-seq, scATAC-seq, multiome, Visium spatial transcriptomics | 10x Pipleines: Cell Ranger, Cell Ranger ARC, Space Ranger | RNA-seq preprocessing &amp; assembly tools: FastQC, Trimmomatic, STAR, HISAT2, Salmon, Kallisto, HTSeq | AI-assisted workflows: ChatGPT, Gemini and Co-Pilot for accelerating analysis and problem-solving | . ",
     "url": "/more-about-me/#technical-skills",
     
     "relUrl": "/more-about-me/#technical-skills"
@@ -91,11 +91,11 @@
     "relUrl": "/more-about-me/#my-publications"
   },"13": {
     "doc": "About me",
-    "title": "My Formal Education",
+    "title": "Education",
     "content": ". | Doctor in Biology Sciences Biotechnology Specialist Thesis: “Análisis de redes de coexpresión RNA-Seq para identificar patrones genéticos consenso en Arabidopsis en respuesta a la infección por hongos ascomycetes” Centro de Investigación Científica de Yucatán, Yucatán, Mx. CONACYT 552999 January 2019 - January 2023 . | Master in Computer Science Thesis: “Modelo para el Análisis de la Interacción en Entornos Virtuales de Aprendizaje Colaborativo” Universidad Autónoma de Yucatán, Yucatán, Mx. CONACYT 552999 September 2013 - May 2016 . | Bachelor in Computer Science Universidad Autónoma de Tamaulipas, Tamaulipas, Mx. January 1993 - January 1997 . | . ",
-    "url": "/more-about-me/#my-formal-education",
+    "url": "/more-about-me/#education",
     
-    "relUrl": "/more-about-me/#my-formal-education"
+    "relUrl": "/more-about-me/#education"
   },"14": {
     "doc": "About me",
     "title": "About me",
