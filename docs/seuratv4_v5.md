@@ -10,9 +10,9 @@ description: "Conceptual and structural changes in the scRNA-seq workflow betwee
 
 ![Seurat versions comparison](../images/seurat_versions.png)
 
-Here, I summarize the **most relevant conceptual and structural changes** introduced in **Seurat v5** compared to **Seurat v4**, with an emphasis on how these changes impact single-cell RNA-seq analysis workflows.
+Here I summarize the most relevant conceptual and structural changes introduced in **Seurat v5** compared to **Seurat v4**, with an emphasis on how these changes impact single-cell RNA-seq analysis workflows.
 
-This notebook is intended to **frame the new conceptual model** behind Seurat v5 and its alignment with current best practices.
+This notebook is intended to frame the new conceptual model behind Seurat v5 and its alignment with current best practices.
 
 > **Versioning note**  
 > This overview reflects Seurat v5.x behavior as of early 2026. Minor interface details may evolve across releases, but the core design principles described here are stable.
