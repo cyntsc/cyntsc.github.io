@@ -141,6 +141,8 @@ Common examples include:
 
 ## Addendum: Signac workflows (RNA + ATAC) in Seurat v5
 
+![Seurat multiome](../images/seurat_multiome.png)
+
 While Seurat v5 provides a unified object model for multimodal data, **Signac-based chromatin workflows introduce additional constraints** that are important to keep in mind during migration.
 
 Key considerations:
