@@ -37,6 +37,9 @@
 <loc>http://localhost:4000/single_cell_RNA-seq/RunModes/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/single_cell_RNA-seq/seurat_v4_v5/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/single_cell_RNA-seq/</loc>
 </url>
 </urlset>
