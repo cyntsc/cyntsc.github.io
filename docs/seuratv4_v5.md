@@ -6,8 +6,8 @@ permalink: /single_cell_RNA-seq/seurat_v4_v5/
 description: "Conceptual and structural changes in the scRNA-seq workflow between Seurat v4 and Seurat v5."
 ---
 
-# Seurat v4 vs Seurat v5  
-## Key changes in the scRNA-seq workflow
+## <span class="gradient-heading">Seurat v4 vs Seurat v5 </span>
+### Key changes in the scRNA-seq workflow
 
 ![Seurat versions comparison](../images/seurat_versions.png)
 
@@ -22,7 +22,7 @@ This notebook is intended to **frame the new conceptual model** behind Seurat v5
 
 ---
 
-## Motivation for moving to Seurat v5
+## <span class="gradient-heading">Motivation for moving to Seurat v5 </span>
 
 Seurat v5 introduces an internal reorganization of the data object and the analysis workflow with the following goals:
 
@@ -35,7 +35,7 @@ These changes reflect a shift toward more modular, explicit, and comparable work
 
 ---
 
-## Main structural change: from `Assay` to `Assay5`
+## <span class="gradient-heading">Main structural change: from `Assay` to `Assay5` </span>
 
 ### Seurat v4
 
@@ -59,7 +59,7 @@ This design avoids object duplication and enables alternative analytical strateg
 
 ---
 
-## The concept of layers in Seurat v5
+## <span class="gradient-heading">The concept of layers in Seurat v5 </span>
 
 A **layer** represents a specific data representation within an assay.
 
@@ -77,7 +77,7 @@ Common examples include:
 
 ---
 
-## Normalization: conceptual differences between v4 and v5
+## <span class="gradient-heading">Normalization: conceptual differences between v4 and v5 </span>
 
 ### Seurat v4
 
@@ -93,7 +93,7 @@ Common examples include:
 
 ---
 
-## Additional workflow-relevant changes
+## <span class="gradient-heading"> Additional workflow-relevant changes </span>
 
 - **Feature selection**  
   Transition from variance-based HVGs to analytical approaches such as Pearson residuals and Deviance
@@ -104,8 +104,12 @@ Common examples include:
 - **Clustering**  
   Shift from Louvain to Leiden as the default method, consistent with prior evidence showing improved efficiency and stability  
   Related conceptual resources:
-  - https://speakerdeck.com/cyntsc/clustering-methods-in-multiome-scrna-seq-and-scatac-seq
-  - https://youtu.be/mE77X5G-3_8?si=T5y7vMFMFpFbQx99
+
+<br>
+
+<iframe width="560" height="315" src="https://youtu.be/mE77X5G-3_8?si=T5y7vMFMFpFbQx99" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+https://speakerdeck.com/cyntsc/clustering-methods-in-multiome-scrna-seq-and-scatac-seq
 
 - **Batch correction**  
   Transition from CCA-dominated workflows to a more modular approach (CCA, Harmony)
@@ -115,7 +119,7 @@ Common examples include:
 
 ---
 
-## Summary comparison
+## <span class="gradient-heading"> Summary comparison </span>
 
 | Aspect | Seurat v4 | Seurat v5 |
 |------|---------|---------|
@@ -130,7 +134,7 @@ Common examples include:
 
 ---
 
-## What changes if I migrate today?
+## <span class="gradient-heading"> What changes if I migrate today? </span>
 
 | Aspect | If you stay on Seurat v4 | If you migrate to Seurat v5 |
 |------|-------------------------|-----------------------------|
@@ -139,7 +143,7 @@ Common examples include:
 | Method comparison | Requires recomputation | Native support via layers |
 | Clustering default | Louvain | Leiden |
 
-## Addendum: Signac workflows (RNA + ATAC) in Seurat v5
+## <span class="gradient-heading"> Addendum: Signac workflows (RNA + ATAC) in Seurat v5 </span>
 
 ![Seurat multiome](../images/seurat_multiome.png)
 
@@ -167,7 +171,7 @@ This distinction is particularly relevant for large multiome datasets and for wo
 
 ---
 
-## Alignment with Seurat v5.1+ developments
+## <span class="gradient-heading"> Alignment with Seurat v5.1+ developments </span>
 
 The conceptual framework described in this notebook remains stable across Seurat v5 releases. However, recent versions (v5.1+) further reinforce the design principles introduced in v5.0.
 
@@ -185,7 +189,7 @@ These refinements include:
 
 ---
 
-## Key message
+## <span class="gradient-heading"> Key message </span>
 
 Overall, Seurat v5.1+ have make a transition toward **transparent, modular, and benchmark-aligned workflows**, rather than introducing breaking conceptual changes.
 
@@ -195,9 +199,7 @@ This notebook serves as a **conceptual reference** to understand that transition
 
 ---
 
-## Resources
-
-## Resources
+## <span class="gradient-heading"> Resources </span>
 
 1. Seurat v5 announcements and design overview  
    https://satijalab.org/seurat/articles/announcements.html
