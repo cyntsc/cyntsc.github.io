@@ -1,4 +1,5 @@
 source "https://rubygems.org"
 
 gem "github-pages", group: :jekyll_plugins #  it uses the exact Jekyll version GitHub uses, reducing surprises.
-gem "jekyll-remote-theme"
+gem "webrick"
+# gem "jekyll-remote-theme"

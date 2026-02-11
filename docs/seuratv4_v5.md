@@ -6,12 +6,11 @@ permalink: /single_cell_RNA-seq/seurat_v4_v5/
 description: "Conceptual and structural changes in the scRNA-seq workflow between Seurat v4 and Seurat v5."
 ---
 
-## <span class="gradient-heading">Seurat v4 vs Seurat v5 </span>
-### Key changes in the scRNA-seq workflow
+## <span class="gradient-heading">Seurat v4 vs Seurat v5</span>
 
 ![Seurat versions comparison](../images/seurat_versions.png)
 
-This notebook summarizes the **most relevant conceptual and structural changes** introduced in **Seurat v5** compared to **Seurat v4**, with an emphasis on how these changes impact single-cell RNA-seq analysis workflows.
+Here, I summarize the **most relevant conceptual and structural changes** introduced in **Seurat v5** compared to **Seurat v4**, with an emphasis on how these changes impact single-cell RNA-seq analysis workflows.
 
 This notebook is intended to **frame the new conceptual model** behind Seurat v5 and its alignment with current best practices.
 
@@ -22,7 +21,7 @@ This notebook is intended to **frame the new conceptual model** behind Seurat v5
 
 ---
 
-## <span class="gradient-heading">Motivation for moving to Seurat v5 </span>
+## <span class="gradient-heading">What does Seurat v5 introduce?</span>
 
 Seurat v5 introduces an internal reorganization of the data object and the analysis workflow with the following goals:
 
@@ -35,7 +34,7 @@ These changes reflect a shift toward more modular, explicit, and comparable work
 
 ---
 
-## <span class="gradient-heading">Main structural change: from `Assay` to `Assay5` </span>
+## <span class="gradient-heading">Main structural change: from ´Assay´ to ´Assay5´</span>
 
 ### Seurat v4
 
@@ -44,7 +43,6 @@ These changes reflect a shift toward more modular, explicit, and comparable work
   - `data`
   - `scale.data`
 - A single normalization strategy per assay
-- Methodological decisions tightly coupled to the object
 
 ### Seurat v5
 
@@ -61,16 +59,13 @@ This design avoids object duplication and enables alternative analytical strateg
 
 ## <span class="gradient-heading">The concept of layers in Seurat v5 </span>
 
-A **layer** represents a specific data representation within an assay.
-
-Common examples include:
+A **layer** represents a specific data representation within an assay. Common examples include:
 - `counts`
 - `lognorm`
 - `sctransform`
 - `pearson_residuals`
 
-### Key advantages
-
+This structure provide us a key of advantages, now we can: 
 - Compare different normalization methods within the same object  
 - Modify downstream analyses without recomputing upstream steps  
 - Enable methodological benchmarking  
@@ -96,26 +91,27 @@ Common examples include:
 ## <span class="gradient-heading"> Additional workflow-relevant changes </span>
 
 - **Feature selection**  
-  Transition from variance-based HVGs to analytical approaches such as Pearson residuals and Deviance
+  Expanded from predominantly variance-based HVGs toward analytical, model-based approaches such as Pearson residuals and Deviance, while retaining variance-based methods.
 
 - **Dimensionality reduction**  
-  Decoupled from the assay and explicitly defined by layer, improving clarity and flexibility
+  Decoupled from the assay and explicitly defined by layer, improving clarity and flexibility.
 
 - **Clustering**  
-  Shift from Louvain to Leiden as the default method, consistent with prior evidence showing improved efficiency and stability  
-  Related conceptual resources:
+  Shift from Louvain algorithm to Leiden as the default method, althought Louvain is still supported. This change push to get a better partition stability and faster convergence.
 
-<br>
+  Related resources reviewed on 2025, but still on practice:
 
-<iframe width="560" height="315" src="https://youtu.be/mE77X5G-3_8?si=T5y7vMFMFpFbQx99" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="560" height="315" 
+  src="https://youtu.be/mE77X5G-3_8?si=T5y7vMFMFpFbQx99" 
+  title="YouTube video player" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen></iframe>
 
-https://speakerdeck.com/cyntsc/clustering-methods-in-multiome-scrna-seq-and-scatac-seq
-
-- **Batch correction**  
-  Transition from CCA-dominated workflows to a more modular approach (CCA, Harmony)
+  [Ver presentación: Metodos de agrupamiento en datos multiome](https://speakerdeck.com/cyntsc/clustering-methods-in-multiome-scrna-seq-and-scatac-seq)
 
 - **Differential analysis**  
-  Increased emphasis on pseudobulk and mixed models over cell-level testing
+  Growing emphasis on pseudobulk and donor-aware modeling, aligned with recent benchmarking studies, while retaining cell-level testing options
 
 ---
 
@@ -129,7 +125,6 @@ https://speakerdeck.com/cyntsc/clustering-methods-in-multiome-scrna-seq-and-scat
 | Feature selection | Variance-based HVGs | Pearson residuals and Deviance |
 | Dimensionality reduction | Assay-coupled | Layer-defined |
 | Default clustering | Louvain | Leiden |
-| Batch correction | CCA-dominated | Modular CCA and Harmony |
 | DGE | Mostly cell-level | Pseudobulk and mixed models |
 
 ---
@@ -177,54 +172,37 @@ The conceptual framework described in this notebook remains stable across Seurat
 
 These refinements include:
 
-- **More consistent handling of layers across functions**  
-  Downstream methods increasingly require or encourage explicit layer specification, reducing ambiguity in the analysis.
-
-- **Improved interoperability with external methods**  
-  Layer-based storage makes it easier to integrate outputs from non-Seurat normalization or modeling frameworks while remaining within a single object.
-
-- **Clearer separation between data representation and analysis logic**  
-  This continues the shift away from implicit assumptions tied to assays and toward explicit, inspectable analysis choices.
-
+- More consistent handling of layers across functions
+- Improved interoperability with external methods
+- Clearer separation between data representation and analysis logic
 
 ---
 
-## <span class="gradient-heading"> Key message </span>
-
-Overall, Seurat v5.1+ have make a transition toward **transparent, modular, and benchmark-aligned workflows**, rather than introducing breaking conceptual changes.
+I have found that Seurat v5.1+ have make a clear improvement toward transparent, modular, and benchmark-aligned workflows, rather than introducing breaking conceptual changes.
 
 Users migrating from Seurat v4 are therefore encouraged to adopt the **layer-centric mindset early**, as it represents the stable direction of the framework going forward.
 
-This notebook serves as a **conceptual reference** to understand that transition and to support informed decisions when designing new analyses or migrating existing projects.
+This notebook serves as a conceptual reference to understand these changes and to support informed decisions when designing new analyses or migrating existing projects.
 
 ---
 
 ## <span class="gradient-heading"> Resources </span>
 
-1. Seurat v5 announcements and design overview  
-   https://satijalab.org/seurat/articles/announcements.html
+1. [Seurat v5 announcements and design overview](https://satijalab.org/seurat/articles/announcements.html)
 
-2. Seurat v5 Command Cheat Sheet (Assay5 + layers)
-   https://satijalab.org/seurat/articles/seurat5_essential_commands
+2. [Seurat v5 Command Cheat Sheet (Assay5 + layers)](https://satijalab.org/seurat/articles/seurat5_essential_commands)
 
-3. Hafemeister & Satija (2019) – SCTransform  
-   https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1874-1
+3. [Hafemeister & Satija (2019) – SCTransform](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1874-1)
 
-<!-->
+4. [Crowell et al. (2020) – Benchmarking scRNA-seq analysis pipelines](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02136-7)
+
+5. [Squair et al. (2021) – Best practices for differential expression in scRNA-seq](https://www.nature.com/articles/s41467-021-25960-2)
+
+6. [Traag et al. (2019) – Leiden clustering algorithm](https://www.nature.com/articles/s41598-019-41695-z)
+
+<!--
 4. Lause, Berens & Kobak (2021) – Analytic Pearson residuals  
    https://www.nature.com/articles/s41467-021-25960-2
--->
-
-4. Crowell et al. (2020) – Benchmarking scRNA-seq analysis pipelines  
-   https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02136-7
-
-5. Squair et al. (2021) – Best practices for differential expression in scRNA-seq  
-   https://www.nature.com/articles/s41467-021-25960-2
-
-6. Traag et al. (2019) – Leiden clustering algorithm  
-   https://www.nature.com/articles/s41598-019-41695-z
-
-<!-->
 8. Stuart et al. (2019) – Seurat integration framework  
    https://www.cell.com/cell/fulltext/S0092-8674(19)30559-8
 -->
