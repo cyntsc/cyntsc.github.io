@@ -101,12 +101,13 @@ This structure provide us a key of advantages, now we can:
 
   Related resources reviewed on 2025, but still on practice:
 
-  <iframe width="560" height="315" 
-  src="https://youtu.be/mE77X5G-3_8?si=T5y7vMFMFpFbQx99" 
-  title="YouTube video player" 
-  frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+<iframe width="560" height="315"
+  src="https://www.youtube.com/embed/mE77X5G-3_8?si=T5y7vMFMFpFbQx99"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   allowfullscreen></iframe>
+
 
   [Ver presentación: Metodos de agrupamiento en datos multiome](https://speakerdeck.com/cyntsc/clustering-methods-in-multiome-scrna-seq-and-scatac-seq)
 
