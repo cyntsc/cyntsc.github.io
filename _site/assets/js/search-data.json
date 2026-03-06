@@ -64,7 +64,7 @@
   },"9": {
     "doc": "Home",
     "title": "Home",
-    "content": "Hi, My name is Cynthia SC, I’m a passionate data scientist who loves bringing together biology, statistics, and computer science to tackle complex biological questions. Welcome to my site!! . ",
+    "content": "🧬 Multiomics specialist | Data Scientist | Founder of Arkhe . Tech Stack . Hi . My name is Cynthia SC, I’m a passionate data scientist who loves bringing together biology, statistics, and computer science to tackle complex biological questions. I specialize in the integration of single-cell transcriptomic and epigenomic data, developing analytical frameworks that support rigorous and reproducible interpretation of complex biological systems. As Founder of El Arkhe, I design advanced training and methodological programs in multi-omic data integration, collaborating with academic and private research groups to strengthen analytical capacity and scalable research infrastructure. Open to scientific collaboration and strategic program development. Cynthia SC . © El Arkhe · Talleres Multiomics . Cuentos Moléculares . ",
     "url": "/",
     
     "relUrl": "/"
@@ -246,7 +246,7 @@
   },"35": {
     "doc": "Seurat v4 vs Seurat v5",
     "title": "Seurat v4 vs Seurat v5",
-    "content": ". Here, I summarize the most relevant conceptual and structural changes introduced in Seurat v5 compared to Seurat v4, with an emphasis on how these changes impact single-cell RNA-seq analysis workflows. This notebook is intended to frame the new conceptual model behind Seurat v5 and its alignment with current best practices. Versioning note This overview reflects Seurat v5.x behavior as of early 2026. Minor interface details may evolve across releases, but the core design principles described here are stable. Unless explicitly stated otherwise, examples and concepts discussed here refer primarily to RNA assays. Multimodal (RNA + ATAC) considerations are noted where relevant. ",
+    "content": ". Here I summarize the most relevant conceptual and structural changes introduced in Seurat v5 compared to Seurat v4, with an emphasis on how these changes impact single-cell RNA-seq analysis workflows. This notebook is intended to frame the new conceptual model behind Seurat v5 and its alignment with current best practices. Versioning note This overview reflects Seurat v5.x behavior as of early 2026. Minor interface details may evolve across releases, but the core design principles described here are stable. Unless explicitly stated otherwise, examples and concepts discussed here refer primarily to RNA assays. Multimodal (RNA + ATAC) considerations are noted where relevant. ",
     "url": "/single_cell_RNA-seq/seurat_v4_v5/",
     
     "relUrl": "/single_cell_RNA-seq/seurat_v4_v5/"
@@ -281,7 +281,7 @@
   },"40": {
     "doc": "Seurat v4 vs Seurat v5",
     "title": " Additional workflow-relevant changes ",
-    "content": ". | Feature selection Expanded from predominantly variance-based HVGs toward analytical, model-based approaches such as Pearson residuals and Deviance, while retaining variance-based methods. | Dimensionality reduction Decoupled from the assay and explicitly defined by layer, improving clarity and flexibility. | Clustering Shift from Louvain algorithm to Leiden as the default method, althought Louvain is still supported. This change push to get a better partition stability and faster convergence. Related resources reviewed on 2025, but still on practice: . Ver presentación: Metodos de agrupamiento en datos multiome . | Differential analysis Growing emphasis on pseudobulk and donor-aware modeling, aligned with recent benchmarking studies, while retaining cell-level testing options . | . ",
+    "content": ". | Feature selection Expanded from predominantly variance-based HVGs toward analytical, model-based approaches such as Pearson residuals and Deviance, while retaining variance-based methods. | Dimensionality reduction Decoupled from the assay and explicitly defined by layer, improving clarity and flexibility. | Clustering Shift from Louvain algorithm to Leiden as the default method, althought Louvain is still supported. This change push to get a better partition stability and faster convergence. Related resources reviewed on 2025, but still on practice: . | . Ver presentación: Metodos de agrupamiento en datos multiome . | Differential analysis Growing emphasis on pseudobulk and donor-aware modeling, aligned with recent benchmarking studies, while retaining cell-level testing options | . ",
     "url": "/single_cell_RNA-seq/seurat_v4_v5/#-additional-workflow-relevant-changes-",
     
     "relUrl": "/single_cell_RNA-seq/seurat_v4_v5/#-additional-workflow-relevant-changes-"
