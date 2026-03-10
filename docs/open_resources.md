@@ -4,20 +4,21 @@ nav_order: 2
 permalink: /open_resources/
 ---
 
-*Cynthia SC* (10-30-2025)
-
+[![ORCID](https://img.shields.io/badge/ORCID-Researcher-green?style=flat&logo=orcid)](https://orcid.org/0000-0002-6877-514X)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Cynthia%20SC-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/cynthiacardinault/)
+[![GitHub](https://img.shields.io/badge/GitHub-cyntsc-black?style=flat&logo=github)](https://github.com/cyntsc)
+[![El Arkhe](https://img.shields.io/badge/El%20Arkhe-Multi--Omics%20Training-purple?style=flat)](https://elarkhe.github.io/)
 [![Email](https://img.shields.io/badge/-Email-D14836?logo=gmail&logoColor=white&style=for-the-badge)](mailto:bioinformatic2019@gmail.com)
 
 * TOC
 {:toc}
 
----
 
 ## My Bioinformatics Notebooks
 
 A growing collection with bi-weekly updates, containing links to papers, workflows, conceptual maps, and insights for *scRNA-seq*, *scATAC-seq*, *multiome*, and *Visium spatial transcriptomics*.
 
-[Go --> Bioinformatic_Notebook](/bioinformatics-notebooks.md/)
+[Bioinformatic Notebooks](/bioinformatics-notebooks.md/)
 
 ---
 
@@ -78,5 +79,3 @@ Compiles a set of talks and presentations in which I discussed topics in molecul
   </iframe>
 </div>
 
-
----

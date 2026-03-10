@@ -6,117 +6,134 @@ permalink: /more-about-me/
 
 # About me | Bio
 
-[LinkedIn](https://www.linkedin.com/in/cynthiacardinault/) | [Twitter](https://twitter.com/cynthiasotocar) | [GitHub](https://github.com/cyntsc) | [Email](mailto:cyntsc10@gmail.com)
-
-
-I’m a passionate data scientist who loves bringing together biology, statistics, and computer science to tackle complex biological questions.  
-
-I began my Ph.D. in *Biological Sciences* in *2018* at the *Centro de Investigación Científica de Yucatán (CICY)*, where I studied *Arabidopsis thaliana* under the guidance of *Dra. Elsa Gongora*. Using public bulk RNA-seq datasets from plants infected by ascomycete fungi, a widespread pathogen responsible for major crop losses worldwide, I identified key defense gene modules linked to food security and agricultural resilience.  
-
-Earlier, in *2013*, I completed my master’s degree in *Computer Sciences*, focusing on IMS-LTI–based services that strengthened connections between learning platforms and educational applications. My thesis earned *first place* in the *Computing Category* of the *XXIX National Contest of Computer Science (ANIEI, 2016)*. This early experience in computing sparked my lasting enthusiasm for the fast-growing field of artificial intelligence in bioinformatics.  
-
-At the *Lieber Institute for Brain Development (LIBD)*, my current work focuses on data-driven analyses of the *human brain habenula*. Together with *Kelsey Montgomery* and under the leadership of *Dr. Kristen Maynard* and *Dr. Leonardo Collado-Torres*, our team aims to characterize habenular cell subpopulations, canonical and novel gene markers, and candidate regulatory elements, all within their spatial context. Our integrative approach combines cutting-edge single-cell and spatial technologies, including **multiome (snRNA-seq + snATAC-seq)** and **spatial transcriptomics (Visium and Visium HD)**. We look forward to sharing our preprint soon!  
-
-I could list the many tools, platforms, and workflows I’ve mastered, but honestly, bioinformatics moves at bullet-train speed, staying connected and curious is what truly matters.  Bioinformatics is a borderless field, unconstrained by species, languages, or methods. I’m driven to contribute to projects that advance human health, agriculture, and other global challenges. If you’d like to collaborate or share ideas, don’t hesitate to reach out.  I’m always open to meaningful conversations and projects where my skills can help answer complex biological questions.  
-
+[![ORCID](https://img.shields.io/badge/ORCID-Researcher-green?style=flat&logo=orcid)](https://orcid.org/0000-0002-6877-514X)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Cynthia%20SC-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/cynthiacardinault/)
+[![GitHub](https://img.shields.io/badge/GitHub-cyntsc-black?style=flat&logo=github)](https://github.com/cyntsc)
+[![El Arkhe](https://img.shields.io/badge/El%20Arkhe-Multi--Omics%20Training-purple?style=flat)](https://elarkhe.github.io/)
 
 ---
-<!--
-## My GitHub Activity
 
-My recent GitHub contributions are private projects for now, planned to be public next year. In the meantime, you can explore my current GitHub contributions and stats here:
+## Profile
 
-<p style="text-align:center;">
-  <a href="{{ site.baseurl }}/github-activity/">
-    <img 
-      src="https://ghchart.rshah.org/cyntsc" 
-      alt="GitHub contribution chart for cyntsc"
-      style="width:100%; max-width:600px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.15); display:block; margin:auto;">
-  </a>
-  <br>
-  <a href="{{ site.baseurl }}/github-activity/" style="text-decoration:none; color:#0366d6;">
-    → View full GitHub Activity page
-  </a>
-</p>
+Computational biologist specializing in **single-cell, multi-omic, and spatial transcriptomics analysis**. My work focuses on integrating genomic technologies and computational frameworks to interpret complex biological systems.
 
--->
+My experience spans **bioinformatics, data science, and molecular biology**, combining statistical analysis, reproducible computational workflows, and large-scale genomics datasets to investigate questions relevant to human health, plant biology, and global sustainability.
+
+---
+
+## Research Interests
+
+My research sits at the intersection of **genomics, computational biology, and data science**, with a focus on developing analytical frameworks to interpret high-dimensional biological data.
+
+### Primary interests
+
+- Single-cell transcriptomics (scRNA-seq)
+- Chromatin accessibility and regulatory genomics (scATAC-seq)
+- Multiome data integration (RNA + ATAC)
+- Spatial transcriptomics and tissue architecture
+- Gene regulatory networks and cis-regulatory element discovery
+- Computational methods for large-scale genomics datasets
+
+### Broader interests
+
+- Neurogenomics and brain cell-type diversity
+- Plant genomics and host–pathogen interactions
+- Reproducible bioinformatics workflows
+- Training and capacity building in genomic data science
+
+---
+
+## A short story about my journey into molecular biology and bioinformatics
+
+In 2013, I completed a Master’s degree in Computer Science under the guidance of *Dr. Raúl Aguilar*, where I designed an IMS-LTI–based service model to strengthen interoperability between learning platforms and educational applications. My thesis received first place in the Computing Category at the XXIX National Contest of Computer Science (ANIEI, 2016).
+
+This early experience in computing, together with a summer research program at Texas A&M University, sparked my long-term interest in applying computational methods and artificial intelligence to biological problems.
+
+In 2018, I began my Ph.D. in Biological Sciences at the *Centro de Investigación Científica de Yucatán (CICY)* under the supervision of *Dr. Elsa Góngora*. My research focused on *Arabidopsis thaliana* and plant defense responses against fungal pathogens. Using public bulk RNA-seq datasets, I identified gene co-expression modules associated with plant immunity, contributing to the understanding of molecular defense mechanisms relevant to food security and agricultural resilience.
+
+This period strengthened my commitment to the intersection of computational methods and biology, while connecting me with a vibrant and collaborative bioinformatics research community.
+
+Later in 2023, at the Lieber Institute for Brain Development (LIBD), my work focused on data-driven analyses of the human brain habenula, a small but functionally critical structure involved in reward processing and neuropsychiatric disorders.
+
+As part of a collaborative research team led by *Dr. Kristen Maynard* and *Dr. Leonardo Collado-Torres*, we explored habenular cellular diversity, canonical and novel gene markers, and candidate regulatory elements within their spatial context and potential links to neuropsychiatric disorders. Our integrative approach combined advanced technologies including:
+
+- single-nucleus RNA-seq
+- snATAC-seq multiome
+- spatial transcriptomics (Visium and Visium HD)
+
+This stage represented one of the most formative periods in my development as a computational biologist working at the intersection of genomics and neuroscience.
+
+---
+
+## Current Initiative
+
+In my returning to Mexico (2026), I founded **El Arkhe**, an initiative dedicated to developing **advanced training programs and methodological resources in single-cell and multi-omic data analysis**.
+
+Through workshops, collaborative projects, and open educational materials, **El Arkhe** aims to strengthen analytical capacity in genomics and bioinformatics across research communities.
+
+[![Visit El Arkhe](https://img.shields.io/badge/Visit-El%20Arkhe-purple?style=for-the-badge)](https://elarkhe.github.io)
+
+---
 
 ## Technical Skills
 
-Any language or package I need to get the job done. 
-I work across **R**, **Python** (Jupyter), and **Shell/Bash** for high-performance, **SLURM**-managed workflows, with **GitHub** for reproducibility.
+I work across **R**, **Python (Jupyter)**, and **Shell/Bash** for high-performance computing workflows using **SLURM**, with **GitHub** for version control and reproducible research.
 
-**My toolkit includes:**  
+### Core bioinformatics ecosystem
+
 - **R packages:** Seurat, Signac, SpatialExperiment, spatialLIBD, scran, scater, bluster, WGCNA, DeconvoBuddies, dendextend, ComplexHeatmap, ggplot2, tidyverse  
 - **Technologies & data types:** scRNA-seq, scATAC-seq, multiome, Visium spatial transcriptomics  
-- **10x Pipleines:** Cell Ranger, Cell Ranger ARC, Space Ranger  
-- **RNA-seq preprocessing & assembly tools:** FastQC, Trimmomatic, STAR, HISAT2, Salmon, Kallisto, HTSeq  
-- **AI-assisted workflows:** ChatGPT, Gemini and Co-Pilot for accelerating analysis and problem-solving
+- **10x Genomics pipelines:** Cell Ranger, Cell Ranger ARC, Space Ranger  
+
+### RNA-seq preprocessing & quantification
+
+FastQC • Trimmomatic • STAR • HISAT2 • Salmon • Kallisto • HTSeq
+
+### AI-assisted workflows
+
+ChatGPT • GitHub Copilot for accelerating analysis and problem-solving
 
 ---
 
-## My publications
+## Publications
 
-Soto-Cardinault C, Childs KL, Góngora-Castillo E. Network Analysis of Publicly Available RNA-seq Provides Insights into the Molecular Mechanisms of Plant Defense against Multiple Fungal Pathogens in Arabidopsis thaliana. Genes (Basel). 2023 Dec 16;14(12):2223. doi: 10.3390/genes14122223. PMID: 38137044; PMCID: PMC10743233 [Link](https://pubmed.ncbi.nlm.nih.gov/38137044/)
+Soto-Cardinault C, Childs KL, Góngora-Castillo E.  
+**Network Analysis of Publicly Available RNA-seq Provides Insights into the Molecular Mechanisms of Plant Defense against Multiple Fungal Pathogens in *Arabidopsis thaliana***.  
+Genes (Basel). 2023 Dec 16;14(12):2223.  
+https://pubmed.ncbi.nlm.nih.gov/38137044/
 
-Soto-Cardinault CG, Duarte-Aké F, De-la-Peña C, Góngora-Castillo E. DNA Methylation and Transcriptomic Next-Generation Technologies in Cereal Genomics. Methods Mol Biol. 2020;2072:65-84. [doi: 10.1007/978-1-4939-9865-4_7. PMID: 31541439] [Book-chapter](https://pubmed.ncbi.nlm.nih.gov/31541439/)
+Soto-Cardinault CG, Duarte-Aké F, De-la-Peña C, Góngora-Castillo E.  
+**DNA Methylation and Transcriptomic Next-Generation Technologies in Cereal Genomics.**  
+Methods Mol Biol. 2020;2072:65-84.  
+https://pubmed.ncbi.nlm.nih.gov/31541439/
 
-Soto, C., Ucán, J. P., & Aguilar, R. A. (2018). Diseñando entornos virtuales de aprendizaje para el análisis de la colaboración con UWE. Abstraction & Application, 20, 55–67. México. [ISSN:2007-2635](https://biblat.unam.mx/en/revista/abstraction-application/articulo/disenando-entornos-virtuales-de-aprendizaje-para-el-analisis-de-la-colaboracion-con-uwe)
+Soto C., Ucán J. P., & Aguilar R. A. (2018).  
+**Diseñando entornos virtuales de aprendizaje para el análisis de la colaboración con UWE.**  
+Abstraction & Application, 20.  
+https://biblat.unam.mx/en/revista/abstraction-application/articulo/disenando-entornos-virtuales-de-aprendizaje-para-el-analisis-de-la-colaboracion-con-uwe
 
-Soto, C., Menéndez, V. y Aguilar, R. (2015) Interoperabilidad entre el LMS Moodle y aplicaciones educativas de propósito específico utilizando servicios del IMS-LTI. Revista Apertura. Vol. 7 No. 2. Índice de Revistas Mexicanas de Investigación Científica y Tecnológica. [ISSN:2007-1094](https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S1665-61802015000200024)
+Soto C., Menéndez V., Aguilar R. (2015).  
+**Interoperabilidad entre el LMS Moodle y aplicaciones educativas utilizando IMS-LTI.**  
+Revista Apertura.  
+https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S1665-61802015000200024
 
-Soto, C., Menéndez, V & Aguilar, R. (2014) Methodological framework for the development of virtual environments for collaborative-ludic sceneries and integration to learning management systems. Proceedings of the International Conference on Education and New Learning Technologies (Edulearn 2014).Julio 7-9. Spain: Barcelona. pp. 2534-2540. ISBN: 978-84-6170557-3 / ISSN: 2340-1117. Indexed in Web Of Science. [EDULEARN14](https://library.iated.org/view/SOTO2014AME)
+Soto C., Menéndez V., Aguilar R. (2014).  
+**Methodological framework for collaborative virtual learning environments integrated with LMS.**  
+EDULEARN14 Proceedings.  
+https://library.iated.org/view/SOTO2014AME
 
 ---
 
 ## Education
 
-- **Doctor in Biology Sciences** <br>
-  Biotechnology Specialist <br>
-  Thesis: *"Análisis de redes de coexpresión RNA-Seq para identificar patrones genéticos consenso en Arabidopsis en respuesta a la infección por hongos ascomycetes"*  <br>
-  Centro de Investigación Científica de Yucatán, Yucatán, Mx. <br>
-  CONACYT 552999 <br>
-  *January 2019 - January 2023*
+**Doctor in Biological Sciences**  
+Biotechnology specialization  
+Centro de Investigación Científica de Yucatán (CICY), México  
+2019 – 2023
 
-- **Master in Computer Science** <br>
-  Thesis: *"Modelo para el Análisis de la Interacción en Entornos Virtuales de Aprendizaje Colaborativo"* <br>
-  Universidad Autónoma de Yucatán, Yucatán, Mx. <br>
-  CONACYT 552999 <br>
-  *September 2013 - May 2016*
+**Master in Computer Science**  
+Universidad Autónoma de Yucatán, México  
+2013 – 2016
 
-- **Bachelor in Computer Science**  <br>
-  Universidad Autónoma de Tamaulipas, Tamaulipas, Mx.  <br>
-  *January 1993 - January 1997*
-
-<!---
-## Previous Working Experience
-
-- **Healthy International Dept. in Tamaulipas**  
-  Administrative Supervisor at Tampico-Madero-Altamira Harbor  
-  *Jan 2004 - Jan 2012*
-
-- **Freelance IT Consultant**  
-  Software Development  
-  *2000 - 2010*
-
-- **Terminales Portátiles SA de CV**  
-  Software Engineer  
-  *1998 - 2000*
-
-## Teaching
-
-- **CSHL, NY.**  
-  Teacher Assistant  
-  *Oct 2022*
-
-- **Latin American Technological University (UTEL)**  
-  Instructor  
-  *Aug 2016 - Aug 2018*
-
-- **Aliat Universities, Mx**  
-  Content Specialist and Instructional Designer  
-  *Jan 2017 - Dec 2017*
-
-- **Latin University of Merida, Mx**  
-  Instructor  
-  *June 2016 - Aug 2018* --> 
+**Bachelor in Computer Science**  
+Universidad Autónoma de Tamaulipas, México
