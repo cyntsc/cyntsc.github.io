@@ -6,8 +6,6 @@ permalink: /sATAC-seq-analysis/integration_dna_metilation/
 parent_permalink: /sATAC-seq-analysis/
 ---
 
-*Cynthia SC* (03-13-2026)
-
 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?logo=linkedin&logoColor=white&style=for-the-badge)](https://www.linkedin.com/in/cynthiacardinault)
 [![Email](https://img.shields.io/badge/-Email-D14836?logo=gmail&logoColor=white&style=for-the-badge)](mailto:bioinformatic2019@gmail.com)
@@ -218,4 +216,8 @@ A major international consortium that provides comprehensive reference annotatio
 
 ---
 
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=el-arkhe.scrnaseq-workshop)
 
+© El Arkhe · Talleres Multiomics
+
+CSC. March 13, 2026
