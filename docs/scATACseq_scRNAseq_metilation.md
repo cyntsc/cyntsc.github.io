@@ -77,7 +77,7 @@ Typical steps include read alignment, quality filtering, peak calling and constr
 These peaks represent potential regulatory regions where transcription factors may bind. 
 
 
-
+---
 ### Step 2. Integrating Methylation with Accessible Regions
 
 Once peaks are defined, they are intersected with methylation data:
@@ -100,7 +100,7 @@ This allows the calculation of methylation levels within accessible regions.
 - High methylation + low accessibility → repressed region
 
 
-
+---
 ### Step 3. Identification of TF Motifs
 
 Next, TF motif scanning is performed within the identified peaks. This allows the detection of potential TF binding sites.
@@ -126,7 +126,7 @@ Next, TF motif scanning is performed within the identified peaks. This allows th
 | peak_3 | 1 | 1 | 0 |
 
 
-
+---
 ### Step 4. Estimating TF Activity Using Chromatin Accessibility
 
 Peaks containing motifs for a given TF can be aggregated to estimate regulatory activity based on accessibility. This strategy is commonly used in methods such as **chromVAR**.
@@ -142,7 +142,7 @@ TF accessibility score
 ```
 
 
-
+---
 ### Step 5. Integrating Methylation at Motif Sites
 
 DNA methylation is then used to refine TF activity inference. For each `motif`:
@@ -164,7 +164,7 @@ DNA methylation is then used to refine TF activity inference. For each `motif`:
 - Low accessibility + high methylation → TF likely inactive
 
 
-
+---
 ### Step 6. Integration with Gene Expression (scRNA-seq)
 
 Finally, transcriptomic information is incorporated. For each `TF`, the following evidence is evaluated:
@@ -186,7 +186,7 @@ Finally, transcriptomic information is incorporated. For each `TF`, the followin
 **→ strong evidence of regulatory activity**
 
 
-
+---
 ### Step 7. Inference of Regulatory Networks
 
 Once active `TFs` are identified:
