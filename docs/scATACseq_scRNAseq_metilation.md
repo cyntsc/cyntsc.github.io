@@ -207,16 +207,15 @@ target gene
 
 These networks help identify **cell-type-specific regulatory programs**.
 
-
-
+---
 ## Conclusion
 
-Integrating **chromatin accessibility**, **DNA methylation**, and **gene expression** enables more accurate inference of transcription factor activity and reconstruction of regulatory networks in complex biological systems. :contentReference[oaicite:3]{index=3}
+Integrating **chromatin accessibility**, **DNA methylation**, and **gene expression** enables more accurate inference of transcription factor activity and reconstruction of regulatory networks in complex biological systems.
 
-In the context of **single-cell epigenomics**, this type of multi-omic integration is increasingly used to characterize cellular states and differentiation trajectories. Computational frameworks such as **SCENIC**, **ArchR**, and **MOFA** allow these analyses to be implemented systematically, and their use is rapidly becoming standard practice in single-cell epigenomics studies. :contentReference[oaicite:4]{index=4}
+In the context of **single-cell epigenomics**, this type of multi-omic integration is increasingly used to characterize cellular states and differentiation trajectories. Computational frameworks such as **SCENIC**, **ArchR**, and **MOFA** allow these analyses to be implemented systematically, and their use is rapidly becoming standard practice in single-cell epigenomics studies.
 
 
-
+---
 ## Key References
 
 The following publications and resources were consulted as key methodological and conceptual references for the approaches described in this document.
