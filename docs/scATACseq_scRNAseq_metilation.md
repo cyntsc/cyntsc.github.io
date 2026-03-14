@@ -1,5 +1,5 @@
 ---
-title: "Integration of DNA metilation"
+title: "Integration of DNA metilation + scATACseq + scRNAseq * TF"
 parent: "3 Multiome scATAC-seq"
 nav_order: 2
 permalink: /sATAC-seq-analysis/integration_dna_metilation/
