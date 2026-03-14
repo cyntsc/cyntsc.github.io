@@ -15,15 +15,37 @@ parent_permalink: /sATAC-seq-analysis/
 
 Gene expression regulation depends on the interaction between transcription factors (TFs) and regulatory regions of the genome such as promoters and enhancers. However, the ability of TFs to bind DNA is strongly influenced by the local epigenetic state, including chromatin accessibility and DNA methylation.
 
-In this context, three types of data provide complementary information:
+In this context, three types of data provide complementary information: **scRNA-seq**,  **scATAC-seq**, and **DNA methylation**. Integrating these layers makes it possible to infer which TFs are active and which genes they regulate, providing a more complete view of the regulatory networks that define cellular states.
 
-- **scRNA-seq** measures gene expression and reveals which TFs are present in a cell.  
-- **scATAC-seq** identifies accessible regions of the genome, suggesting potential TF binding sites.  
-- **DNA methylation** provides additional information about the epigenetic state of regulatory regions, since active regulatory elements often show reduced levels of methylation.  
+In this *notebook*, I present a summary analysis pipeline to integrate these three sources of information using single-cell data. Each omic layer answers a different biological question.
 
-Integrating these layers makes it possible to infer which TFs are active and which genes they regulate, providing a more complete view of the regulatory networks that define cellular states.
+| Data type       | What it tells us                                                      |
+| --------------- | --------------------------------------------------------------------- |
+| scRNA-seq       | Which genes and TFs are expressed                                     |
+| scATAC-seq      | Which genomic regions are accessible                                  |
+| DNA methylation | Whether regulatory regions are epigenetically permissive or repressed |
 
-In this notebook, I present a summary analysis pipeline to integrate these three sources of information using single-cell data.
+**Overall:**
+
+*TF* activity is inferred, not directly measured. To infer TF activity we combine multiple signals:
+```plaintext
+TF expressed
++ motif present
++ chromatin accessible
++ low methylation
+→ strong evidence that the TF is active
+```
+
+Integration reveals *regulatory programs*. When these signals are combined across thousands of cells we can:
+```plaintext
+identify active transcription factors
+map enhancers to target genes
+reconstruct cell-type–specific regulatory networks
+```
+
+These approaches allow researchers to move from descriptive transcriptomics to mechanistic models of gene regulation.
+
+>Single-cell multi-omics integrates expression, chromatin accessibility, and DNA methylation to identify which transcription factors are active and how they control gene regulatory networks that define cellular identity.
 
 
 ## Summary of the Pipeline
@@ -36,7 +58,7 @@ In this notebook, I present a summary analysis pipeline to integrate these three
 6. Integrate **multi-omic matrices**
 7. Infer **regulatory activity**
 
-
+---
 
 ### Step 1. Processing scATAC-seq and Peak Identification
 
