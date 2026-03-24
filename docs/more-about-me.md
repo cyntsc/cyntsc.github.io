@@ -6,44 +6,44 @@ permalink: /more-about-me/
 
 # About me | Bio
 
-[![ORCID](https://img.shields.io/badge/ORCID-Researcher-green?style=flat&logo=orcid)](https://orcid.org/0000-0002-6877-514X)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Cynthia%20SC-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/cynthiacardinault/)
-[![GitHub](https://img.shields.io/badge/GitHub-cyntsc-black?style=flat&logo=github)](https://github.com/cyntsc)
-[![El Arkhe](https://img.shields.io/badge/El%20Arkhe-Multi--Omics%20Training-purple?style=flat)](https://elarkhe.github.io/)
+[![El Arkhe](https://img.shields.io/badge/El%20Arkhe-Multi--Omics%20Training-purple?style=flat)](https://elarkhe.github.io/talleres/)
+[![YouTube](https://img.shields.io/badge/YouTube-Arkhe%20Multi--Omics%20Channel-red?style=flat&logo=youtube&logoColor=white)](https://www.youtube.com/@arkhe_multiomics/playlists)
+[![GitHub](https://img.shields.io/badge/GitHub-cyntsc-black?style=flat&logo=github)](https://github.com/cyntsc) 
+[![ORCID](https://img.shields.io/badge/ORCID-Researcher-green?style=flat&logo=orcid)](https://orcid.org/0000-0002-6877-514X)
 
 ---
 
 ## Profile
 
-Computational biologist specializing in **single-cell, multi-omic, and spatial transcriptomics analysis**. My work focuses on integrating genomic technologies and computational frameworks to interpret complex biological systems.
+Mom of two amazing kids, I find balance in life through nature and the simple things that keep me grounded. 
 
-My experience spans **bioinformatics, data science, and molecular biology**, combining statistical analysis, reproducible computational workflows, and large-scale genomics datasets to investigate questions relevant to human health, plant biology, and global sustainability.
+I am a multiomics data specialist and founder of El Arkhe. I specialize in **single-cell and spatially resolved transcriptomics (SRT)**.
+
+My work sits at the intersection of bioinformatics, statistics, and molecular biology, where I strive to translate large-scale genomics data into meaningful and interpretable insights.
 
 ---
 
 ## Research Interests
 
-My research sits at the intersection of **genomics, computational biology, and data science**, with a focus on developing analytical frameworks to interpret high-dimensional biological data.
+Designing classical and AI-assisted frameworks to interpret high-dimensional biological data.
 
-### Primary interests
+Understanding neurological diseases through transcriptomics and gene regulatory mechanisms in the human brain.
+
+Studying plant host–pathogen interactions using single-cell and spatial transcriptomics approaches.
+
+Advancing **scientific communication and education**, making complex genomic concepts accessible to non-scientific audiences. El Arkhe *Cuentos Moleculares*, my new initiative, is a key part of this mission.
+
+### Specific technologies and approaches I am interested in include:
 
 - Single-cell transcriptomics (scRNA-seq)
 - Chromatin accessibility and regulatory genomics (scATAC-seq)
 - Multiome data integration (RNA + ATAC)
-- Spatial transcriptomics and tissue architecture
-- Gene regulatory networks and cis-regulatory element discovery
-- Computational methods for large-scale genomics datasets
-
-### Broader interests
-
-- Neurogenomics and brain cell-type diversity
-- Plant genomics and host–pathogen interactions
-- Reproducible bioinformatics workflows
-- Training and capacity building in genomic data science
+- Spatial Resolved Transcriptomics - SRT (Visium, Visium HD)
 
 ---
 
-## A short story about my journey into molecular biology and bioinformatics
+## My journey into molecular biology and bioinformatics (2013–2026)
 
 In 2013, I completed a Master’s degree in Computer Science under the guidance of *Dr. Raúl Aguilar*, where I designed an IMS-LTI–based service model to strengthen interoperability between learning platforms and educational applications. My thesis received first place in the Computing Category at the XXIX National Contest of Computer Science (ANIEI, 2016).
 
@@ -67,31 +67,32 @@ This stage represented one of the most formative periods in my development as a 
 
 ## Current Initiative
 
-In my returning to Mexico (2026), I founded **El Arkhe**, an initiative dedicated to developing **advanced training programs and methodological resources in single-cell and multi-omic data analysis**.
+**El Arkhe** is my most recent initiative, an educational and cultural platform devoted to omics sciences through multiple forms of expression.
 
-Through workshops, collaborative projects, and open educational materials, **El Arkhe** aims to strengthen analytical capacity in genomics and bioinformatics across research communities.
+Through El Arkhe, I aim to provide accessible and high-quality training in multiomic technologies, while also fostering a broader appreciation for the beauty and complexity of molecular biology through storytelling and artistic collaborations.
 
 [![Visit El Arkhe](https://img.shields.io/badge/Visit-El%20Arkhe-purple?style=for-the-badge)](https://elarkhe.github.io)
 
 ---
 
-## Technical Skills
+## Technical Skills in Computational Biology and Bioinformatics
 
-I work across **R**, **Python (Jupyter)**, and **Shell/Bash** for high-performance computing workflows using **SLURM**, with **GitHub** for version control and reproducible research.
+A typical day includes reading scientific literature, coding in *R* and *Python (Jupyter)*, and working with *Shell/Bash* for HPC workflows (*SLURM/SGE/GPU/local environments*), while maintaining version control with *GitHub* and following reproducible research practices.
+
+I continuously explore new tools and technologies that can enhance my work, but I am not a tool collector. I prefer to master a few widely used tools that allow me to remain flexible and adaptable across different types of data and research questions.
+
+My key strengths include staying organized, maintaining focus, and adapting to new tools and methods as required by the research questions I address.
+
+I enjoy sharing knowledge and learning from others, and I am always looking for ways to contribute to the scientific community through my work and collaborations.
+
 
 ### Core bioinformatics ecosystem
 
 - **R packages:** Seurat, Signac, SpatialExperiment, spatialLIBD, scran, scater, bluster, WGCNA, DeconvoBuddies, dendextend, ComplexHeatmap, ggplot2, tidyverse  
 - **Technologies & data types:** scRNA-seq, scATAC-seq, multiome, Visium spatial transcriptomics  
 - **10x Genomics pipelines:** Cell Ranger, Cell Ranger ARC, Space Ranger  
-
-### RNA-seq preprocessing & quantification
-
-FastQC • Trimmomatic • STAR • HISAT2 • Salmon • Kallisto • HTSeq
-
-### AI-assisted workflows
-
-ChatGPT • GitHub Copilot for accelerating analysis and problem-solving
+- **RNA-seq preprocessing & quantification**: FastQC • Trimmomatic • STAR • HISAT2 • Salmon • Kallisto • HTSeq
+- **AI-assisted workflows**: ChatGPT • GitHub Copilot for accelerating analysis and problem-solving
 
 ---
 
@@ -137,3 +138,5 @@ Universidad Autónoma de Yucatán, México
 
 **Bachelor in Computer Science**  
 Universidad Autónoma de Tamaulipas, México
+
+---
