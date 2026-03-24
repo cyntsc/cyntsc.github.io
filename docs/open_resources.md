@@ -13,19 +13,44 @@ permalink: /open_resources/
 {:toc}
 
 
-## My Bioinformatics Notebooks
+## Processing single-cell data in 10X Genomics on the Cloud | YouTube
 
-A growing collection with bi-weekly updates, containing links to papers, workflows, conceptual maps, and insights for *scRNA-seq*, *scATAC-seq*, *multiome*, and *Visium spatial transcriptomics*.
+  The serie brings together short snapshots focused on **Processing raw single-cell data (fastq) using Cell Ranger from 10X Genomics on the Cloud**.
+
+  The material come from internal talks supporting the [Single-Cell RNA-seq Workshop](https://github.com/el-arkhe/scrnaseq-workshop). 
+
+<div style="text-align: center;">
+  <iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/videoseries?si=kWmTG6q3L2hRkaMQ&amp;list=PLArO1MFHqSWiMRgnymay0Fk6BqaT0PS9P" 
+    title="YouTube playlist player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen>
+  </iframe>
+</div>
+
+💬 *Left your comments and recommendations on the Youtube Channel!*
+
+---
+
+## Bioinformatic Notebook | GitHub 
+
+A growing collection containing links to papers, workflows, conceptual maps, and insights for *scRNA-seq*, *scATAC-seq*, *multiome*, and *Spatial transcriptomics*.
 
 [Bioinformatic Notebooks](/bioinformatics-notebooks.md/)
 
 ---
 
-## Walkthroughs in multiomics | YouTube
+## Behind the Scenes in Multiome Data Analysis in Neuroscience | YouTube
 
-  Title: LIEBER - Behind the Scenes of Spatial an Multiomic Data Analysis in Neuroscience 🧠🧬 <br>
-  Playlist featuring walkthroughs of my work with a focus on the human brain.
-  Multiome pipelines like CellRanger ARC and Data-driven discussions. Thanks to PhD Collado who compiled, edited and allocated all these recordings. [Youtube](https://www.youtube.com/playlist?list=PLArO1MFHqSWgCECfO__GEp7TZnRmcJEFY)
+  Playlist featuring walkthroughs of my work in LIEBER working with the human habenula. We discuss the data processing pipelines, data-driven discussions, and insights from the analyses. We cover topics such as single-nucleus RNA-seq,  snATAC-seq multiome pipelines.
+  
+  Thanks to PhD Collado who compiled, edited and allocated all these recordings. 
+  
+  Follow the full playlist: [Youtube](https://www.youtube.com/playlist?list=PLArO1MFHqSWgCECfO__GEp7TZnRmcJEFY)
 
 <div style="text-align: center;">
   <iframe 
@@ -42,7 +67,7 @@ A growing collection with bi-weekly updates, containing links to papers, workflo
 
 ---
 
-## Multiomics Slides | SpeakerDeck
+## Multiome Slides | SpeakerDeck
 
 Title: LIEBER - Slides for talks <br>
 Spatial transcriptomics and multiomics. Material used for internal talks, the R-StatClub and conferences. 
@@ -59,7 +84,7 @@ Spatial transcriptomics and multiomics. Material used for internal talks, the R-
 
 ---
 
-## Transcriptomics in *Arabidopsis* | Youtube playlist
+## Transcriptomics in *Arabidopsis* | Youtube
 
 Title: CICY – Arabidopsis Pathogenesis <br>
 Compiles a set of talks and presentations in which I discussed topics in molecular biology, plant genetics, and transcriptomic analysis in *Arabidopsis thaliana*. 
@@ -78,3 +103,4 @@ Compiles a set of talks and presentations in which I discussed topics in molecul
   </iframe>
 </div>
 
+---
