@@ -4,7 +4,7 @@ nav_order: 0
 permalink: /
 ---
 
-#### 🧬 Multiomics specialist | Data Scientist | Founder of Arkhe
+#### Multiomics specialist | Data Scientist | Founder of El Arkhe
 ---
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Cynthia%20SC-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/cynthiacardinault/)
@@ -22,7 +22,7 @@ Open to scientific collaboration and strategic program development.
 
 Thanks for visiting my website
 
-Cynthia SC
+*Cynthia S Cardinault*
 
 ---
 

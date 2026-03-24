@@ -7,7 +7,6 @@ permalink: /open_resources/
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Cynthia%20SC-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/cynthiacardinault/)
 [![El Arkhe](https://img.shields.io/badge/El%20Arkhe-Multi--Omics%20Training-purple?style=flat)](https://elarkhe.github.io/talleres/)
 [![YouTube](https://img.shields.io/badge/YouTube-Arkhe%20Multi--Omics%20Channel-red?style=flat&logo=youtube&logoColor=white)](https://www.youtube.com/@arkhe_multiomics/playlists)
-[![Email](https://img.shields.io/badge/-Email-D14836?logo=gmail&logoColor=white&style=for-the-badge)](mailto:bioinformatic2019@gmail.com)
 
 * TOC
 {:toc}
