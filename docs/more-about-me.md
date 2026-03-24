@@ -18,7 +18,7 @@ permalink: /more-about-me/
 
 Mom of two amazing kids, I find balance in life through nature and the simple things that keep me grounded. 
 
-I am a multiomics data specialist and founder of El Arkhe. I specialize in **single-cell and spatially resolved transcriptomics (SRT)**.
+I am a multiomics data specialist and founder of *El Arkhe*. I specialize in **single-cell and spatially resolved transcriptomics (SRT)**.
 
 My work sits at the intersection of bioinformatics, statistics, and molecular biology, where I strive to translate large-scale genomics data into meaningful and interpretable insights.
 
@@ -26,15 +26,13 @@ My work sits at the intersection of bioinformatics, statistics, and molecular bi
 
 ## Research Interests
 
-Designing classical and AI-assisted frameworks to interpret high-dimensional biological data.
+My work focuses on developing classical and AI-assisted frameworks to interpret high-dimensional biological data, with an emphasis on neurological diseases through transcriptomics and gene regulatory mechanisms in the human brain. I also explore plant host–pathogen interactions using single-cell and spatial transcriptomics.
 
-Understanding neurological diseases through transcriptomics and gene regulatory mechanisms in the human brain.
+Beyond research, I am committed to advancing *scientific communication and education*. Through **El Arkhe – Multiomics**, I offer training and consulting in multi-omics data analysis, helping researchers build analytical capacity, develop reproducible workflows, and translate data into meaningful insights.
 
-Studying plant host–pathogen interactions using single-cell and spatial transcriptomics approaches.
+In parallel, **El Arkhe – Cuentos Moleculares** serves as a communication bridge—integrating science with storytelling and creative expression to make molecular biology more accessible and engaging.
 
-Advancing **scientific communication and education**, making complex genomic concepts accessible to non-scientific audiences. El Arkhe *Cuentos Moleculares*, my new initiative, is a key part of this mission.
-
-### Specific technologies and approaches I am interested in include:
+### Technologies & approaches of interest
 
 - Single-cell transcriptomics (scRNA-seq)
 - Chromatin accessibility and regulatory genomics (scATAC-seq)
@@ -43,7 +41,7 @@ Advancing **scientific communication and education**, making complex genomic con
 
 ---
 
-## My journey into molecular biology and bioinformatics (2013–2026)
+## My journey into molecular biology (2013–2026)
 
 In 2013, I completed a Master’s degree in Computer Science under the guidance of *Dr. Raúl Aguilar*, where I designed an IMS-LTI–based service model to strengthen interoperability between learning platforms and educational applications. My thesis received first place in the Computing Category at the XXIX National Contest of Computer Science (ANIEI, 2016).
 
@@ -65,11 +63,13 @@ This stage represented one of the most formative periods in my development as a 
 
 ---
 
-## Current Initiative
+## El Arkhe Project
 
-**El Arkhe** is my most recent initiative, an educational and cultural platform devoted to omics sciences through multiple forms of expression.
+Over the years, I have shared technical insights and reflections across different areas of computational biology, especially bioinformatics—sparking meaningful and diverse conversations within the community.
 
-Through El Arkhe, I aim to provide accessible and high-quality training in multiomic technologies, while also fostering a broader appreciation for the beauty and complexity of molecular biology through storytelling and artistic collaborations.
+*El Arkhe* emerged as a natural extension of that journey. It is an educational and cultural platform devoted to the omics sciences, approached through multiple languages: science, data, and storytelling.
+
+Through *El Arkhe*, I aim to make multiomic technologies more accessible through high-quality training, while also creating space to explore the beauty and complexity of molecular biology beyond analysis—through narrative, creativity, and collaboration.
 
 [![Visit El Arkhe](https://img.shields.io/badge/Visit-El%20Arkhe-purple?style=for-the-badge)](https://elarkhe.github.io)
 
@@ -77,7 +77,7 @@ Through El Arkhe, I aim to provide accessible and high-quality training in multi
 
 ## Technical Skills in Computational Biology and Bioinformatics
 
-A typical day includes reading scientific literature, coding in *R* and *Python (Jupyter)*, and working with *Shell/Bash* for HPC workflows (*SLURM/SGE/GPU/local environments*), while maintaining version control with *GitHub* and following reproducible research practices.
+A typical day includes reading scientific literature, coding in *R* or *Python (Jupyter)*; working with *Shell/Bash* for HPC workflows (*SLURM/SGE/GPU/local environments*), while maintaining version control with *GitHub*, following reproducible research practices.
 
 I continuously explore new tools and technologies that can enhance my work, but I am not a tool collector. I prefer to master a few widely used tools that allow me to remain flexible and adaptable across different types of data and research questions.
 
@@ -99,29 +99,24 @@ I enjoy sharing knowledge and learning from others, and I am always looking for 
 ## Publications
 
 Soto-Cardinault C, Childs KL, Góngora-Castillo E.  
-**Network Analysis of Publicly Available RNA-seq Provides Insights into the Molecular Mechanisms of Plant Defense against Multiple Fungal Pathogens in *Arabidopsis thaliana***.  
-Genes (Basel). 2023 Dec 16;14(12):2223.  
-https://pubmed.ncbi.nlm.nih.gov/38137044/
+[Network Analysis of Publicly Available RNA-seq Provides Insights into the Molecular Mechanisms of Plant Defense against Multiple Fungal Pathogens in *Arabidopsis thaliana*.](https://pubmed.ncbi.nlm.nih.gov/38137044/)  
+*Genes (Basel).* 2023 Dec 16;14(12):2223  
 
 Soto-Cardinault CG, Duarte-Aké F, De-la-Peña C, Góngora-Castillo E.  
-**DNA Methylation and Transcriptomic Next-Generation Technologies in Cereal Genomics.**  
-Methods Mol Biol. 2020;2072:65-84.  
-https://pubmed.ncbi.nlm.nih.gov/31541439/
+[DNA Methylation and Transcriptomic Next-Generation Technologies in Cereal Genomics.](https://pubmed.ncbi.nlm.nih.gov/31541439/)  
+*Methods Mol Biol.* 2020;2072:65–84  
 
-Soto C., Ucán J. P., & Aguilar R. A. (2018).  
-**Diseñando entornos virtuales de aprendizaje para el análisis de la colaboración con UWE.**  
-Abstraction & Application, 20.  
-https://biblat.unam.mx/en/revista/abstraction-application/articulo/disenando-entornos-virtuales-de-aprendizaje-para-el-analisis-de-la-colaboracion-con-uwe
+Soto C, Ucán JP, Aguilar RA.  
+[Diseñando entornos virtuales de aprendizaje para el análisis de la colaboración con UWE.](https://biblat.unam.mx/en/revista/abstraction-application/articulo/disenando-entornos-virtuales-de-aprendizaje-para-el-analisis-de-la-colaboracion-con-uwe)  
+*Abstraction & Application.* 2018;20  
 
-Soto C., Menéndez V., Aguilar R. (2015).  
-**Interoperabilidad entre el LMS Moodle y aplicaciones educativas utilizando IMS-LTI.**  
-Revista Apertura.  
-https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S1665-61802015000200024
+Soto C, Menéndez V, Aguilar R.  
+[Interoperabilidad entre el LMS Moodle y aplicaciones educativas utilizando IMS-LTI.](https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S1665-61802015000200024)  
+*Revista Apertura.* 2015  
 
-Soto C., Menéndez V., Aguilar R. (2014).  
-**Methodological framework for collaborative virtual learning environments integrated with LMS.**  
-EDULEARN14 Proceedings.  
-https://library.iated.org/view/SOTO2014AME
+Soto C, Menéndez V, Aguilar R.  
+[Methodological framework for collaborative virtual learning environments integrated with LMS.](https://library.iated.org/view/SOTO2014AME)  
+*EDULEARN14 Proceedings.* 2014  
 
 ---
 
@@ -140,3 +135,14 @@ Universidad Autónoma de Yucatán, México
 Universidad Autónoma de Tamaulipas, México
 
 ---
+
+## Training & Honors
+
+A summary of my academic background and recognitions:
+
+- 🎓 [Education](https://www.linkedin.com/in/cynthiacardinault/details/education/)  
+- 🏅 [Honors & Awards](https://www.linkedin.com/in/cynthiacardinault/details/honors/)   
+
+---
+
+Updated on March 2026
