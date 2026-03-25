@@ -36,7 +36,6 @@ In parallel, **El Arkhe – Cuentos Moleculares** focuses on accessible scientif
 
 [![Visit El Arkhe](https://img.shields.io/badge/Visit-El%20Arkhe-purple?style=for-the-badge)](https://elarkhe.github.io)
 
-[![Visit El Arkhe](https://img.shields.io/badge/Visit-El%20Arkhe-purple?style=for-the-badge&logo=https://cyntsc.github.io/images/banner_arkhe2.png)](https://elarkhe.github.io)
 
 ### Technologies & approaches of interest
 
