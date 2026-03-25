@@ -14,7 +14,7 @@ permalink: /
 
 Hi,
 
-I’m a data scientist and multi-omics who loves bringing together biology, statistics, and computer science to address complex biological questions.
+I’m a data scientist and multi-omics specialist who loves bringing together biology, statistics, and computer science to address complex biological questions.
 
 As the Founder of El Arkhe, I lead two complementary initiatives:
 
