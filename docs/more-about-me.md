@@ -16,11 +16,11 @@ permalink: /more-about-me/
 
 ## Profile
 
-Mom of two amazing kids, I find balance in life through nature and the simple things that keep me grounded. 
+Mom of two amazing kids, I find balance in life through nature and the simple things that keep me grounded.
 
-I am a multiomics data specialist and founder of *El Arkhe*. I specialize in **single-cell and spatially resolved transcriptomics (SRT)**.
+I am a multi-omics data specialist and founder of El Arkhe. My work sits at the intersection of bioinformatics, statistics, and molecular biology, where I focus on translating large-scale genomics data into meaningful and interpretable insights.
 
-My work sits at the intersection of bioinformatics, statistics, and molecular biology, where I strive to translate large-scale genomics data into meaningful and interpretable insights.
+I am particularly passionate about scientific communication and education, and I actively seek opportunities for collaboration and interdisciplinary work.
 
 ---
 
@@ -28,9 +28,9 @@ My work sits at the intersection of bioinformatics, statistics, and molecular bi
 
 My work focuses on developing classical and AI-assisted frameworks to interpret high-dimensional biological data, with an emphasis on neurological diseases through transcriptomics and gene regulatory mechanisms in the human brain. I also explore plant host–pathogen interactions using single-cell and spatial transcriptomics.
 
-Beyond research, I am committed to advancing *scientific communication and education*. Through **El Arkhe – Multiomics**, I offer training and consulting in multi-omics data analysis, helping researchers build analytical capacity, develop reproducible workflows, and translate data into meaningful insights.
+Through *El Arkhe Multiomics*, I offer training and consulting in several omics technologies, helping researchers build analytical capacity, develop reproducible workflows, and translate data into actionable insights.
 
-In parallel, **El Arkhe – Cuentos Moleculares** serves as a communication bridge—integrating science with storytelling and creative expression to make molecular biology more accessible and engaging.
+In parallel, *El Arkhe Cuentos Moleculares* serves as a communication bridge integrating science with storytelling and creative expression to make molecular biology more accessible and engaging.
 
 ### Technologies & approaches of interest
 
