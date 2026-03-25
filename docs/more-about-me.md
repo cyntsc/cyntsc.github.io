@@ -16,70 +16,86 @@ permalink: /more-about-me/
 
 ## Profile
 
-Mom of two amazing kids, I find balance in life through nature and the simple things that keep me grounded.
+I am a multi-omics data specialist and founder of *El Arkhe*.  
 
-I am a multi-omics data specialist and founder of El Arkhe. My work sits at the intersection of bioinformatics, statistics, and molecular biology, where I focus on translating large-scale genomics data into meaningful and interpretable insights.
+My work sits at the intersection of bioinformatics, statistics, and molecular biology, where I focus on translating large-scale genomics data into meaningful and interpretable insights.
 
-I am particularly passionate about scientific communication and education, and I actively seek opportunities for collaboration and interdisciplinary work.
+I am particularly interested in bridging research, training, and scientific communication.
 
----
 
 ## Research Interests
 
-My work focuses on developing classical and AI-assisted frameworks to interpret high-dimensional biological data, with an emphasis on neurological diseases through transcriptomics and gene regulatory mechanisms in the human brain. I also explore plant host–pathogen interactions using single-cell and spatial transcriptomics.
+My work focuses on developing classical and AI-assisted frameworks to interpret high-dimensional biological data, with an emphasis on:
 
-Through *El Arkhe Multiomics*, I offer training and consulting in several omics technologies, helping researchers build analytical capacity, develop reproducible workflows, and translate data into actionable insights.
+- Neurological diseases through single-cell and spatial transcriptomics  
+- Plant host–pathogen interactions using bulk transcriptomics, with growing interest in single-cell and spatial transcriptomics in plants  
 
-In parallel, *El Arkhe Cuentos Moleculares* serves as a communication bridge integrating science with storytelling and creative expression to make molecular biology more accessible and engaging.
+Through **El Arkhe – Multiomics**, I provide training and consulting in omics technologies, supporting researchers in building analytical capacity and reproducible workflows.
+
+In parallel, **El Arkhe – Cuentos Moleculares** focuses on accessible scientific communication, connecting molecular biology with broader cultural contexts.
+
+[![Visit El Arkhe](https://img.shields.io/badge/Visit-El%20Arkhe-purple?style=for-the-badge)](https://elarkhe.github.io)
+
 
 ### Technologies & approaches of interest
 
 - Single-cell transcriptomics (scRNA-seq)
 - Chromatin accessibility and regulatory genomics (scATAC-seq)
 - Multiome data integration (RNA + ATAC)
-- Spatial Resolved Transcriptomics - SRT (Visium, Visium HD)
+- Spatial Resolved Transcriptomics (SRT)
 
 ---
 
 ## My journey into molecular biology (2013–2026)
 
+### Early training in computer science (2013–2016)
+
 In 2013, I completed a Master’s degree in Computer Science under the guidance of *Dr. Raúl Aguilar*, where I designed an IMS-LTI–based service model to strengthen interoperability between learning platforms and educational applications. My thesis received first place in the Computing Category at the XXIX National Contest of Computer Science (ANIEI, 2016).
 
 This early experience in computing, together with a summer research program at Texas A&M University, sparked my long-term interest in applying computational methods and artificial intelligence to biological problems.
 
-In 2018, I began my Ph.D. in Biological Sciences at the *Centro de Investigación Científica de Yucatán (CICY)* under the supervision of *Dr. Elsa Góngora*. My research focused on *Arabidopsis thaliana* and plant defense responses against fungal pathogens. Using public bulk RNA-seq datasets, I identified gene co-expression modules associated with plant immunity, contributing to the understanding of molecular defense mechanisms relevant to food security and agricultural resilience.
+### Transition into molecular biology (2018–2023)
+
+In 2018, I began my Ph.D in Biological Sciences at the *Centro de Investigación Científica de Yucatán (CICY)* under the supervision of *Dr. Elsa Góngora*. My research focused on *Arabidopsis thaliana* and plant defense responses against fungal pathogens. Using public bulk RNA-seq datasets, I identified gene co-expression modules associated with plant immunity, contributing to the understanding of molecular defense mechanisms relevant to food security and agricultural resilience.
 
 This period strengthened my commitment to the intersection of computational methods and biology, while connecting me with a vibrant and collaborative bioinformatics research community.
 
-Later in 2023, at the Lieber Institute for Brain Development (LIBD), my work focused on data-driven analyses of the human brain habenula, a small but functionally critical structure involved in reward processing and neuropsychiatric disorders.
+### Neurogenomics research at LIBD (2023–2025)
 
-As part of a collaborative research team led by *Dr. Kristen Maynard* and *Dr. Leonardo Collado-Torres*, we explored habenular cellular diversity, canonical and novel gene markers, and candidate regulatory elements within their spatial context and potential links to neuropsychiatric disorders. Our integrative approach combined advanced technologies including:
+At the Lieber Institute for Brain Development (LIBD), my work focused on data-driven analyses of the human brain habenula, a small but functionally critical structure involved in reward processing and neuropsychiatric disorders.
 
-- single-nucleus RNA-seq
-- snATAC-seq multiome
-- spatial transcriptomics (Visium and Visium HD)
+As part of a collaborative research team led by *Dr. Leonardo Collado-Torres* and *Dr. Kristen Maynard*, we investigated habenular cellular diversity and candidate regulatory elements within their spatial context.
+
+Our integrative approach combined advanced technologies including:
+
+- single-nucleus RNA-seq  
+- snATAC-seq multiome  
+- spatial transcriptomics (Visium)  
 
 This stage represented one of the most formative periods in my development as a computational biologist working at the intersection of genomics and neuroscience.
 
----
+### Current work — El Arkhe (2025–present)
 
-## El Arkhe Project
+I currently lead *El Arkhe*, an initiative focused on advancing training, consulting, and scientific communication in multi-omics.
 
-Over the years, I have shared technical insights and reflections across different areas of computational biology, especially bioinformatics—sparking meaningful and diverse conversations within the community.
+Through **El Arkhe – Multiomics**, I design and deliver specialized training programs in single-cell, multiome, and spatial transcriptomics, supporting researchers in building analytical capacity and reproducible workflows.
 
-*El Arkhe* emerged as a natural extension of that journey. It is an educational and cultural platform devoted to the omics sciences, approached through multiple languages: science, data, and storytelling.
+In parallel, **El Arkhe – Cuentos Moleculares** explores scientific communication through accessible, interdisciplinary formats that connect molecular biology with culture and storytelling.
 
-Through *El Arkhe*, I aim to make multiomic technologies more accessible through high-quality training, while also creating space to explore the beauty and complexity of molecular biology beyond analysis—through narrative, creativity, and collaboration.
-
-[![Visit El Arkhe](https://img.shields.io/badge/Visit-El%20Arkhe-purple?style=for-the-badge)](https://elarkhe.github.io)
+This stage reflects a transition toward leadership, education, and the development of scalable scientific programs in multi-omics.
 
 ---
 
 ## Technical Skills in Computational Biology and Bioinformatics
 
-A typical day includes reading scientific literature, coding in *R* or *Python (Jupyter)*; working with *Shell/Bash* for HPC workflows (*SLURM/SGE/GPU/local environments*), while maintaining version control with *GitHub*, following reproducible research practices.
+A typical day includes:
 
-I continuously explore new tools and technologies that can enhance my work, but I am not a tool collector. I prefer to master a few widely used tools that allow me to remain flexible and adaptable across different types of data and research questions.
+- Reading scientific literature  
+- Coding in *R* and *Python (Jupyter)*  
+- Working with *Shell/Bash* in HPC environments (SLURM/SGE/GPU/local)  
+- Maintaining reproducible workflows with *GitHub*  
+
+I continuously explore new tools and technologies that can enhance my work, but I am not a tool collector. I prefer to master a few widely used tools that allow me to remain flexible and adaptable.
 
 My key strengths include staying organized, maintaining focus, and adapting to new tools and methods as required by the research questions I address.
 
