@@ -6,12 +6,12 @@ permalink: /single_cell_RNA-seq/unicellular_orgs/
 description: "Unicellular organisms in single-cell RNA sequencing"
 ---
 
-## <span class="gradient-heading">Unicellular organisms</span>
+## <span class="gradient-heading">Single-cell en organismos unicelulares</span>
 
-![Unicellular organisms](../images/unicellular_orgs.png)
+![Unicellular organisms](../images/scrnaseq_unicellular_orgs.svg)
 
 # ¿Tiene sentido hacer *single-cell* en organismos unicelulares?
-## Poblaciones, muestras, variabilidad y pseudorreplicación
+### Poblaciones, muestras, variabilidad y pseudorreplicación
 
 Cuando pensamos en tecnologías de célula única, como  **single-cell RNA-seq (scRNA-seq)**, lo más intuitivo es asociarlas con organismos multicelulares: tejidos complejos, múltiples tipos celulares, interacciones entre células, etc.
 
