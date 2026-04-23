@@ -135,7 +135,8 @@ Ambos enfoques responden a la misma pregunta:
 
 ---
 
-CSC. February 2026
+
+[![Visit El Arkhe](https://img.shields.io/badge/Visit-El%20Arkhe-purple?style=for-the-badge)](https://el-arkhe.github.io)
 
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=el-arkhe.el-arkhe)
 
