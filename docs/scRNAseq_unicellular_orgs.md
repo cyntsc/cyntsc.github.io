@@ -1,5 +1,5 @@
 ---
-title: "Unicellular organisms"
+title: "Single-cell en organismos unicelulares"
 parent: "1 Single-Cell RNA-seq"
 nav_order: 4
 permalink: /single_cell_RNA-seq/unicellular_orgs/
