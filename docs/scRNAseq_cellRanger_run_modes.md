@@ -1,7 +1,7 @@
 ---
 title: "Cell Ranger Run Modes"
 parent: "1 Single-Cell RNA-seq"
-nav_order: 1
+nav_order: 2
 permalink: /single_cell_RNA-seq/RunModes/
 parent_permalink: /single_cell_RNA-seq/
 ---

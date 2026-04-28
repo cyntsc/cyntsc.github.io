@@ -1,7 +1,7 @@
 ---
 title: "Seurat v4 vs Seurat v5"
 parent: "1 Single-Cell RNA-seq"
-nav_order: 1
+nav_order: 3
 permalink: /single_cell_RNA-seq/seurat_v4_v5/
 description: "Conceptual and structural changes in the scRNA-seq workflow between Seurat v4 and Seurat v5."
 ---
