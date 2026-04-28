@@ -6,7 +6,21 @@ permalink: /single_cell_RNA-seq/scRNAseq_h5_vs_mtx/
 description: "Diferencias entre formatos H5 y MTX en single-cell RNA-seq"
 ---
 
+*Cynthia SC* (04-27-2026)
+
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?logo=linkedin&logoColor=white&style=for-the-badge)](https://www.linkedin.com/in/cynthiacardinault)
+[![Email](https://img.shields.io/badge/-Email-D14836?logo=gmail&logoColor=white&style=for-the-badge)](mailto:bioinformatic2019@gmail.com)
+
+## Contenido
+{: .no_toc }
+
+1. TOC
+{:toc}
+
+<br>
+
 ## <span class="gradient-heading">Formatos H5 vs MTX en single-cell RNA-seq</span>
+{: .no_toc }
 
 ### Estructura, interpretación y uso práctico en Seurat v5
 
