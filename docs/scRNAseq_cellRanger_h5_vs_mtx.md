@@ -124,11 +124,9 @@ El formato no cambia la biología, pero sí la experiencia de análisis. Aunque 
 
 ## Recursos de consulta
 
-[10x Genomics – Feature Barcode Matrices](https://www.10xgenomics.com/support/software/cell-ranger-arc/latest/analysis/outputs/feature-barcode-matrices)
-
-[Load in data from 10X](https://satijalab.org/seurat/reference/read10x)
-
-[Cell Ranger – Outputs Overview](https://www.10xgenomics.com/support/software/cell-ranger/latest/analysis/outputs/cr-outputs-overview)
+- [10x Genomics – Feature Barcode Matrices](https://www.10xgenomics.com/support/software/cell-ranger-arc/latest/analysis/outputs/feature-barcode-matrices)
+- [Load in data from 10X](https://satijalab.org/seurat/reference/read10x)
+- [Cell Ranger – Outputs Overview](https://www.10xgenomics.com/support/software/cell-ranger/latest/analysis/outputs/cr-outputs-overview)
 
 ---
 
