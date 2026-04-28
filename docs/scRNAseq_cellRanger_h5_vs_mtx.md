@@ -17,8 +17,6 @@ description: "Diferencias entre formatos H5 y MTX en single-cell RNA-seq"
 1. TOC
 {:toc}
 
-<br>
-
 ## <span class="gradient-heading">Formatos H5 vs MTX en single-cell RNA-seq</span>
 {: .no_toc }
 
@@ -34,8 +32,8 @@ En ambos formatos se representan el mismo dato biológico, es decir, la relació
 ![Unicellular organisms](../images/scrnaseq_format_files.svg)
 
 
-
-### ¿Por qué existen distintos formatos para los mismos datos?
+## <span class="gradient-heading">¿Por qué existen distintos formatos para los mismos datos?</span>
+{: .no_toc }
 
 Cuando trabajamos con datos de **single-cell RNA-seq (scRNA-seq)** generados por plataformas como **:contentReference[oaicite:1]{index=1}**, es común encontrarnos con dos formatos principales:
 
@@ -95,7 +93,9 @@ Pensado para *transparencia y entendimiento*
 - MTX facilita el aprendizaje
 
 
-## Aplicación directa en Seurat v5
+## <span class="gradient-heading"> Aplicación directa en Seurat v5</span>
+{: .no_toc }
+
 
 ### Cargar datos desde H5
 
