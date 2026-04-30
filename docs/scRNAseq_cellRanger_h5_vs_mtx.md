@@ -59,6 +59,7 @@ La diferencia está en cómo se organiza la información:
 | MTX | Tres archivos de texto separados |
 
 ### Estructura de los formatos
+{: .gradient-heading .toc }
 
 - Formato **H5 (.h5)**: formato de datos jerárquicos (Hierarchical Data Format)
 
