@@ -103,13 +103,32 @@ En resumen:
 library(Seurat)
 data <- Read10X_h5("filtered_feature_bc_matrix.h5")
 seurat_obj <- CreateSeuratObject(counts = data)
+seurat_obj
 ```
+
+Salida: 
+```r
+An object of class Seurat 
+38606 features across 5710 samples within 1 assay 
+Active assay: RNA (38606 features, 0 variable features)
+ 1 layer present: counts
+```
+
 ### Cargar datos desde MTX
 ```r
 library(Seurat)
 data <- Read10X(data.dir = "filtered_feature_bc_matrix/")
 seurat_obj <- CreateSeuratObject(counts = data)
 ```
+Salida: 
+```r
+An object of class Seurat 
+38606 features across 5710 samples within 1 assay 
+Active assay: RNA (38606 features, 0 variable features)
+ 1 layer present: counts
+```
+
+Como puedes observar los objetos de clase Seurat que se crean son idénticos, aunque con estructura diferente. Mientras **.h5** tiene la ventaja de ser un solo archivo de lectura más rápida, **.mtx** es como recibir un rompecabezas en tres bolsas con piezas, instrucciones, etiquetas y luego ensamblarlo.
 
 ### Estructura de archivos MTX
 ```plaintext
