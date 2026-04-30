@@ -97,7 +97,7 @@ En resumen:
 ## Aplicación directa en Seurat v5
 {: .gradient-heading .toc }
 
-### Cargar datos desde H5
+### Cargar datos desde H5: un solo archivo contiene todo lo necesario
 
 ```r
 library(Seurat)
@@ -105,7 +105,6 @@ data <- Read10X_h5("filtered_feature_bc_matrix.h5")
 seurat_obj <- CreateSeuratObject(counts = data)
 seurat_obj
 ```
-
 Salida: 
 ```r
 An object of class Seurat 
@@ -114,7 +113,7 @@ Active assay: RNA (38606 features, 0 variable features)
  1 layer present: counts
 ```
 
-### Cargar datos desde MTX
+### Cargar datos desde MTX: es un directorio con 3 archivos
 ```r
 library(Seurat)
 data <- Read10X(data.dir = "filtered_feature_bc_matrix/")
@@ -128,7 +127,7 @@ Active assay: RNA (38606 features, 0 variable features)
  1 layer present: counts
 ```
 
-Como puedes observar los objetos de clase Seurat que se crean son idénticos, aunque con estructura diferente. Mientras **.h5** tiene la ventaja de ser un solo archivo de lectura más rápida, **.mtx** es como recibir un rompecabezas en tres bolsas con piezas, instrucciones, etiquetas y luego ensamblarlo.
+Como puedes observar los objetos de clase Seurat que se crean son idénticos, aunque la estructura de datos de entrada es diferente. Mientras **.h5** tiene la ventaja de ser un solo archivo de lectura más rápida, **.mtx** es un directorio de archivos, como recibir un rompecabezas con tres bolsas, conteniendo piezas, instrucciones y etiquetas, para luego ensamblarse.
 
 ### Estructura de archivos MTX
 ```plaintext
