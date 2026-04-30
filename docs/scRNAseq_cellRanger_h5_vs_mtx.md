@@ -115,7 +115,7 @@ La diferencia está en cómo se organiza la información:
   En *matrix.mtx.gz* esta la matriz de expresión génica en formato disperso (sparse) basado en coordenadas.
   La idea central es guardar únicamente los valores distintos de cero, ya que en scRNA-seq la mayoría de genes NO se detectan en la mayoría de células. Por ejemplo:
   ```plaintext
-  ❯ gzip -cd matrix.mtx.gz | head                       scrnaseq-seurat5
+  ❯ gzip -cd matrix.mtx.gz | head
   %%MatrixMarket matrix coordinate integer general
   %metadata_json: {"software_version": "cellranger-9.0.0", "format_version": 2}
   38606 5710 19262779
@@ -123,7 +123,7 @@ La diferencia está en cómo se organiza la información:
   19 1 3
   22 1 1
   ```
-  En la primera fila estan los metadatos agregados por `cellranger`, la siguiente fila contiene las dimensiones de la matriz (38606 X 5710), pero solo almacenó 19262779 entradas NO vacías. Por lo tanto, las siguientes filas representan:
+  En la primera fila estan los metadatos agregados por `cellranger`, la siguiente fila contiene las dimensiones de la matriz (38606 X 5710), pero solo almacenó 19,262,779 entradas NO vacías. Por lo tanto, las filas representan:
   ```plaintext
   fila columna valor 
   ```
@@ -163,7 +163,7 @@ Más brevemente:
 ## Aplicación directa en Seurat v5
 {: .gradient-heading .toc }
 
-¿Y como se ve esto en un flujo de análisis single-cell? Veamos
+¿Y como se ve esto en un flujo de análisis single-cell? Veamos un ejemplo con Seurat v5.
 
 ### Cargar datos desde H5: un solo archivo contiene todo lo necesario
 
@@ -195,21 +195,21 @@ Active assay: RNA (38606 features, 0 variable features)
  1 layer present: counts
 ```
 
-Como puedes observar los objetos de clase *Seurat* que se crean son idénticos, aunque la estructura de datos de entrada es diferente. Mientras **.h5** tiene la ventaja de ser un solo archivo de lectura más rápida, **.mtx** es un directorio de archivos, como recibir un rompecabezas con tres bolsas, conteniendo piezas, instrucciones y etiquetas, para luego ensamblarlas.
+Como puedes observar los objetos de clase *Seurat* que se crean son idénticos, aunque la estructura de datos de entrada es diferente.
+
+Mientras **.h5** tiene la ventaja de ser un solo archivo de lectura más rápida, **.mtx** es un directorio de archivos, como recibir un rompecabezas con tres bolsas, conteniendo piezas, instrucciones y etiquetas, para luego ensamblarlas.
 
 El formato no cambia la biología, pero sí la experiencia de análisis. Aunque ambos formatos representan lo mismo, la forma en que interactuamos con los datos cambia nuestra comprensión del dato, generalmente con `MTX` entendemos la estructura y con `H5` nos enfocamos en el análisis.
 
 >OJO. Ni el formato **HDF5** ni el formato **MEX/MTX** son exclusivos de 10x Genomics/Cell Ranger. Ambos son formatos relativamente estándar utilizados en bioinformática y análisis de datos dispersos (sparse matrices). 
 
-Algo que sí puede ser específico de `Cell Ranger`, es la estructura del directorio  **filtered_feature_bc_matrix** organizado en 3 archivos, una convención específica de la organización, popularizada por 10x y hoy casi un “estándar de facto” en single-cell.
+Algo que sí puede ser específico de `Cell Ranger`, es la estructura del directorio  **filtered_feature_bc_matrix** organizado en 3 archivos, una convención específica  popularizada por 10x y hoy casi un “estándar de facto” en single-cell.
 
 **MEX = Matrix Exchange format**, es un formato estándar definido por NIST Matrix Market para almacenar matrices dispersas, que es ampliamente  utilizado por muchísimas herramientas (Scanpy, STARsolo, kallisto, Alevin, SciPy, Bioconductor).
 
 Y, **HDF5 = Hierarchical Data Format version 5**, es un estándar científico general, muy utilizado en astronomía, física, machine learning, imágenes, y ahora también en genómica y single-cell. Herramientas y ecosistemas enormes lo usan (AnnData, loompy, Seurat, TensorFlow, PyTorch)
 
-Una diferencia clave en HDF5, es qué su uso no es universal, ya que es como un contenedor, donde  cada herramienta decide como organiza los grupos, datasets, nombres internos y metadatos. Por eso **.mtx** es casi un formato universal, mientras **.h5** depende de la estructura interna. 
-
-**Eso explica por qué hoy existe tanta interoperabilidad entre herramientas single-cell.**
+Una diferencia clave en **HDF5**, es qué su uso no es universal, ya que es como un contenedor, donde  cada herramienta decide como organizar los grupos, datasets, nombres internos y metadatos. Por eso **.mtx** es casi un formato universal, mientras **.h5** depende de la estructura interna. **Esto explica por qué hoy existe tanta interoperabilidad entre herramientas single-cell.**
 
 *Cynthia SC*
 
