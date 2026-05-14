@@ -157,12 +157,12 @@ Aunque... algunas veces convendrá preguntarse:
 esto, será particularmente relevante en experimentos con datos de alta complejidad.
 
 
-## Y aquí, una pregunta importante
+### Y aquí, una pregunta importante
 {: .no_toc }
 
 ¿Debemos aceptar siempre los barcodes seleccionados automáticamente?
 
-La respuesta corta es "depende del experimento"
+La respuesta corta es, "depende del experimento"
 
 En algunos datasets:
 
@@ -180,9 +180,9 @@ Por ello, muchos análisis avanzados exploran también la matriz *raw*.
 
 Una de las herramientas más conocidas para este problema es `EmptyDrops`, propuesta por Lun et al. (2019).
 
-Aquí, la idea conceptual es *comparar cada barcode contra el perfil de RNA ambiental esperado*.
-
-Si el barcode presenta una señal significativamente distinta del ambiente, probablemente contiene una célula real.
+Aquí, la idea conceptual:
+1. *comparar cada barcode contra el perfil de RNA ambiental esperado*.
+2. Si el barcode presenta una señal significativamente distinta del ambiente, probablemente contiene una célula real.
 
 Esto permite detectar:
 
@@ -230,12 +230,10 @@ Esto es importante porque muchas herramientas modernas fueron diseñadas especí
 
    
 
-### Ejemplo conceptual: Smart-seq2
+### Ejemplo: Smart-seq2
 {: .toc }
 
-Las tecnologías *plate-based* funcionan de manera distinta.
-
-Por ejemplo, en **Smart-seq2**:
+Las tecnologías *plate-based* funcionan de manera distinta. Por ejemplo, en **Smart-seq2**:
 
 * cada célula se deposita individualmente en un pozo
 * no existen millones de droplets vacíos
