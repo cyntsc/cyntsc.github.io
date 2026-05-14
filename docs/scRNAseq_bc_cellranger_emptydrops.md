@@ -1,18 +1,18 @@
 ---
-title: "QC y Cell Calling en scRNA-seq"
+title: "Cell Calling en scRNA-seq"
 parent: "1 Single-Cell RNA-seq"
 nav_order: 5
-permalink: /single_cell_RNA-seq/qc_cell_calling_scrnaseq/
-description: "Introducción conceptual al control de calidad (QC) y cell calling en datos scRNA-seq"
+permalink: /single_cell_RNA-seq/cell_calling_scrnaseq/
+description: "Por qué un barcode no siempre representa una célula real en scRNA-seq"
 ---
 
 Author: *Cynthia SC* (05-14-2026)
 
 ---
 
-## <span class="gradient-heading">Control de calidad (QC) y <i>cell calling</i> en scRNA-seq</span>
+## <span class="gradient-heading">Cell Calling en scRNA-seq</span>
 {: .no_toc }
-### Por qué un barcode no siempre representa una célula real
+### Por qué un barcode "no" siempre representa una célula real
 {: .gradient-heading .no_toc }
 
 ## Contenido
@@ -21,17 +21,20 @@ Author: *Cynthia SC* (05-14-2026)
 1. TOC
 {:toc}
 
+   
 
-## Una idea peligrosa acerca de scRNA-seq
+## Una idea peligrosa sobre scRNA-seq
 {: .gradient-heading .toc }
 
-Uno error muy frecuente al comenzar en análisis *single-cell RNA-seq* es asumir que:
+Uno de los errores más frecuentes al comenzar en análisis *single-cell RNA-seq* es asumir que:
 
 ```text
 1 barcode = 1 célula
-```
+````
 
-En realidad, esto no es cierto. En tecnologías *droplet-based* como **10x Genomics**, el experimento genera millones de droplets, pero muchos de ellos:
+En realidad, esto no siempre es cierto.
+
+En tecnologías *droplet-based* como **10x Genomics**, el experimento genera millones de droplets, pero muchos de ellos:
 
 * están vacíos
 * contienen RNA ambiental
@@ -40,7 +43,7 @@ En realidad, esto no es cierto. En tecnologías *droplet-based* como **10x Genom
 
 <br>
 
-![cell calling](../images/scrnaseq_bc_cellcalling_emptydrops1.png)
+![Unicellular organisms](../images/scrnaseq_bc_cellcalling_emptydrops1.png)
 
 Por ello, antes del análisis biológico, existe una etapa crítica llamada:
 
@@ -52,8 +55,10 @@ es decir:
 
 > decidir qué barcodes representan células reales y cuáles NO.
 
+   
 
-## ¿Qué es realmente un barcode?
+## Entonces… ¿qué es realmente un barcode?
+
 {: .gradient-heading .toc }
 
 En tecnologías *droplet-based*, cada droplet recibe un identificador molecular conocido como:
@@ -68,7 +73,7 @@ Pero aquí aparece un detalle importante:
 
 > un barcode identifica un droplet, NO necesariamente una célula.
 
-Por ello, una matriz sin procesar *raw* típica puede contener:
+Por ello, una matriz *raw* típica puede contener:
 
 ```text
 1,000,000+ barcodes
@@ -76,8 +81,10 @@ Por ello, una matriz sin procesar *raw* típica puede contener:
 
 aunque solamente una fracción corresponde a células reales.
 
+   
 
-## ¿Qué significa *droplet-based*?
+## ¿Qué significa <i>droplet-based</i>?
+
 {: .gradient-heading .toc }
 
 Las tecnologías *droplet-based* buscan encapsular células individuales dentro de gotas microscópicas (*droplets*) utilizando sistemas microfluídicos.
@@ -97,16 +104,15 @@ Cada droplet contiene:
 
 Después de la secuenciación, las lecturas pueden asociarse a células individuales utilizando dichos barcodes.
 
+Sin embargo, la realidad experimental es mucho más compleja.
 
-### El problema: no todos los droplets contienen células
-{: .gradient-heading .no_toc }
+   
 
-En la práctica, un experimento *droplet-based* genera una mezcla de:
+## El problema: no todos los droplets contienen células
 
-* droplets vacíos
-* droplets con una célula
-* droplets con múltiples células (*doublets/multiplets*)
-* droplets contaminados con RNA ambiental libre (*ambient RNA*)
+{: .gradient-heading .toc }
+
+En la práctica, un experimento *droplet-based* genera una mezcla de droplets vacíos, droplets con una célula, droplets con múltiples células (*doublets/multiplets*) y droplets contaminados con RNA ambiental libre (*ambient RNA*).
 
 Por ello, los datos sin procesar contienen millones de barcodes cuya composición real no se conoce inicialmente.
 
@@ -118,7 +124,7 @@ Por ejemplo, una matriz `raw_feature_bc_matrix.h5` típica puede contener:
 
 aunque la mayoría de esos droplets están vacíos.
 
-Esto introduce problemas específicos, que pueden resumirse como:
+Cuando observamos matrices sin filtrar, en realidad estamos viendo una mezcla compleja de señales biológicas y técnicas, que pueden resumirse como sigue:
 
 | Problema              | Descripción                           |
 | --------------------- | ------------------------------------- |
@@ -128,52 +134,15 @@ Esto introduce problemas específicos, que pueden resumirse como:
 | Barcode contamination | Señales espurias entre droplets       |
 
 
-### El problema biológico detrás del QC
-{: .gradient-heading .no_toc }
+En este contexto, el *cell calling* intenta **reconstruir correctamente qué señales corresponden a biología real**.
 
-Cuando observamos matrices sin filtrar como:
+   
 
-```text
-raw_feature_bc_matrix.h5
-```
+## Cell Ranger ya realiza <i>cell calling</i>?
 
-en realidad estamos viendo una mezcla compleja de señales biológicas y técnicas.
+`Cell Ranger` ya implementa algoritmos estadísticos para decidir qué droplets contienen células reales.
 
-| Tipo de barcode | Interpretación                      |
-| --------------- | ----------------------------------- |
-| Empty droplets  | Droplets vacíos                     |
-| Ambient RNA     | RNA libre capturado accidentalmente |
-| Real cells      | Células reales                      |
-| Doublets        | Dos células encapsuladas juntas     |
-
-Por ello, el objetivo del *QC* no es simplemente “limpiar datos”. Esto es particularmente importante en datos scRNA-seq, donde la complejidad técnica es alta.
-
-El verdadero objetivo es:
-
-> reconstruir correctamente qué señales corresponden a biología real.
-
-
-## ¿Sabías que *Cell Ranger* ya realiza *cell calling*?
-{: .gradient-heading .toc }
-
-Muchos usuarios utilizan directamente:
-
-```text
-filtered_feature_bc_matrix
-```
-
-Esto puede ser correcto sí conocen el patron esperado, y confían en los algoritmos de `Cell Ranger`, pero en algunos casos será importante entender que:
-
-* ¿cómo fueron seleccionados esos barcodes?
-* ¿qué criterios utilizó Cell Ranger?
-* ¿qué barcodes quedaron fuera?
-* ¿qué impacto tiene esto en downstream analysis?
-
-`Cell Ranger` implementa algoritmos estadísticos para decidir qué droplets contienen células reales.
-
-![cell calling](../images/scrnaseq_bc_cellranger_emptydrops2.png)
-
-De forma simplificada:
+De forma simplificada sigue el siguiente flujo:
 
 ```text
 raw matrix
@@ -185,13 +154,38 @@ detección estadística de droplets celulares
 filtered matrix
 ```
 
-Es decir:
+Y se ilustra muy resumidamente en la siguiente figura:
+
+![Unicellular organisms](../images/scrnaseq_bc_cellranger_emptydrops2.png)
+
+<br>
+
+Es decir,:
 
 > la matriz filtrada ya representa una interpretación computacional del experimento.
 
 
-### Y aquí, una pregunta importante
-{: .gradient-heading .no_toc }
+{: .gradient-heading .toc }
+
+Por ello muchos usuarios la utilizan directamente:
+
+```text
+filtered_feature_bc_matrix
+```
+
+Aunque algunas veces convendrá preguntarse:
+
+* ¿cómo fueron seleccionados esos barcodes?
+* ¿qué criterios utilizó Cell Ranger?
+* ¿qué barcodes quedaron fuera?
+* ¿qué impacto tiene esto en downstream analysis?
+
+esto, será particularmente importante en experimentos con datos de alta complejidad.
+
+
+## Y aquí, una pregunta importante
+
+{: .gradient-heading .toc }
 
 ¿Debemos aceptar siempre los barcodes seleccionados automáticamente?
 
@@ -208,15 +202,23 @@ En algunos datasets:
 * poblaciones de baja expresión pueden desaparecer
 * o el RNA ambiental puede afectar la selección
 
-Por ello, muchos análisis avanzados exploran también la matriz sin procesar *raw*.
+Por ello, muchos análisis avanzados exploran también la matriz *raw*.
 
+   
 
-### EmptyDrops: seleccionando barcodes bajo tus propios criterios
-{: .gradient-heading .no_toc }
+## EmptyDrops y el modelado de RNA ambiental
 
-Una de las herramientas más conocidas para este problema es **EmptyDrops**, propuesto por Lun et al. (2019).
+{: .gradient-heading .toc }
 
-La idea conceptual:
+Una de las herramientas más conocidas para este problema es:
+
+```text
+EmptyDrops
+```
+
+propuesto por Lun et al. (2019).
+
+La idea conceptual es elegante:
 
 > comparar cada barcode contra el perfil de RNA ambiental esperado.
 
@@ -233,83 +235,11 @@ Esto permite detectar:
 * droplets ambiguos
 * señales que podrían perderse en filtros automáticos
 
+   
 
-## ¿Por qué existen herramientas especializadas?
+## Puede estó cambiar un análisis?
+
 {: .gradient-heading .toc }
-
-Muchas herramientas modernas de scRNA-seq fueron diseñadas específicamente para resolver problemas característicos de tecnologías *droplet-based*.
-
-| Problema                | Herramienta típica       | ¿Qué hace?                                                  |
-| ----------------------- | ------------------------ | ----------------------------------------------------------- |
-| Droplets vacíos         | EmptyDrops / Cell Ranger | Identifica droplets con células reales                      |
-| RNA ambiental           | SoupX                    | Corrige contaminación por RNA ambiental                     |
-| Doublets                | scDblFinder              | Detecta múltiples células en un mismo droplet               |
-| Células de baja calidad | QC downstream            | Filtra células con baja complejidad o alto RNA mitocondrial |
-
-Estas herramientas:
-
-**NO son universales**, y dependen del tipo de tecnología utilizada.
-
-
-## ¿Qué hace EmptyDrops?
-{: .gradient-heading .toc }
-
-El método `EmptyDrops` fue diseñado para tecnologías que generan grandes cantidades de droplets vacíos.
-
-Su objetivo es distinguir **droplet vacío vs droplet con célula real**, utilizando matrices sin procesar (*raw matrices*).
-
-Por ello, `EmptyDrops` solamente tiene sentido en tecnologías donde:
-
-* existen millones de droplets
-* muchos droplets están vacíos
-* hay RNA ambiental detectable
-
-
-### No todas las tecnologías generan droplets
-{: .gradient-heading .no_toc }
-
-Es importante recordar que no todas las plataformas de scRNA-seq utilizan droplets.
-
-Existen múltiples arquitecturas experimentales y cada una produce datos con propiedades distintas.
-
-| Tipo de tecnología | Ejemplo                        |
-| ------------------ | ------------------------------ |
-| Droplet-based      | 10x Genomics, Drop-seq, inDrop |
-| Plate-based        | Smart-seq2                     |
-| Microwell-based    | Seq-Well                       |
-
-
-### Ejemplo conceptual: Smart-seq2
-{: .gradient-heading .no_toc }
-
-Las tecnologías *plate-based* funcionan de manera distinta.
-
-Por ejemplo, en **Smart-seq2**:
-
-* cada célula se deposita individualmente en un pozo
-* no existen millones de droplets vacíos
-* el RNA ambiental tiene un comportamiento distinto
-* no se requiere *cell calling*
-
-Por ello, herramientas como `EmptyDrops` no tienen sentido en estos datasets.
-
-
-## Comparación conceptual entre tecnologías
-{: .gradient-heading .toc }
-
-| Característica         | Droplet-based | Plate-based    |
-| ---------------------- | ------------- | -------------- |
-| High-throughput        | ✅ Muy alto    | ❌ Más limitado |
-| Empty droplets         | ✅ Sí          | ❌ No           |
-| Ambient RNA            | ✅ Frecuente   | ⚠️ Menor       |
-| Cell calling           | ✅ Necesario   | ❌ No           |
-| UMIs                   | ✅ Frecuentes  | ⚠️ Variable    |
-| Costo por célula       | ✅ Bajo        | ❌ Más alto     |
-| Profundidad por célula | ⚠️ Moderada   | ✅ Alta         |
-
-
-### ¿Por qué esto puede cambiar un análisis?
-{: .gradient-heading .no_toc }
 
 La selección de barcodes puede modificar:
 
@@ -324,31 +254,71 @@ En otras palabras:
 
 > el *cell calling* puede cambiar completamente la historia biológica que observamos.
 
-Y este es uno de los motivos por los cuales el QC en scRNA-seq es mucho más complejo que simplemente filtrar genes o UMIs.
+Y este es uno de los motivos por los cuales esta etapa es mucho más importante de lo que muchos tutoriales sugieren.
 
+   
 
-### QC no significa únicamente “filtrar células malas”
-{: .gradient-heading .no_toc }
+## No todas las tecnologías generan droplets
 
-En análisis *single-cell*, el QC ocurre en múltiples niveles:
+{: .gradient-heading .toc }
 
-| Etapa                  | Objetivo                        |
-| ---------------------- | ------------------------------- |
-| Cell calling           | Detectar células reales         |
-| Ambient RNA correction | Corregir contaminación          |
-| Doublet detection      | Detectar múltiples células      |
-| QC downstream          | Filtrar células de baja calidad |
+Es importante recordar que no todas las plataformas de scRNA-seq utilizan droplets.
 
-Por ello, herramientas como:
+Existen múltiples arquitecturas experimentales y cada una produce datos con propiedades distintas.
 
-* EmptyDrops
-* SoupX
-* scDblFinder
+| Tipo de tecnología | Ejemplo                        |
+| ------------------ | ------------------------------ |
+| Droplet-based      | 10x Genomics, Drop-seq, inDrop |
+| Plate-based        | Smart-seq2                     |
+| Microwell-based    | Seq-Well                       |
 
-existen porque los problemas biológicos y técnicos son distintos.
+Esto es importante porque muchas herramientas modernas fueron diseñadas específicamente para tecnologías *droplet-based*.
 
+   
+
+## Ejemplo conceptual: Smart-seq2
+
+{: .gradient-heading .toc }
+
+Las tecnologías *plate-based* funcionan de manera distinta.
+
+Por ejemplo, en **Smart-seq2**:
+
+* cada célula se deposita individualmente en un pozo
+* no existen millones de droplets vacíos
+* el RNA ambiental tiene un comportamiento distinto
+* no se requiere *cell calling*
+
+Por ello, herramientas como `EmptyDrops` no tienen sentido en estos datasets.
+
+   
+
+## Herramientas especializadas para tecnologías <i>droplet-based</i>
+
+{: .gradient-heading .toc }
+
+Muchas herramientas modernas de scRNA-seq fueron desarrolladas específicamente para resolver problemas característicos de tecnologías *droplet-based*.
+
+| Problema        | Herramienta típica       | ¿Qué hace?                                    |
+| --------------- | ------------------------ | --------------------------------------------- |
+| Droplets vacíos | EmptyDrops / Cell Ranger | Identifica droplets con células reales        |
+| RNA ambiental   | SoupX                    | Corrige contaminación por RNA ambiental       |
+| Doublets        | scDblFinder              | Detecta múltiples células en un mismo droplet |
+
+Estas herramientas:
+
+```text
+NO son universales
+```
+
+y dependen fuertemente del tipo de tecnología utilizada.
+
+Comprender la arquitectura experimental evita aplicar herramientas incorrectas simplemente porque aparecen en un tutorial o pipeline popular.
+
+   
 
 ## Relación conceptual con Seurat
+
 {: .gradient-heading .toc }
 
 Es importante enfatizar que Seurat es una plataforma de análisis *downstream* y no reemplaza las etapas iniciales de preprocesamiento experimental.
@@ -362,8 +332,6 @@ alignment / counting
  ↓
 cell calling
  ↓
-QC
- ↓
 normalización
  ↓
 clustering
@@ -376,9 +344,11 @@ Por ello:
 * `EmptyDrops` pertenece a la fase de *cell calling*
 * Seurat comienza típicamente después de esta etapa
 
+   
 
-### Lo importante no es memorizar herramientas
-{: .gradient-heading .no_toc }
+## Lo importante no es memorizar herramientas
+
+{: .gradient-heading .toc }
 
 La verdadera pregunta en scRNA-seq no es:
 
@@ -390,8 +360,10 @@ Sino:
 
 Comprender esto cambia completamente la forma de analizar datos *single-cell*.
 
+   
 
 ## Aprender single-cell más allá de los pipelines
+
 {: .gradient-heading .toc }
 
 Gran parte de los tutoriales modernos muestran únicamente:
@@ -412,8 +384,10 @@ Pero rara vez explican:
 
 Comprender estas etapas mejora enormemente la interpretación biológica y evita aplicar herramientas como si fueran universales.
 
+---   
 
 ## Recursos de consulta
+
 {: .gradient-heading .no_toc }
 
 * [10x Genomics — Cell Ranger Gene Expression Algorithm Overview](https://www.10xgenomics.com/support/software/cell-ranger/latest/algorithms-overview/cr-gex-algorithm)
