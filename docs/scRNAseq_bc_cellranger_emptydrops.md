@@ -7,6 +7,7 @@ description: "Por qué un barcode no siempre representa una célula real en scRN
 ---
 
 Author: *Cynthia SC* (05-14-2026)
+⏱️ Tiempo de lectura aproximado: 10 min
 
 ---
 
@@ -58,7 +59,6 @@ es decir:
    
 
 ## Entonces… ¿qué es realmente un barcode?
-
 {: .gradient-heading .toc }
 
 En tecnologías *droplet-based*, cada droplet recibe un identificador molecular conocido como:
@@ -84,7 +84,6 @@ aunque solamente una fracción corresponde a células reales.
    
 
 ## ¿Qué significa <i>droplet-based</i>?
-
 {: .gradient-heading .toc }
 
 Las tecnologías *droplet-based* buscan encapsular células individuales dentro de gotas microscópicas (*droplets*) utilizando sistemas microfluídicos.
@@ -108,9 +107,8 @@ Sin embargo, la realidad experimental es mucho más compleja.
 
    
 
-## El problema: no todos los droplets contienen células
-
-{: .gradient-heading .toc }
+### El problema: no todos los droplets contienen células
+{: .no_toc }
 
 En la práctica, un experimento *droplet-based* genera una mezcla de droplets vacíos, droplets con una célula, droplets con múltiples células (*doublets/multiplets*) y droplets contaminados con RNA ambiental libre (*ambient RNA*).
 
@@ -138,7 +136,8 @@ En este contexto, el *cell calling* intenta **reconstruir correctamente qué se�
 
    
 
-## Cell Ranger ya realiza <i>cell calling</i>?
+## Cell Ranger ya realiza <i>cell calling</i>
+{: .gradient-heading .toc }
 
 `Cell Ranger` ya implementa algoritmos estadísticos para decidir qué droplets contienen células reales.
 
@@ -164,9 +163,6 @@ Es decir,:
 
 > la matriz filtrada ya representa una interpretación computacional del experimento.
 
-
-{: .gradient-heading .toc }
-
 Por ello muchos usuarios la utilizan directamente:
 
 ```text
@@ -184,8 +180,7 @@ esto, será particularmente importante en experimentos con datos de alta complej
 
 
 ## Y aquí, una pregunta importante
-
-{: .gradient-heading .toc }
+{: .no_toc }
 
 ¿Debemos aceptar siempre los barcodes seleccionados automáticamente?
 
@@ -207,7 +202,6 @@ Por ello, muchos análisis avanzados exploran también la matriz *raw*.
    
 
 ## EmptyDrops y el modelado de RNA ambiental
-
 {: .gradient-heading .toc }
 
 Una de las herramientas más conocidas para este problema es:
@@ -237,9 +231,8 @@ Esto permite detectar:
 
    
 
-## Puede estó cambiar un análisis?
-
-{: .gradient-heading .toc }
+### ¿Puede estó cambiar un análisis?
+{: .no_toc }
 
 La selección de barcodes puede modificar:
 
@@ -259,7 +252,6 @@ Y este es uno de los motivos por los cuales esta etapa es mucho más importante 
    
 
 ## No todas las tecnologías generan droplets
-
 {: .gradient-heading .toc }
 
 Es importante recordar que no todas las plataformas de scRNA-seq utilizan droplets.
@@ -276,9 +268,8 @@ Esto es importante porque muchas herramientas modernas fueron diseñadas especí
 
    
 
-## Ejemplo conceptual: Smart-seq2
-
-{: .gradient-heading .toc }
+### Ejemplo conceptual: Smart-seq2
+{: .toc }
 
 Las tecnologías *plate-based* funcionan de manera distinta.
 
@@ -294,7 +285,6 @@ Por ello, herramientas como `EmptyDrops` no tienen sentido en estos datasets.
    
 
 ## Herramientas especializadas para tecnologías <i>droplet-based</i>
-
 {: .gradient-heading .toc }
 
 Muchas herramientas modernas de scRNA-seq fueron desarrolladas específicamente para resolver problemas característicos de tecnologías *droplet-based*.
@@ -318,7 +308,6 @@ Comprender la arquitectura experimental evita aplicar herramientas incorrectas s
    
 
 ## Relación conceptual con Seurat
-
 {: .gradient-heading .toc }
 
 Es importante enfatizar que Seurat es una plataforma de análisis *downstream* y no reemplaza las etapas iniciales de preprocesamiento experimental.
@@ -346,9 +335,8 @@ Por ello:
 
    
 
-## Lo importante no es memorizar herramientas
-
-{: .gradient-heading .toc }
+### Lo importante no es memorizar herramientas
+{: .toc }
 
 La verdadera pregunta en scRNA-seq no es:
 
@@ -363,7 +351,6 @@ Comprender esto cambia completamente la forma de analizar datos *single-cell*.
    
 
 ## Aprender single-cell más allá de los pipelines
-
 {: .gradient-heading .toc }
 
 Gran parte de los tutoriales modernos muestran únicamente:
@@ -387,8 +374,7 @@ Comprender estas etapas mejora enormemente la interpretación biológica y evita
 ---   
 
 ## Recursos de consulta
-
-{: .gradient-heading .no_toc }
+{: .no_toc }
 
 * [10x Genomics — Cell Ranger Gene Expression Algorithm Overview](https://www.10xgenomics.com/support/software/cell-ranger/latest/algorithms-overview/cr-gex-algorithm)
 
