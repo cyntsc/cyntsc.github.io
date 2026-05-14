@@ -22,26 +22,25 @@ Author: *Cynthia SC* (05-14-2026)
 {:toc}
 
 
-![cell calling](../images/scrnaseq_bc_cellcalling_emptydrops1.png)
-
-
-## La idea más peligrosa en scRNA-seq
+## Una idea peligrosa acerca de scRNA-seq
 {: .gradient-heading .toc }
 
-Uno de los errores más frecuentes al comenzar en análisis *single-cell RNA-seq* es asumir que:
+Uno error muy frecuente al comenzar en análisis *single-cell RNA-seq* es asumir que:
 
 ```text
 1 barcode = 1 célula
-````
+```
 
-En realidad, esto no es cierto.
-
-En tecnologías *droplet-based* como **10x Genomics**, el experimento genera millones de droplets, pero muchos de ellos:
+En realidad, esto no es cierto. En tecnologías *droplet-based* como **10x Genomics**, el experimento genera millones de droplets, pero muchos de ellos:
 
 * están vacíos
 * contienen RNA ambiental
 * contienen múltiples células (*doublets*)
 * o presentan señales ambiguas
+
+<br>
+
+![cell calling](../images/scrnaseq_bc_cellcalling_emptydrops1.png)
 
 Por ello, antes del análisis biológico, existe una etapa crítica llamada:
 
@@ -54,7 +53,7 @@ es decir:
 > decidir qué barcodes representan células reales y cuáles NO.
 
 
-## ¿Qué es realmente un barcode?
+### ¿Qué es realmente un barcode?
 {: .gradient-heading .toc }
 
 En tecnologías *droplet-based*, cada droplet recibe un identificador molecular conocido como:
@@ -100,7 +99,6 @@ Después de la secuenciación, las lecturas pueden asociarse a células individu
 
 
 ### El problema: no todos los droplets contienen células
-{: .gradient-heading .no_toc }
 
 En la práctica, un experimento *droplet-based* genera una mezcla de:
 
@@ -129,8 +127,7 @@ Esto introduce problemas específicos, que pueden resumirse como:
 | Barcode contamination | Señales espurias entre droplets       |
 
 
-## El problema biológico detrás del QC
-{: .gradient-heading .toc }
+### El problema biológico detrás del QC
 
 Cuando observamos matrices sin filtrar como:
 
@@ -154,7 +151,7 @@ El verdadero objetivo es:
 > reconstruir correctamente qué señales corresponden a biología real.
 
 
-### ¿Sabías que Cell Ranger ya realiza *cell calling*?
+### ¿Sabías que *Cell Ranger* ya realiza *cell calling*?
 {: .gradient-heading .toc }
 
 Muchos usuarios utilizan directamente:
@@ -172,7 +169,7 @@ Esto puede ser correcto sí conocen el patron esperado, y confían en los algori
 
 `Cell Ranger` implementa algoritmos estadísticos para decidir qué droplets contienen células reales.
 
-![cell calling](../images/scrnaseq_bc_cellcalling_emptydrops2.png)
+![cell calling](../images/scrnaseq_bc_cellranger_emptydrops2.png)
 
 De forma simplificada:
 
@@ -192,7 +189,6 @@ Es decir:
 
 
 ### Y aquí, una pregunta importante
-{: .gradient-heading .no_toc }
 
 ¿Debemos aceptar siempre los barcodes seleccionados automáticamente?
 
@@ -266,8 +262,8 @@ Por ello, `EmptyDrops` solamente tiene sentido en tecnologías donde:
 * hay RNA ambiental detectable
 
 
-### OJO. No todas las tecnologías generan droplets
-{: .gradient-heading .no_toc }
+## No todas las tecnologías generan droplets
+{: .gradient-heading .toc }
 
 Es importante recordar que no todas las plataformas de scRNA-seq utilizan droplets.
 
@@ -280,9 +276,7 @@ Existen múltiples arquitecturas experimentales y cada una produce datos con pro
 | Microwell-based    | Seq-Well                       |
 
 
-
 ### Ejemplo conceptual: Smart-seq2
-{: .gradient-heading .no_toc }
 
 Las tecnologías *plate-based* funcionan de manera distinta.
 
@@ -311,7 +305,6 @@ Por ello, herramientas como `EmptyDrops` no tienen sentido en estos datasets.
 
 
 ### ¿Por qué esto puede cambiar un análisis?
-{: .gradient-heading .toc }
 
 La selección de barcodes puede modificar:
 
@@ -330,7 +323,6 @@ Y este es uno de los motivos por los cuales el QC en scRNA-seq es mucho más com
 
 
 ### QC no significa únicamente “filtrar células malas”
-{: .gradient-heading .toc }
 
 En análisis *single-cell*, el QC ocurre en múltiples niveles:
 
@@ -380,7 +372,6 @@ Por ello:
 
 
 ### Lo importante no es memorizar herramientas
-{: .gradient-heading .no_toc }
 
 La verdadera pregunta en scRNA-seq no es:
 
