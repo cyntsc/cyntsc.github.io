@@ -7,6 +7,7 @@ description: "Por qué un barcode no siempre representa una célula real en scRN
 ---
 
 Author: *Cynthia SC* (05-14-2026)
+
 ⏱️ Tiempo de lectura aproximado: 10 min
 
 ---
@@ -46,11 +47,7 @@ En tecnologías *droplet-based* como **10x Genomics**, el experimento genera mil
 
 ![Unicellular organisms](../images/scrnaseq_bc_cellcalling_emptydrops1.png)
 
-Por ello, antes del análisis biológico, existe una etapa crítica llamada:
-
-```text
-cell calling
-```
+Por ello, antes del análisis biológico, existe una etapa crítica llamada `cell calling`
 
 es decir:
 
@@ -61,15 +58,9 @@ es decir:
 ## Entonces… ¿qué es realmente un barcode?
 {: .gradient-heading .toc }
 
-En tecnologías *droplet-based*, cada droplet recibe un identificador molecular conocido como:
+En tecnologías *droplet-based*, cada droplet recibe un identificador molecular conocido como `cell barcode`. Este barcode permite asociar lecturas de secuenciación a un droplet específico.
 
-```text
-cell barcode
-```
-
-Este barcode permite asociar lecturas de secuenciación a un droplet específico.
-
-Pero aquí aparece un detalle importante:
+El detalle importante es que:
 
 > un barcode identifica un droplet, NO necesariamente una célula.
 
@@ -88,26 +79,17 @@ aunque solamente una fracción corresponde a células reales.
 
 Las tecnologías *droplet-based* buscan encapsular células individuales dentro de gotas microscópicas (*droplets*) utilizando sistemas microfluídicos.
 
-Idealmente:
+Idealmente se quiere una equivalencia, `1 droplet → 1 célula`
 
-```text
-1 droplet → 1 célula
-```
+Sin embargo, la realidad experimental es mucho más compleja y cada droplet contiene:
 
-Cada droplet contiene:
-
-* una célula (idealmente)
+* una célula (idealmente), no siempre es así
 * reactivos de retrotranscripción
 * un barcode celular
 * UMIs (*Unique Molecular Identifiers*)
-
-Después de la secuenciación, las lecturas pueden asociarse a células individuales utilizando dichos barcodes.
-
-Sin embargo, la realidad experimental es mucho más compleja.
-
    
 
-### El problema: no todos los droplets contienen células
+### El problema: es que "no" todos los droplets contienen células
 {: .no_toc }
 
 En la práctica, un experimento *droplet-based* genera una mezcla de droplets vacíos, droplets con una célula, droplets con múltiples células (*doublets/multiplets*) y droplets contaminados con RNA ambiental libre (*ambient RNA*).
@@ -139,9 +121,7 @@ En este contexto, el *cell calling* intenta **reconstruir correctamente qué se�
 ## Cell Ranger ya realiza <i>cell calling</i>
 {: .gradient-heading .toc }
 
-`Cell Ranger` ya implementa algoritmos estadísticos para decidir qué droplets contienen células reales.
-
-De forma simplificada sigue el siguiente flujo:
+`Cell Ranger` implementa algoritmos estadísticos para decidir qué droplets contienen células reales. De forma simplificada sigue el siguiente flujo:
 
 ```text
 raw matrix
@@ -153,15 +133,13 @@ detección estadística de droplets celulares
 filtered matrix
 ```
 
-Y se ilustra muy resumidamente en la siguiente figura:
+Se describen resumidamente en la siguiente figura:
 
 ![Unicellular organisms](../images/scrnaseq_bc_cellranger_emptydrops2.png)
 
 <br>
 
-Es decir,:
-
-> la matriz filtrada ya representa una interpretación computacional del experimento.
+Es decir, despues del cell calling, `Cell Ranger` genera una matriz filtrada (`filtered_feature_bc_matrix.h5`) que contiene únicamente los barcodes que se consideran células reales:
 
 Por ello muchos usuarios la utilizan directamente:
 
@@ -169,14 +147,14 @@ Por ello muchos usuarios la utilizan directamente:
 filtered_feature_bc_matrix
 ```
 
-Aunque algunas veces convendrá preguntarse:
+Aunque... algunas veces convendrá preguntarse:
 
 * ¿cómo fueron seleccionados esos barcodes?
 * ¿qué criterios utilizó Cell Ranger?
 * ¿qué barcodes quedaron fuera?
 * ¿qué impacto tiene esto en downstream analysis?
 
-esto, será particularmente importante en experimentos con datos de alta complejidad.
+esto, será particularmente relevante en experimentos con datos de alta complejidad.
 
 
 ## Y aquí, una pregunta importante
@@ -184,11 +162,7 @@ esto, será particularmente importante en experimentos con datos de alta complej
 
 ¿Debemos aceptar siempre los barcodes seleccionados automáticamente?
 
-La respuesta corta es:
-
-```text
-depende del experimento
-```
+La respuesta corta es "depende del experimento"
 
 En algunos datasets:
 
@@ -204,23 +178,11 @@ Por ello, muchos análisis avanzados exploran también la matriz *raw*.
 ## EmptyDrops y el modelado de RNA ambiental
 {: .gradient-heading .toc }
 
-Una de las herramientas más conocidas para este problema es:
+Una de las herramientas más conocidas para este problema es `EmptyDrops`, propuesta por Lun et al. (2019).
 
-```text
-EmptyDrops
-```
+Aquí, la idea conceptual es *comparar cada barcode contra el perfil de RNA ambiental esperado*.
 
-propuesto por Lun et al. (2019).
-
-La idea conceptual es elegante:
-
-> comparar cada barcode contra el perfil de RNA ambiental esperado.
-
-Si el barcode presenta una señal significativamente distinta del ambiente:
-
-```text
-→ probablemente contiene una célula real
-```
+Si el barcode presenta una señal significativamente distinta del ambiente, probablemente contiene una célula real.
 
 Esto permite detectar:
 
@@ -295,13 +257,7 @@ Muchas herramientas modernas de scRNA-seq fueron desarrolladas específicamente 
 | RNA ambiental   | SoupX                    | Corrige contaminación por RNA ambiental       |
 | Doublets        | scDblFinder              | Detecta múltiples células en un mismo droplet |
 
-Estas herramientas:
-
-```text
-NO son universales
-```
-
-y dependen fuertemente del tipo de tecnología utilizada.
+Estas herramientas NO son universales, y dependen fuertemente del tipo de tecnología utilizada.
 
 Comprender la arquitectura experimental evita aplicar herramientas incorrectas simplemente porque aparecen en un tutorial o pipeline popular.
 
