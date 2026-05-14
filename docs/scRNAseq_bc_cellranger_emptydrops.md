@@ -53,7 +53,7 @@ es decir:
 > decidir qué barcodes representan células reales y cuáles NO.
 
 
-### ¿Qué es realmente un barcode?
+## ¿Qué es realmente un barcode?
 {: .gradient-heading .toc }
 
 En tecnologías *droplet-based*, cada droplet recibe un identificador molecular conocido como:
@@ -77,7 +77,7 @@ Por ello, una matriz sin procesar *raw* típica puede contener:
 aunque solamente una fracción corresponde a células reales.
 
 
-### ¿Qué significa *droplet-based*?
+## ¿Qué significa *droplet-based*?
 {: .gradient-heading .toc }
 
 Las tecnologías *droplet-based* buscan encapsular células individuales dentro de gotas microscópicas (*droplets*) utilizando sistemas microfluídicos.
@@ -99,6 +99,7 @@ Después de la secuenciación, las lecturas pueden asociarse a células individu
 
 
 ### El problema: no todos los droplets contienen células
+{: .gradient-heading .no_toc }
 
 En la práctica, un experimento *droplet-based* genera una mezcla de:
 
@@ -128,6 +129,7 @@ Esto introduce problemas específicos, que pueden resumirse como:
 
 
 ### El problema biológico detrás del QC
+{: .gradient-heading .no_toc }
 
 Cuando observamos matrices sin filtrar como:
 
@@ -151,7 +153,7 @@ El verdadero objetivo es:
 > reconstruir correctamente qué señales corresponden a biología real.
 
 
-### ¿Sabías que *Cell Ranger* ya realiza *cell calling*?
+## ¿Sabías que *Cell Ranger* ya realiza *cell calling*?
 {: .gradient-heading .toc }
 
 Muchos usuarios utilizan directamente:
@@ -189,6 +191,7 @@ Es decir:
 
 
 ### Y aquí, una pregunta importante
+{: .gradient-heading .no_toc }
 
 ¿Debemos aceptar siempre los barcodes seleccionados automáticamente?
 
@@ -209,7 +212,7 @@ Por ello, muchos análisis avanzados exploran también la matriz sin procesar *r
 
 
 ### EmptyDrops: seleccionando barcodes bajo tus propios criterios
-{: .gradient-heading .toc }
+{: .gradient-heading .no_toc }
 
 Una de las herramientas más conocidas para este problema es **EmptyDrops**, propuesto por Lun et al. (2019).
 
@@ -231,7 +234,7 @@ Esto permite detectar:
 * señales que podrían perderse en filtros automáticos
 
 
-### ¿Por qué existen herramientas especializadas?
+## ¿Por qué existen herramientas especializadas?
 {: .gradient-heading .toc }
 
 Muchas herramientas modernas de scRNA-seq fueron diseñadas específicamente para resolver problemas característicos de tecnologías *droplet-based*.
@@ -248,7 +251,7 @@ Estas herramientas:
 **NO son universales**, y dependen del tipo de tecnología utilizada.
 
 
-### ¿Qué hace EmptyDrops?
+## ¿Qué hace EmptyDrops?
 {: .gradient-heading .toc }
 
 El método `EmptyDrops` fue diseñado para tecnologías que generan grandes cantidades de droplets vacíos.
@@ -262,8 +265,8 @@ Por ello, `EmptyDrops` solamente tiene sentido en tecnologías donde:
 * hay RNA ambiental detectable
 
 
-## No todas las tecnologías generan droplets
-{: .gradient-heading .toc }
+### No todas las tecnologías generan droplets
+{: .gradient-heading .no_toc }
 
 Es importante recordar que no todas las plataformas de scRNA-seq utilizan droplets.
 
@@ -277,6 +280,7 @@ Existen múltiples arquitecturas experimentales y cada una produce datos con pro
 
 
 ### Ejemplo conceptual: Smart-seq2
+{: .gradient-heading .no_toc }
 
 Las tecnologías *plate-based* funcionan de manera distinta.
 
@@ -290,7 +294,7 @@ Por ejemplo, en **Smart-seq2**:
 Por ello, herramientas como `EmptyDrops` no tienen sentido en estos datasets.
 
 
-### Comparación conceptual entre tecnologías
+## Comparación conceptual entre tecnologías
 {: .gradient-heading .toc }
 
 | Característica         | Droplet-based | Plate-based    |
@@ -305,6 +309,7 @@ Por ello, herramientas como `EmptyDrops` no tienen sentido en estos datasets.
 
 
 ### ¿Por qué esto puede cambiar un análisis?
+{: .gradient-heading .no_toc }
 
 La selección de barcodes puede modificar:
 
@@ -323,6 +328,7 @@ Y este es uno de los motivos por los cuales el QC en scRNA-seq es mucho más com
 
 
 ### QC no significa únicamente “filtrar células malas”
+{: .gradient-heading .no_toc }
 
 En análisis *single-cell*, el QC ocurre en múltiples niveles:
 
@@ -372,6 +378,7 @@ Por ello:
 
 
 ### Lo importante no es memorizar herramientas
+{: .gradient-heading .no_toc }
 
 La verdadera pregunta en scRNA-seq no es:
 
