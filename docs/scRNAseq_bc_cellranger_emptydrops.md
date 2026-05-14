@@ -54,8 +54,7 @@ es decir:
 > decidir qué barcodes representan células reales y cuáles NO.
 
 
-## Entonces… ¿qué es realmente un barcode?
-
+## ¿Qué es realmente un barcode?
 {: .gradient-heading .toc }
 
 En tecnologías *droplet-based*, cada droplet recibe un identificador molecular conocido como:
@@ -79,8 +78,7 @@ Por ello, una matriz sin procesar *raw* típica puede contener:
 aunque solamente una fracción corresponde a células reales.
 
 
-## ¿Qué significa <i>droplet-based</i>?
-
+### ¿Qué significa *droplet-based*?
 {: .gradient-heading .toc }
 
 Las tecnologías *droplet-based* buscan encapsular células individuales dentro de gotas microscópicas (*droplets*) utilizando sistemas microfluídicos.
@@ -101,10 +99,8 @@ Cada droplet contiene:
 Después de la secuenciación, las lecturas pueden asociarse a células individuales utilizando dichos barcodes.
 
 
-
-## El problema: no todos los droplets contienen células
-
-{: .gradient-heading .toc }
+### El problema: no todos los droplets contienen células
+{: .gradient-heading .no_toc }
 
 En la práctica, un experimento *droplet-based* genera una mezcla de:
 
@@ -134,7 +130,6 @@ Esto introduce problemas específicos, que pueden resumirse como:
 
 
 ## El problema biológico detrás del QC
-
 {: .gradient-heading .toc }
 
 Cuando observamos matrices sin filtrar como:
@@ -159,8 +154,7 @@ El verdadero objetivo es:
 > reconstruir correctamente qué señales corresponden a biología real.
 
 
-## ¿Sabías que Cell Ranger ya realiza <i>cell calling</i>?
-
+### ¿Sabías que Cell Ranger ya realiza *cell calling*?
 {: .gradient-heading .toc }
 
 Muchos usuarios utilizan directamente:
@@ -197,9 +191,8 @@ Es decir:
 > la matriz filtrada ya representa una interpretación computacional del experimento.
 
 
-## Y aquí, una pregunta importante
-
-{: .gradient-heading .toc }
+### Y aquí, una pregunta importante
+{: .gradient-heading .no_toc }
 
 ¿Debemos aceptar siempre los barcodes seleccionados automáticamente?
 
@@ -219,8 +212,7 @@ En algunos datasets:
 Por ello, muchos análisis avanzados exploran también la matriz sin procesar *raw*.
 
 
-## EmptyDrops: seleccionando barcodes bajo tus propios criterios
-
+### EmptyDrops: seleccionando barcodes bajo tus propios criterios
 {: .gradient-heading .toc }
 
 Una de las herramientas más conocidas para este problema es **EmptyDrops**, propuesto por Lun et al. (2019).
@@ -243,9 +235,7 @@ Esto permite detectar:
 * señales que podrían perderse en filtros automáticos
 
 
-
-## ¿Por qué existen herramientas especializadas?
-
+### ¿Por qué existen herramientas especializadas?
 {: .gradient-heading .toc }
 
 Muchas herramientas modernas de scRNA-seq fueron diseñadas específicamente para resolver problemas característicos de tecnologías *droplet-based*.
@@ -262,8 +252,7 @@ Estas herramientas:
 **NO son universales**, y dependen del tipo de tecnología utilizada.
 
 
-## ¿Qué hace EmptyDrops?
-
+### ¿Qué hace EmptyDrops?
 {: .gradient-heading .toc }
 
 El método `EmptyDrops` fue diseñado para tecnologías que generan grandes cantidades de droplets vacíos.
@@ -277,9 +266,8 @@ Por ello, `EmptyDrops` solamente tiene sentido en tecnologías donde:
 * hay RNA ambiental detectable
 
 
-## OJO. No todas las tecnologías generan droplets
-
-{: .gradient-heading .toc }
+### OJO. No todas las tecnologías generan droplets
+{: .gradient-heading .no_toc }
 
 Es importante recordar que no todas las plataformas de scRNA-seq utilizan droplets.
 
@@ -293,9 +281,8 @@ Existen múltiples arquitecturas experimentales y cada una produce datos con pro
 
 
 
-## Ejemplo conceptual: Smart-seq2
-
-{: .gradient-heading .toc }
+### Ejemplo conceptual: Smart-seq2
+{: .gradient-heading .no_toc }
 
 Las tecnologías *plate-based* funcionan de manera distinta.
 
@@ -309,8 +296,7 @@ Por ejemplo, en **Smart-seq2**:
 Por ello, herramientas como `EmptyDrops` no tienen sentido en estos datasets.
 
 
-## Comparación conceptual entre tecnologías
-
+### Comparación conceptual entre tecnologías
 {: .gradient-heading .toc }
 
 | Característica         | Droplet-based | Plate-based    |
@@ -324,8 +310,7 @@ Por ello, herramientas como `EmptyDrops` no tienen sentido en estos datasets.
 | Profundidad por célula | ⚠️ Moderada   | ✅ Alta         |
 
 
-## ¿Por qué esto puede cambiar un análisis?
-
+### ¿Por qué esto puede cambiar un análisis?
 {: .gradient-heading .toc }
 
 La selección de barcodes puede modificar:
@@ -344,8 +329,7 @@ En otras palabras:
 Y este es uno de los motivos por los cuales el QC en scRNA-seq es mucho más complejo que simplemente filtrar genes o UMIs.
 
 
-## QC no significa únicamente “filtrar células malas”
-
+### QC no significa únicamente “filtrar células malas”
 {: .gradient-heading .toc }
 
 En análisis *single-cell*, el QC ocurre en múltiples niveles:
@@ -367,7 +351,6 @@ existen porque los problemas biológicos y técnicos son distintos.
 
 
 ## Relación conceptual con Seurat
-
 {: .gradient-heading .toc }
 
 Es importante enfatizar que Seurat es una plataforma de análisis *downstream* y no reemplaza las etapas iniciales de preprocesamiento experimental.
@@ -396,9 +379,8 @@ Por ello:
 * Seurat comienza típicamente después de esta etapa
 
 
-## Lo importante no es memorizar herramientas
-
-{: .gradient-heading .toc }
+### Lo importante no es memorizar herramientas
+{: .gradient-heading .no_toc }
 
 La verdadera pregunta en scRNA-seq no es:
 
@@ -412,7 +394,6 @@ Comprender esto cambia completamente la forma de analizar datos *single-cell*.
 
 
 ## Aprender single-cell más allá de los pipelines
-
 {: .gradient-heading .toc }
 
 Gran parte de los tutoriales modernos muestran únicamente:
@@ -435,7 +416,6 @@ Comprender estas etapas mejora enormemente la interpretación biológica y evita
 
 
 ## Recursos de consulta
-
 {: .gradient-heading .no_toc }
 
 * [10x Genomics — Cell Ranger Gene Expression Algorithm Overview](https://www.10xgenomics.com/support/software/cell-ranger/latest/algorithms-overview/cr-gex-algorithm)
