@@ -6,12 +6,14 @@ permalink: /more-about-me/
 
 # Cynthia Soto-Cardinault, PhD
 
+<img src="/assets/images/cynthia_soto.png" alt="Cynthia Soto-Cardinault. She is wearing a professional outfit and is positioned against a neutral background. The image conveys a friendly and approachable demeanor, reflecting her role as a computational biologist and consultant." width="220" height="220" style="float: right; margin: 0 0 1rem 1.5rem; border-radius: 50%; border: 2px solid #d9d9d9;" />
+
 **Computational Biologist | Multi-Omics Data Analysis & Bioinformatics Consulting**
 
 Founder of [Arkhe Multiomics](https://elarkhe.github.io)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/cynthiacardinault/)
-[![El Arkhe](https://img.shields.io/badge/Arkhe-Multiomics-purple?style=flat)](https://elarkhe.github.io)
+[![Arkhe Multiomics](https://img.shields.io/badge/Arkhe-Multiomics-purple?style=flat)](https://elarkhe.github.io)
 [![GitHub](https://img.shields.io/badge/GitHub-cyntsc-black?style=flat&logo=github)](https://github.com/cyntsc)
 [![ORCID](https://img.shields.io/badge/ORCID-Researcher-green?style=flat&logo=orcid)](https://orcid.org/0000-0002-6877-514X)
 
@@ -165,7 +167,7 @@ I welcome inquiries from **research laboratories, principal investigators, unive
 Whether you need support for a specific analysis, a collaborative research project, or specialized technical training, I would be happy to discuss your goals.
 
 [![Contact Me](https://img.shields.io/badge/Contact%20Me-LinkedIn-blue?style=for-the-badge&logo=linkedin)](mailto:elarkhe@gmail.com)
-[![Explore El Arkhe](https://img.shields.io/badge/Explore-El%20Arkhe-purple?style=for-the-badge)](https://elarkhe.github.io)
+[![Explore Arkhe Multiomics](https://img.shields.io/badge/Explore-Arkhe%20Multiomics-purple?style=for-the-badge)](https://elarkhe.github.io)
 
 ---
 

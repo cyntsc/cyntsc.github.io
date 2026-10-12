@@ -16,7 +16,7 @@ permalink: /more-about-me/
 
 ## Profile
 
-I am a multi-omics data specialist and founder of *El Arkhe Multiomics*.  
+I am a multi-omics data specialist and founder of *Arkhe Multiomics*.  
 
 My work sits at the intersection of bioinformatics, statistics, and molecular biology, where I focus on translating large-scale genomics data into meaningful and interpretable insights.
 
