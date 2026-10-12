@@ -113,11 +113,16 @@ permalink: /more-about-me/
 
   </div>
 
-  <img
-    class="profile-photo"
-    src="{{ '_site/assets/images/cynthia.png' | relative_url }}"
-    alt="Cynthia Soto-Cardinault"
-  >
+
+
+<img
+  class="profile-photo"
+  src="{{ '/assets/images/cynthia.png' | relative_url }}"
+  alt="Cynthia Soto-Cardinault"
+  width="180"
+  height="180"
+>
+
 
 </div>
 
