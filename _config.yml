@@ -24,6 +24,9 @@ just_the_docs:
 sass:
   sass_dir: _sass
 
+exclude:
+  - old_versions/
+
 # include:
 #  - _pages
 #  - docs
