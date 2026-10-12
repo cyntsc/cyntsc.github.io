@@ -4,18 +4,142 @@ nav_order: 1
 permalink: /more-about-me/
 ---
 
-# Cynthia Soto-Cardinault, PhD
 
-<img src="/images/cynthia_soto.png" alt="Cynthia Soto-Cardinault. She is wearing a professional outfit and is positioned against a neutral background. The image conveys a friendly and approachable demeanor, reflecting her role as a computational biologist and consultant." width="220" height="220" style="float: right; margin: 0 0 1rem 1.5rem; border-radius: 50%; border: 2px solid #d9d9d9;"/>
+<style>
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 1rem 0 1.5rem;
+}
 
-**Computational Biologist | Multi-Omics Data Analysis & Bioinformatics Consulting**
+.profile-intro {
+  flex: 1;
+  min-width: 0;
+}
 
-Founder of [Arkhe Multiomics](https://elarkhe.github.io)
+.profile-intro h1 {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  line-height: 1.2;
+  margin: 0 0 0.8rem;
+}
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/cynthiacardinault/)
-[![Arkhe Multiomics](https://img.shields.io/badge/Arkhe-Multiomics-purple?style=flat)](https://elarkhe.github.io)
-[![GitHub](https://img.shields.io/badge/GitHub-cyntsc-black?style=flat&logo=github)](https://github.com/cyntsc)
-[![ORCID](https://img.shields.io/badge/ORCID-Researcher-green?style=flat&logo=orcid)](https://orcid.org/0000-0002-6877-514X)
+.profile-role {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.profile-specialty {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
+}
+
+.profile-founder {
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.profile-photo {
+  width: 180px;
+  height: 180px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 3px solid #e5e5e5;
+}
+
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1.2rem 0 2rem;
+}
+
+.profile-links a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.profile-links img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .profile-header {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .profile-photo {
+    width: 140px;
+    height: 140px;
+  }
+
+  .profile-intro h1 {
+    font-size: 1.8rem;
+  }
+}
+</style>
+
+<div class="profile-header">
+
+  <div class="profile-intro">
+
+    <h1>Cynthia Soto-Cardinault, PhD</h1>
+
+    <div class="profile-role">
+      Computational Biologist
+    </div>
+
+    <div class="profile-specialty">
+      Multi-Omics Data Analysis &amp;
+      Bioinformatics Consulting
+    </div>
+
+    <p class="profile-founder">
+      Founder of
+      <a href="https://elarkhe.github.io">
+        El Arkhe Multiomics
+      </a>
+    </p>
+
+  </div>
+
+  <img
+    class="profile-photo"
+    src="{{ '/assets/images/cynthia.png' | relative_url }}"
+    alt="Cynthia Soto-Cardinault"
+  >
+
+</div>
+
+<div class="profile-links">
+
+  <a href="https://www.linkedin.com/in/cynthiacardinault/">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&amp;logo=linkedin" alt="LinkedIn">
+  </a>
+
+  <a href="https://elarkhe.github.io">
+    <img src="https://img.shields.io/badge/El%20Arkhe-Multiomics-purple?style=flat" alt="El Arkhe">
+  </a>
+
+  <a href="https://github.com/cyntsc">
+    <img src="https://img.shields.io/badge/GitHub-cyntsc-black?style=flat&amp;logo=github" alt="GitHub">
+  </a>
+
+  <a href="https://orcid.org/0000-0002-6877-514X">
+    <img src="https://img.shields.io/badge/ORCID-Researcher-green?style=flat&amp;logo=orcid" alt="ORCID">
+  </a>
+
+</div>
 
 ---
 
