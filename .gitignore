@@ -17,3 +17,6 @@ vendor/bundle/
 
 # Sass caches
 .sass-cache/
+
+# old md
+docs/more-about-me_old.md
