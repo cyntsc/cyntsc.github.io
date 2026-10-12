@@ -16,7 +16,7 @@ permalink: /more-about-me/
 
 ## Profile
 
-I am a multi-omics data specialist and founder of *El Arkhe*.  
+I am a multi-omics data specialist and founder of *El Arkhe Multiomics*.  
 
 My work sits at the intersection of bioinformatics, statistics, and molecular biology, where I focus on translating large-scale genomics data into meaningful and interpretable insights.
 
@@ -25,23 +25,26 @@ I am particularly interested in bridging research, training, and scientific comm
 
 ## Research Interests
 
-My work focuses on developing classical and AI-assisted frameworks to interpret high-dimensional biological data, with an emphasis on:
+My work focuses on **computational biology and the analysis of high-dimensional omics data**, with two primary research interests:
 
-- Neurological diseases through single-cell and spatial transcriptomics  
-- Plant host–pathogen interactions using bulk transcriptomics, with growing interest in single-cell and spatial transcriptomics in plants  
+- **Neuroscience & Disease:** Single-cell and spatial transcriptomics to investigate cellular heterogeneity and disease-associated molecular mechanisms.
+- **Plant–Pathogen Interactions:** Transcriptomics and gene co-expression networks to study plant responses to pathogens, with growing interest in single-cell and spatial transcriptomics.
 
-Through **El Arkhe – Multiomics**, I provide training and consulting in omics technologies, supporting researchers in building analytical capacity and reproducible workflows.
+### Research Collaboration & Data Analysis Services
 
-In parallel, **El Arkhe – Cuentos Moleculares** focuses on accessible scientific communication, connecting molecular biology with broader cultural contexts.
+Through **[El Arkhe Multiomics](https://elarkhe.github.io)**, I collaborate with researchers, laboratories, and academic institutions worldwide, providing **omics data analysis, bioinformatics consulting, and reproducible computational workflows**.
+
+We also offer **hands-on technical training**, helping research teams build computational skills and apply bioinformatics workflows to their own datasets.
+
+**Have an omics dataset, a research challenge, or a team seeking computational expertise?** Let's connect and explore opportunities for collaboration.
 
 [![Visit El Arkhe](https://img.shields.io/badge/Visit-El%20Arkhe-purple?style=for-the-badge)](https://elarkhe.github.io)
-
 
 ### Technologies & approaches of interest
 
 - Single-cell transcriptomics (scRNA-seq)
 - Chromatin accessibility and regulatory genomics (scATAC-seq)
-- Multiome data integration (RNA + ATAC)
+- Multiome single-cell integration (scRNA-seq + scATAC-seq)
 - Spatial Resolved Transcriptomics (SRT)
 
 ---
@@ -112,27 +115,33 @@ I enjoy sharing knowledge and learning from others, and I am always looking for 
 
 ---
 
+
 ## Publications
+
+Montgomery KD, Werner JM, Eagles NJ, Liu C, **Cardinault CS**, Bach SV, Chandra A, Zhang R, Maguire SE, Divecha HR, et al.  
+[Multi-omic spatial mapping of the human habenula defines the molecular and anatomical organization of medial and lateral subregions.](https://www.biorxiv.org/content/10.64898/2026.09.30.755667v2)  
+***bioRxiv.*** 2026. **Preprint.** DOI: 10.64898/2026.09.30.755667
 
 Soto-Cardinault C, Childs KL, Góngora-Castillo E.  
 [Network Analysis of Publicly Available RNA-seq Provides Insights into the Molecular Mechanisms of Plant Defense against Multiple Fungal Pathogens in *Arabidopsis thaliana*.](https://pubmed.ncbi.nlm.nih.gov/38137044/)  
-*Genes (Basel).* 2023 Dec 16;14(12):2223  
+***Genes (Basel).*** 2023 Dec 16;14(12):2223
 
 Soto-Cardinault CG, Duarte-Aké F, De-la-Peña C, Góngora-Castillo E.  
 [DNA Methylation and Transcriptomic Next-Generation Technologies in Cereal Genomics.](https://pubmed.ncbi.nlm.nih.gov/31541439/)  
-*Methods Mol Biol.* 2020;2072:65–84  
+***Methods Mol Biol.*** 2020;2072:65–84
 
 Soto C, Ucán JP, Aguilar RA.  
 [Diseñando entornos virtuales de aprendizaje para el análisis de la colaboración con UWE.](https://biblat.unam.mx/en/revista/abstraction-application/articulo/disenando-entornos-virtuales-de-aprendizaje-para-el-analisis-de-la-colaboracion-con-uwe)  
-*Abstraction & Application.* 2018;20  
+***Abstraction & Application.*** 2018;20
 
 Soto C, Menéndez V, Aguilar R.  
 [Interoperabilidad entre el LMS Moodle y aplicaciones educativas utilizando IMS-LTI.](https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S1665-61802015000200024)  
-*Revista Apertura.* 2015  
+***Revista Apertura.*** 2015
 
 Soto C, Menéndez V, Aguilar R.  
 [Methodological framework for collaborative virtual learning environments integrated with LMS.](https://library.iated.org/view/SOTO2014AME)  
-*EDULEARN14 Proceedings.* 2014  
+***EDULEARN14 Proceedings.*** 2014
+
 
 ---
 
