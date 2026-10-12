@@ -107,7 +107,7 @@ permalink: /more-about-me/
     <p class="profile-founder">
       Founder of
       <a href="https://elarkhe.github.io">
-        El Arkhe Multiomics
+        Arkhe Multiomics
       </a>
     </p>
 
@@ -133,7 +133,7 @@ permalink: /more-about-me/
   </a>
 
   <a href="https://elarkhe.github.io">
-    <img src="https://img.shields.io/badge/El%20Arkhe-Multiomics-purple?style=flat" alt="El Arkhe">
+    <img src="https://img.shields.io/badge/Arkhe-Multiomics-purple?style=flat" alt="El Arkhe">
   </a>
 
   <a href="https://github.com/cyntsc">
@@ -171,7 +171,6 @@ I collaborate with researchers and scientific teams seeking computational suppor
 
 ### Omics Data Analysis & Bioinformatics Consulting
 
-Some services I provide include:
 
 - **Bulk RNA-seq:** Differential expression, functional interpretation, and gene co-expression networks.
 - **Single-cell & single-nucleus RNA-seq:** Quality control, clustering, cell-type annotation, and exploratory analysis.
@@ -196,7 +195,7 @@ The goal is to help researchers develop practical analytical skills and apply re
 
 **Have an omics dataset, a research challenge, or a team seeking computational expertise?**
 
-[Let's connect and explore opportunities for collaboration.](mailto:elarkhe@gmail.com)
+[![Let's Collaborate](https://img.shields.io/badge/Let's%20Collaborate-Contact%20Me-purple?style=for-the-badge)](mailto:elarkhe@gmail.com)
 
 ---
 
@@ -295,9 +294,7 @@ I welcome inquiries from **research laboratories, principal investigators, unive
 
 Whether you need support for a specific analysis, a collaborative research project, or specialized technical training, I would be happy to discuss your goals.
 
-[![Contact Me](https://img.shields.io/badge/Contact%20Me-LinkedIn-blue?style=for-the-badge&logo=linkedin)](mailto:elarkhe@gmail.com)
-[![Explore Arkhe Multiomics](https://img.shields.io/badge/Explore-Arkhe%20Multiomics-purple?style=for-the-badge)](https://elarkhe.github.io)
-
+[![Let's Collaborate](https://img.shields.io/badge/Let's%20Collaborate-Contact%20Me-purple?style=for-the-badge)](mailto:elarkhe@gmail.com)
 ---
 
 *Last updated: October 2026*
