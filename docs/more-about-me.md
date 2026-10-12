@@ -6,7 +6,7 @@ permalink: /more-about-me/
 
 # Cynthia Soto-Cardinault, PhD
 
-<img src="/assets/images/cynthia_soto.png" alt="Cynthia Soto-Cardinault. She is wearing a professional outfit and is positioned against a neutral background. The image conveys a friendly and approachable demeanor, reflecting her role as a computational biologist and consultant." width="220" height="220" style="float: right; margin: 0 0 1rem 1.5rem; border-radius: 50%; border: 2px solid #d9d9d9;" />
+<img src="/images/cynthia_soto.png" alt="Cynthia Soto-Cardinault. She is wearing a professional outfit and is positioned against a neutral background. The image conveys a friendly and approachable demeanor, reflecting her role as a computational biologist and consultant." width="220" height="220" style="float: right; margin: 0 0 1rem 1.5rem; border-radius: 50%; border: 2px solid #d9d9d9;"/>
 
 **Computational Biologist | Multi-Omics Data Analysis & Bioinformatics Consulting**
 
