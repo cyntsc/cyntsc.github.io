@@ -1,7 +1,8 @@
 ---
-title: About me
-nav_order: 1
-permalink: /more-about-me/
+title: About me (archive)
+published: false
+nav_exclude: true
+search_exclude: true
 ---
 
 # About me | Bio
